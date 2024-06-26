@@ -24,9 +24,9 @@ social: true  # includes social icons at the bottom of the page
 Hello! I am a first-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/). Prior to that, I earned my M.S. in Computer Science from the same institution supervised by [Yang You](https://www.comp.nus.edu.sg/~youy/). My academic journey began with the B.Eng. in Computer Science & Electronic Information from Huazhong University of Science and Technology supervised by [Xinggang Wang](https://xwcv.github.io/) and [Xiaojun Hei](https://scholar.google.com/citations?user=x9vhdoIAAAAJ&hl=en).
 
 My research focuses on `efficient and scalable machine learning system` with a primary emphasis on the following areas:
-* `Distributed training optimization`: Explore novel parallelism and communication strategy to enhance efficiency. [<a href="https://oahzxl.github.io/publications/#FastFold">PPoPP24</a>]
-* `Memory optimization`: Leverage compiler and heterogeneous to achieve efficient memory usage. [<a href="https://oahzxl.github.io/publications/#AutoChunk">ICLR24</a>, <a href="https://oahzxl.github.io/publications/#HeteGen">MLSys24</a>]
-* `Acceleration of AI applications`: Speed up and reduce memory cost of diverse AI applications. [<a href="https://oahzxl.github.io/publications/#FastFold">PPoPP24</a>]
+* `Video Model Optimization`: Improve the efficiency of video models from the pespective of parallelism, scheduling and algorithm. [<a href="https://oahzxl.github.io/publications/#DSP">DSP</a>, <a href="https://oahzxl.github.io/publications/#PAB">PAB</a>]
+* `Memory Optimization`: Leverage compiler and heterogeneous to achieve efficient memory usage. [<a href="https://oahzxl.github.io/publications/#AutoChunk">ICLR24</a>, <a href="https://oahzxl.github.io/publications/#HeteGen">MLSys24</a>]
+* `Distributed Optimization`: Explore novel parallelism and communication strategy to enhance efficiency. [<a href="https://oahzxl.github.io/publications/#FastFold">PPoPP24</a>]
 
 Open-source Projects:
 * [`OpenDiT`](https://github.com/NUS-HPC-AI-Lab/OpenDiT): An Easy, Fast and Memory-Efficent System for DiT Training and Inference
