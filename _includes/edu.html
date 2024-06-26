@@ -1,0 +1,32 @@
+          
+          <div class="edu">
+            {% if site.edu != blank -%} 
+            {%- assign edu_size = site.edu | size -%}
+            <div class="table-responsive" {% if site.edu_scrollable and edu_size > 3 %}style="max-height: 10vw"{% endif %}>
+              <table class="table table-sm table-borderless">
+              {%- assign edu = site.edu | reverse -%}
+              {% if site.edu_limit %}
+              {% assign edu_limit = site.edu_limit %}
+              {% else %}
+              {% assign edu_limit = edu_size %}
+              {% endif %}
+              {% for item in edu limit: edu_limit %} 
+                <tr>
+                  <th scope="row">{{ item.period }}</th>
+                  <td>
+                    {% if item.inline -%}
+                      <div class="news-item">
+                        {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                      </div>
+                    {%- else -%} 
+                      <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                    {%- endif %} 
+                  </td>
+                </tr>
+              {%- endfor %} 
+              </table>
+            </div>
+          {%- else -%} 
+            <p>No edu so far...</p>
+          {%- endif %} 
+          </div>
