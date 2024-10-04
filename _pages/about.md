@@ -19,9 +19,9 @@ My current research mainly focuses on **efficient and scalable machine learning 
 Open-Source Projects
 ------
 
-* [VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys): An Easy and Efficient System for Video Generation \
+* **[VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys): An Easy and Efficient System for Video Generation** \
   Project lead
-* [Colossal-AI](https://github.com/hpcaitech/ColossalAI): Making large AI models cheaper, faster and more accessible \
+* **[Colossal-AI](https://github.com/hpcaitech/ColossalAI): Making large AI models cheaper, faster and more accessible** \
   Core contributor ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors) by 2024) with 38k star.
 
 Selected Publications ([all](https://xuefuzhao.github.io/publications/))
