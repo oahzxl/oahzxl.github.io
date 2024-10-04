@@ -21,9 +21,9 @@ Open-Source Projects
 ------
 
 * [VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys): An Easy and Efficient System for Video Generation
-* * Project lead
+  * Project lead
 * [ColossalAI](https://github.com/hpcaitech/ColossalAI): Making large AI models cheaper, faster and more accessible
-* * Core contributor ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors) by 2024)
+  * Core contributor ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors) by 2024)
 * [FastFold](https://github.com/hpcaitech/FastFold/tree/main): Optimizing AlphaFold Training and Inference on GPU Clusters
 
 
