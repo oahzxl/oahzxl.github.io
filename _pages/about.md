@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I am a first-year PhD student in Computer Science at National University of Singapore (NUS) advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology supervised by [Xinggang Wang](https://xwcv.github.io/). Previously, I interned at [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
+Hi! I am a first-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology supervised by [Xinggang Wang](https://xwcv.github.io/). Previously, I interned at [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
 
 I am actively looking for **summer research internship in 2025**. Please feel free to reach out if there are any opportunities available.
 
@@ -19,9 +19,9 @@ My current research mainly focuses on **efficient and scalable machine learning 
 Open-Source Projects
 ------
 
-* [VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys): An Easy and Efficient System for Video Generation
+* [VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys): An Easy and Efficient System for Video Generation \
   Project lead
-* [ColossalAI](https://github.com/hpcaitech/ColossalAI): Making large AI models cheaper, faster and more accessible
+* [Colossal-AI](https://github.com/hpcaitech/ColossalAI): Making large AI models cheaper, faster and more accessible \
   Core contributor ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors) by 2024) with 38k star.
 
 Selected Publications ([all](https://xuefuzhao.github.io/publications/))
