@@ -12,4 +12,6 @@ main:
     url: /publications/
 
   - title: "CV"
-    url: /cv/
+    url: /assets/pdf/Resume_Xuanlei_Zhao.pdf
+    target: "_blank"
+  
