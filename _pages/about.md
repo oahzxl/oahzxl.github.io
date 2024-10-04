@@ -24,20 +24,20 @@ Open-Source Projects
   * Project lead
 * [ColossalAI](https://github.com/hpcaitech/ColossalAI): Making large AI models cheaper, faster and more accessible
   * Core contributor ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors) by 2024) with 38k star.
-* [FastFold](https://github.com/hpcaitech/FastFold/tree/main): Optimizing AlphaFold Training and Inference on GPU Clusters
-
 
 Selected Pubilications ([all](https://xuefuzhao.github.io/publications/))
 ------
 
 **System for Video Models**
-* OpenMoE: An Early Effort on Open Mixture-of-Experts Language Models [[Blog]](https://www.notion.so/Aug-2023-OpenMoE-v0-2-Release-43808efc0f5845caa788f2db52021879) [[Code]](https://github.com/XueFuzhao/OpenMoE) [[Paper]](https://arxiv.org/abs/2402.01739) \
-  **Fuzhao Xue**, Zian Zheng, Yao Fu, Jinjie Ni, Zangwei Zheng, Wangchunshu Zhou and Yang You
-  *Accepted at International Conference on Machine Learning (**ICML**) 2024 (Acceptence rate: 27.5%)*
+* Real-Time Video Generation with Pyramid Attention Broadcast \
+ [[Paper]](https://arxiv.org/abs/2408.12588) [[Code]](https://github.com/NUS-HPC-AI-Lab/VideoSys) [[Blog](https://oahzxl.github.io/PAB/)] \
+  **Xuanlei Zhao**, Xuanlei Zhao, Xiaolong Jin, Kai Wang, Yang You \
+  *Arxiv*
   
-* Adaptive Computation with Elastic Input Sequence [[Arxiv]](https://arxiv.org/abs/2301.13195) [[Code]](https://github.com/google-research/scenic/tree/main/scenic/projects/adatape) \
-  **Fuzhao Xue**, Valerii Likhosherstov, Anurag Arnab, Neil Houlsby, Mostafa Dehghani, Yang You
-  *Accepted at International Conference on Machine Learning (**ICML**) 2023 (Acceptence rate: 27.9%)*
+* DSP: Dynamic Sequence Parallelism for Multi-Dimensional Transformers \
+ [[Paper]](https://arxiv.org/abs/2403.10266) [[Code]](https://github.com/NUS-HPC-AI-Lab/VideoSys) \
+  **Xuanlei Zhao**, Shenggan Cheng, Chang Chen, Zangwei Zheng, Ziming Liu, Zheming Yang, Yang You \
+  *Arxiv*
 
 **System with Low Memory Cost**
 
@@ -53,6 +53,6 @@ Selected Pubilications ([all](https://xuefuzhao.github.io/publications/))
 
 **System for Machine Learning & Science**
 * FastFold: FastFold: Optimizing AlphaFold Training and Inference on GPU Clusters \
-  [[Paper](https://dl.acm.org/doi/10.1145/3627535.3638465) [Code](https://github.com/hpcaitech/FastFold)]
+  [[Paper](https://dl.acm.org/doi/10.1145/3627535.3638465)] [[Code](https://github.com/hpcaitech/FastFold)] \
   Shenggan Cheng, **Xuanlei Zhao**, Guangyang Lu, Jiarui Fang, Tian Zheng, Ruidong Wu, Xiwen Zhang, Jian Peng, Yang You \
   *PPoPP 24*
