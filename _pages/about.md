@@ -15,11 +15,18 @@ I am actively looking for **summer research internship in 2025**. Please feel fr
 Research
 ------
 
-My current research mainly focuses on **efficient and scalable machine learning system** recently with a primary emphasis on **video model acceleration**. 
+My current research mainly focuses on **efficient and scalable machine learning system** recently with a primary emphasis on **video model acceleration**. I am always happy to chat about interesting research ideas, and looking for academic collaborations. Please drop me an email if you are interested in collaborating with me.
 
-I am always happy to chat about interesting research ideas, and looking for academic collaborations. Please drop me an email if you are interested in collaborating with me.
+Open-Source Projects
+------
 
-Selected Projects ([all](https://xuefuzhao.github.io/publications/))
+* [VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys): An Easy and Efficient System for Video Generation
+* [ColossalAI](https://github.com/hpcaitech/ColossalAI): Making large AI models cheaper, faster and more accessible
+ * core contributors ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors))
+* [FastFold](https://github.com/hpcaitech/FastFold/tree/main): Optimizing AlphaFold Training and Inference on GPU Clusters
+
+
+Selected Pubilications ([all](https://xuefuzhao.github.io/publications/))
 ------
 
 My research focuses on **efficient and scalable machine learning system** with a primary emphasis on the following areas:
@@ -27,9 +34,5 @@ My research focuses on **efficient and scalable machine learning system** with a
 * `Memory Optimization`: Leverage compiler and heterogeneous to achieve efficient memory usage. [<a href="https://oahzxl.github.io/publications/#AutoChunk">AutoChunk</a>, <a href="https://oahzxl.github.io/publications/#HeteGen">HeteGen</a>]
 * `Distributed Optimization`: Explore novel parallelism and communication strategy to enhance efficiency. [<a href="https://oahzxl.github.io/publications/#FastFold">FastFold</a>]
 
-Open-source Projects:
-* [`VideoSys`](https://github.com/NUS-HPC-AI-Lab/VideoSys): An Easy and Efficient System for Video Generation
-* [`FastFold`](https://github.com/hpcaitech/FastFold/tree/main): Optimizing AlphaFold Training and Inference on GPU Clusters
-* [`ColossalAI`](https://github.com/hpcaitech/ColossalAI): Making large AI models cheaper, faster and more accessible
 
 Previously, I played a pivotal role in an open-source training system [Colossal-AI](https://github.com/hpcaitech/ColossalAI) (with over 35k stars on GitHub). As one of the core contributors ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors)), I actively participated and led the development of various parallelism strategies.
