@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I am a first-year PhD student in Computer Science at National University of Singapore (NUS) advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology supervised by [Xinggang Wang](https://xwcv.github.io/). Previously, I interned at [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/) and [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
+Hi! I am a first-year PhD student in Computer Science at National University of Singapore (NUS) advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology supervised by [Xinggang Wang](https://xwcv.github.io/). Previously, I interned at [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
 
 
 I am actively looking for **summer research internship in 2025**. Please feel free to reach out if there are any opportunities available.
@@ -59,16 +59,10 @@ Selected Publications ([all](https://xuefuzhao.github.io/publications/))
 
 Experience
 ------
-* **Pika** \
-  Host: [Chenlin Meng](https://cs.stanford.edu/~chenlin/)
-
 * **Colossal-AI** \
   Research Engineer Intern \
-  Host: [Jiarui Fang](https://fangjiarui.github.io/) and [Shenggui Li](https://franklee.xyz/)
-
- * Core contributor ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors) by 2024) with 38k star
- * Responsible for features including ZeRO, TP, PP, auto-parallelism, and MoE. \
-
+  Host: [Jiarui Fang](https://fangjiarui.github.io/) and [Shenggui Li](https://franklee.xyz/) \
+  Core contributor ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors) by 2024) with 38k star, and responsible for features including ZeRO, TP, PP, auto-parallelism, and MoE. \
   *2023.06 - 2023.12*
 
 Education
