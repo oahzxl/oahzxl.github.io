@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Xuanlei Zhao"
   pronouns         : # example: "she/her"  
-  bio              : "PhD Candidate at National University of Singapore."
+  bio              : "PhD Candidate at National University of Singapore"
   location         : "Singapore"
   employer         : # "National University of Singapore"
   uri              : # URL
@@ -33,6 +33,7 @@ author:
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=I5NBOacAAAAJ&hl"
+  twitter          : oahzxl
   impactstory      : # URL
   orcid            : # "http://orcid.org/yourorcidurl"
   semantic         : # URL
@@ -57,7 +58,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : xuanlei-zhao
+  linkedin         : xuanlei-zhao-731ab324a
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -65,13 +66,12 @@ author:
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : oahzxl
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
   xing             : # Username
   youtube          : # Username
-  zhihu            : 赵轩磊
+  zhihu            : chui-zou-liao-ka-pei
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
