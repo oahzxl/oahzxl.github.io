@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am a first-year PhD student in Computer Science at National University of Singapore (NUS) advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also earned my M.S. in Computer Science. My academic journey began with the B.Eng. in Computer Science & Electronic Information from Huazhong University of Science and Technology supervised by [Xinggang Wang](https://xwcv.github.io/) and [Xiaojun Hei](https://scholar.google.com/citations?user=x9vhdoIAAAAJ&hl=en).
+Hello! I am a first-year PhD student in Computer Science at National University of Singapore (NUS) advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also earned my M.S. in Computer Science. I obtained my undergraduate degree  in CS & ECE from Huazhong University of Science and Technology supervised by [Xinggang Wang](https://xwcv.github.io/). Previously, I internd at [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/), and [ColossalAI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
 
 
 I am actively looking for **summer research internship in 2025**. Please feel free to reach out if there are any opportunities available.
@@ -18,6 +18,9 @@ Research
 My current research mainly focuses on **efficient and scalable machine learning system** recently with a primary emphasis on **video model acceleration**. 
 
 I am always happy to chat about interesting research ideas, and looking for academic collaborations. Please drop me an email if you are interested in collaborating with me.
+
+Selected Projects ([all](https://xuefuzhao.github.io/publications/))
+------
 
 My research focuses on **efficient and scalable machine learning system** with a primary emphasis on the following areas:
 * `Video Model Optimization`: Improve the efficiency of video models from the pespective of parallelism, scheduling and algorithm. [<a href="https://oahzxl.github.io/publications/#DSP">DSP</a>, <a href="https://oahzxl.github.io/publications/#PAB">PAB</a>]
@@ -30,9 +33,3 @@ Open-source Projects:
 * [`ColossalAI`](https://github.com/hpcaitech/ColossalAI): Making large AI models cheaper, faster and more accessible
 
 Previously, I played a pivotal role in an open-source training system [Colossal-AI](https://github.com/hpcaitech/ColossalAI) (with over 35k stars on GitHub). As one of the core contributors ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors)), I actively participated and led the development of various parallelism strategies.
-
-Feel free to reach out via email if you're interested in collaborating with me, especially for the  acceleration of AI applications!
-
-
-Selected Projects ([all](https://xuefuzhao.github.io/publications/))
-------
