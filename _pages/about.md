@@ -62,8 +62,8 @@ Experience
 * **Colossal-AI** \
   Research Engineer Intern \
   Host: [Jiarui Fang](https://fangjiarui.github.io/) \
-  Core contributor ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors) by 2024) with 38k star
-  Responsible for features including ZeRO, TP, PP, auto-parallelism, and MoE. \
+  * Core contributor ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors) by 2024) with 38k star
+  * Responsible for features including ZeRO, TP, PP, auto-parallelism, and MoE. \
   *2023.06 - 2023.12*
 
 Education
