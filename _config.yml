@@ -22,7 +22,7 @@ icon                     : "💫"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "assets/img/me.jpeg"
+  avatar           : "me.jpeg"
   name             : "Xuanlei Zhao"
   pronouns         : # example: "she/her"  
   bio              : "PhD Candidate at National University of Singapore"
