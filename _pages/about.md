@@ -30,7 +30,7 @@ Selected Publications ([all](https://xuefuzhao.github.io/publications/))
 
 **System for Video Models**
 * **Real-Time Video Generation with Pyramid Attention Broadcast** \
-  **Xuanlei Zhao**, Xuanlei Zhao, Xiaolong Jin, Kai Wang, Yang You \
+  **Xuanlei Zhao****<sup>*</sup>**, Xiaolong Jin**<sup>*</sup>**, Kai Wang**<sup>*</sup>**, Yang You \
   <span style="color:green; font-style:italic">Arxiv</span> \
   | [paper](https://arxiv.org/abs/2408.12588) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/PAB/) |
   
@@ -47,7 +47,7 @@ Selected Publications ([all](https://xuefuzhao.github.io/publications/))
   | [paper](https://arxiv.org/abs/2401.10652) | [code](https://github.com/hpcaitech/ColossalAI/tree/main/colossalai/autochunk) |
 
 * **HeteGen: Heterogeneous Parallel Inference for Large Language Models on Resource-Constrained Devices** \
-  **Xuanlei Zhao**, Bin Jia, Haotian Zhou, Ziming Liu, Shenggan Cheng, Yang You \
+  **Xuanlei Zhao****<sup>*</sup>**, Bin Jia**<sup>*</sup>**, Haotian Zhou**<sup>*</sup>**, Ziming Liu, Shenggan Cheng, Yang You \
   <span style="color:green; font-style:italic">MLSys 2024</span> \
   | [paper](https://arxiv.org/abs/2403.01164) |
 

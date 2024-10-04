@@ -13,7 +13,7 @@ See a full list on  [Google Scholar](https://scholar.google.com/citations?user=I
 
 ## 2024
 * **Real-Time Video Generation with Pyramid Attention Broadcast** \
-  **Xuanlei Zhao**<sup>*</sup>, Xiaolong Jin<sup>*</sup>, Kai Wang<sup>*</sup>, Yang You \
+  **Xuanlei Zhao****<sup>*</sup>**, Xiaolong Jin**<sup>*</sup>**, Kai Wang**<sup>*</sup>**, Yang You \
   <span style="color:green; font-style:italic">Arxiv</span> \
   | [paper](https://arxiv.org/abs/2408.12588) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/PAB/) |
 
@@ -28,7 +28,7 @@ See a full list on  [Google Scholar](https://scholar.google.com/citations?user=I
   | [paper](https://arxiv.org/abs/2403.10266) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) |
 
 * **HeteGen: Heterogeneous Parallel Inference for Large Language Models on Resource-Constrained Devices** \
-  **Xuanlei Zhao**<sup>*</sup>, Bin Jia<sup>*</sup>, Haotian Zhou<sup>*</sup>, Ziming Liu, Shenggan Cheng, Yang You \
+  **Xuanlei Zhao****<sup>*</sup>**, Bin Jia**<sup>*</sup>**, Haotian Zhou**<sup>*</sup>**, Ziming Liu, Shenggan Cheng, Yang You \
   <span style="color:green; font-style:italic">MLSys 2024</span> \
   | [paper](https://arxiv.org/abs/2403.01164) |
 
