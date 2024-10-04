@@ -60,15 +60,14 @@ Selected Publications ([all](https://xuefuzhao.github.io/publications/))
 Experience
 ------
 * **Pika** \
-  Research Engineer Intern \
   Host: [Chenlin Meng](https://chenlinmeng.github.io/)
 
 * **Colossal-AI** \
   Research Engineer Intern \
-  Host: [Jiarui Fang](https://fangjiarui.github.io/)
+  Host: [Jiarui Fang](https://fangjiarui.github.io/) and [Shenggui Li](https://franklee.xyz/)
 
-  * Core contributor ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors) by 2024) with 38k star
-  * Responsible for features including ZeRO, TP, PP, auto-parallelism, and MoE. \
+ * Core contributor ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors) by 2024) with 38k star
+ * Responsible for features including ZeRO, TP, PP, auto-parallelism, and MoE. \
 
   *2023.06 - 2023.12*
 
