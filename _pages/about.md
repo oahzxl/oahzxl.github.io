@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am a first-year PhD student in Computer Science at National University of Singapore (NUS) advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology supervised by [Xinggang Wang](https://xwcv.github.io/). Previously, I interned at [ColossalAI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
+Hi! I am a first-year PhD student in Computer Science at National University of Singapore (NUS) advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology supervised by [Xinggang Wang](https://xwcv.github.io/). Previously, I interned at [ColossalAI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
 
 
 I am actively looking for **summer research internship in 2025**. Please feel free to reach out if there are any opportunities available.
@@ -15,7 +15,7 @@ I am actively looking for **summer research internship in 2025**. Please feel fr
 Research
 ------
 
-My current research mainly focuses on **efficient and scalable machine learning system** recently with a primary emphasis on **video model acceleration**. I am always happy to chat about interesting research ideas, and looking for academic collaborations. Please drop me an email if you are interested in collaborating with me.
+My current research mainly focuses on **efficient and scalable machine learning systems** recently with a primary emphasis on **video models acceleration**. I am always happy to chat about interesting research ideas, and looking for academic collaborations. Please drop me an email if you are interested in collaborating with me.
 
 Open-Source Projects
 ------
@@ -56,3 +56,23 @@ Selected Publications ([all](https://xuefuzhao.github.io/publications/))
   Shenggan Cheng, **Xuanlei Zhao**, Guangyang Lu, Jiarui Fang, Tian Zheng, Ruidong Wu, Xiwen Zhang, Jian Peng, Yang You \
   <span style="color:green; font-style:italic">PPoPP 2024</span> \
   | [paper](https://dl.acm.org/doi/10.1145/3627535.3638465) | [code](https://github.com/hpcaitech/FastFold) |
+
+Experience
+------
+* **ColossalAI**
+  * Research Engineer Intern (Advisor: [Jiarui Fang](https://fangjiarui.github.io/))
+  * 2023.06 - 2023.12
+  * Core contributor ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors) by 2024) with 38k star.
+  * Responsible for features including ZeRO, TP, PP, auto-parallelism, and MoE.
+
+Education
+------
+* **National University of Singapore**
+  * 2024.01 - now
+  * Ph.D. in Computer Science
+* **National University of Singapore**
+  * 2022.08 - 2023.12
+  * M.S. in Computer Science
+* **Huazhong University of Science and Technology**
+  * 2018.09 - 2022.06
+  * B.S. in Computer Science & Electronic Information
