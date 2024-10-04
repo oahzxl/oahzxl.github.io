@@ -43,7 +43,8 @@ Selected Pubilications ([all](https://xuefuzhao.github.io/publications/))
 
 * AutoChunk: Automated Activation Chunk for Memory-Efficient Long Sequence Inference \
   [[Paper](https://arxiv.org/abs/2401.10652)] [[Code](https://github.com/hpcaitech/ColossalAI/tree/main/colossalai/autochunk)] \
-  <u>Xuanlei Zhao</u>, Shenggan Cheng, Guangyang Lu, Jiarui Fang, Haotian Zhou, Bin Jia, Ziming Liu, Yang You
+  **Xuanlei Zhao**, Shenggan Cheng, Guangyang Lu, Jiarui Fang, Haotian Zhou, Bin Jia, Ziming Liu, Yang You
+  ***ICLR 24***
   
 
 * <a href="https://oahzxl.github.io/publications/#HeteGen">HeteGen</a>
