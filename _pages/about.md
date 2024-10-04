@@ -42,14 +42,17 @@ Selected Pubilications ([all](https://xuefuzhao.github.io/publications/))
 **System with Low Memory Cost**
 
 * AutoChunk: Automated Activation Chunk for Memory-Efficient Long Sequence Inference \
+  [[Paper](https://arxiv.org/abs/2401.10652)] [[Code](https://github.com/hpcaitech/ColossalAI/tree/main/colossalai/autochunk)] \
   **Xuanlei Zhao**, Shenggan Cheng, Guangyang Lu, Jiarui Fang, Haotian Zhou, Bin Jia, Ziming Liu, Yang You \
-  ***ICLR 24*** [[Paper](https://arxiv.org/abs/2401.10652)] [[Code](https://github.com/hpcaitech/ColossalAI/tree/main/colossalai/autochunk)]
+  *ICLR 24*
 
-
-* <a href="https://oahzxl.github.io/publications/#HeteGen">HeteGen</a>
+* HeteGen: Heterogeneous Parallel Inference for Large Language Models on Resource-Constrained Devices \
+  [[Paper](https://arxiv.org/abs/2403.01164)] \
+  **Xuanlei Zhao**, Bin Jia, Haotian Zhou, Ziming Liu, Shenggan Cheng, Yang You \
+  *MLSys 24*
 
 **System for Machine Learning & Science**
-* [<a href="https://oahzxl.github.io/publications/#FastFold">FastFold</a>]
-
-
-Previously, I played a pivotal role in an open-source training system [Colossal-AI](https://github.com/hpcaitech/ColossalAI) (with over 35k stars on GitHub). As one of the core contributors ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors)), I actively participated and led the development of various parallelism strategies.
+* FastFold: FastFold: Optimizing AlphaFold Training and Inference on GPU Clusters \
+  [[Paper](https://dl.acm.org/doi/10.1145/3627535.3638465) [Code](https://github.com/hpcaitech/FastFold)]
+  Shenggan Cheng, **Xuanlei Zhao**, Guangyang Lu, Jiarui Fang, Tian Zheng, Ruidong Wu, Xiwen Zhang, Jian Peng, Yang You \
+  *PPoPP 24*
