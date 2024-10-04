@@ -5,6 +5,12 @@ permalink: /publications/
 author_profile: true
 ---
 
+---
+
+See a full list on  [Google Scholar](https://scholar.google.com/citations?user=I5NBOacAAAAJ)  
+
+---
+
 ## 2024
 
 * OpenMoE: An Early Effort on Open Mixture-of-Experts Language Models [[Blog]](https://www.notion.so/Aug-2023-OpenMoE-v0-2-Release-43808efc0f5845caa788f2db52021879) [[Code]](https://github.com/XueFuzhao/OpenMoE) [[Arxiv]](https://arxiv.org/abs/2402.01739) \
