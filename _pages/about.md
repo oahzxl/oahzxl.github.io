@@ -60,7 +60,7 @@ Selected Publications ([all](https://xuefuzhao.github.io/publications/))
 Experience
 ------
 * **Pika** \
-  Host: [Chenlin Meng](https://chenlinmeng.github.io/)
+  Host: [Chenlin Meng](https://cs.stanford.edu/~chenlin/)
 
 * **Colossal-AI** \
   Research Engineer Intern \
