@@ -30,29 +30,29 @@ Selected Pubilications ([all](https://xuefuzhao.github.io/publications/))
 
 **System for Video Models**
 * **Real-Time Video Generation with Pyramid Attention Broadcast** \
- [[Paper](https://arxiv.org/abs/2408.12588)] [[Code](https://github.com/NUS-HPC-AI-Lab/VideoSys)] [[Blog](https://oahzxl.github.io/PAB/)] \
   **Xuanlei Zhao**, Xuanlei Zhao, Xiaolong Jin, Kai Wang, Yang You \
-  *Arxiv*
+  <span style="color:green; font-style:italic">Arxiv</span> \
+  | [paper](https://arxiv.org/abs/2408.12588) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/PAB/)
   
 * **DSP: Dynamic Sequence Parallelism for Multi-Dimensional Transformers** \
- [[Paper](https://arxiv.org/abs/2403.10266)] [[Code](https://github.com/NUS-HPC-AI-Lab/VideoSys)] \
   **Xuanlei Zhao**, Shenggan Cheng, Chang Chen, Zangwei Zheng, Ziming Liu, Zheming Yang, Yang You \
-  *Arxiv*
+  <span style="color:green; font-style:italic">Arxiv</span> \
+  | [paper](https://arxiv.org/abs/2403.10266) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys)
 
 **System with Low Memory Cost**
 
 * **AutoChunk: Automated Activation Chunk for Memory-Efficient Long Sequence Inference** \
-  [[Paper](https://arxiv.org/abs/2401.10652)] [[Code](https://github.com/hpcaitech/ColossalAI/tree/main/colossalai/autochunk)] \
   **Xuanlei Zhao**, Shenggan Cheng, Guangyang Lu, Jiarui Fang, Haotian Zhou, Bin Jia, Ziming Liu, Yang You \
-  *ICLR 24*
+  <span style="color:green; font-style:italic">ICLR 2024</span> \
+  | [paper](https://arxiv.org/abs/2401.10652) | [code](https://github.com/hpcaitech/ColossalAI/tree/main/colossalai/autochunk)
 
 * **HeteGen: Heterogeneous Parallel Inference for Large Language Models on Resource-Constrained Devices** \
-  [[Paper](https://arxiv.org/abs/2403.01164)] \
   **Xuanlei Zhao**, Bin Jia, Haotian Zhou, Ziming Liu, Shenggan Cheng, Yang You \
-  *MLSys 24*
+  <span style="color:green; font-style:italic">MLSys 2024</span> \
+  | [paper](https://arxiv.org/abs/2403.01164)
 
 **System for Machine Learning & Science**
 * **FastFold: FastFold: Optimizing AlphaFold Training and Inference on GPU Clusters** \
-  [[Paper](https://dl.acm.org/doi/10.1145/3627535.3638465)] [[Code](https://github.com/hpcaitech/FastFold)] \
   Shenggan Cheng, **Xuanlei Zhao**, Guangyang Lu, Jiarui Fang, Tian Zheng, Ruidong Wu, Xiwen Zhang, Jian Peng, Yang You \
-  *PPoPP 24*
+  <span style="color:green; font-style:italic">PPoPP 2024</span> \
+  | [paper](https://dl.acm.org/doi/10.1145/3627535.3638465) | [code](https://github.com/hpcaitech/FastFold)
