@@ -59,19 +59,20 @@ Selected Publications ([all](https://xuefuzhao.github.io/publications/))
 
 Experience
 ------
-* **Colossal-AI**
+* **Colossal-AI** \
   Research Engineer Intern \
   Host: [Jiarui Fang](https://fangjiarui.github.io/) \
-  Core contributor ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors) by 2024) with 38k star, and responsible for features including ZeRO, TP, PP, auto-parallelism, and MoE. \
+  Core contributor ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors) by 2024) with 38k star
+  Responsible for features including ZeRO, TP, PP, auto-parallelism, and MoE. \
   *2023.06 - 2023.12*
 
 Education
 ------
-* **National University of Singapore**
+* **National University of Singapore** \
   Ph.D. in Computer Science \
   *2024.01 - now* \
   M.S. in Computer Science \
   *2022.08 - 2023.12*
-* **Huazhong University of Science and Technology**
+* **Huazhong University of Science and Technology** \
   B.S. in Computer Science & Electronic Information \
   *2018.09 - 2022.06*
