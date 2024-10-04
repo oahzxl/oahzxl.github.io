@@ -15,13 +15,14 @@ description              : &description "Xuanlei Zhao's personal website."
 url                      : https://oahzxl.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "oahzxl/oahzxl.github.io"
+icon                     : "💫"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "assets/img/me.jpeg"
   name             : "Xuanlei Zhao"
   pronouns         : # example: "she/her"  
   bio              : "PhD Candidate at National University of Singapore"
