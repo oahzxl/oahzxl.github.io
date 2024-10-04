@@ -27,7 +27,7 @@ Open-Source Projects
 Selected Publications ([all](https://xuefuzhao.github.io/publications/))
 ------
 
-### System for Video Models
+**System for Video Models**
 * **Real-Time Video Generation with Pyramid Attention Broadcast** \
   **Xuanlei Zhao****<sup>*</sup>**, Xiaolong Jin**<sup>*</sup>**, Kai Wang**<sup>*</sup>**, Yang You \
   <span style="color:green; font-style:italic">Arxiv</span> \
