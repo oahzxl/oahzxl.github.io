@@ -28,36 +28,27 @@ Selected Publications ([all](https://xuefuzhao.github.io/publications/))
 ------
 
 **System for Video Models**
-* **Real-Time Video Generation with Pyramid Attention Broadcast** \
-  **Xuanlei Zhao****<sup>*</sup>**, Xiaolong Jin**<sup>*</sup>**, Kai Wang**<sup>*</sup>**, Yang You \
-  <span style="color:green; font-style:italic">Arxiv</span> \
+* Real-Time Video Generation with Pyramid Attention Broadcast \
+  | <span style="color:green; font-style:italic">Arxiv</span> | <span style="font-style:italic">First Author</span> 
   | [paper](https://arxiv.org/abs/2408.12588) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/PAB/) |
 
-* **Real-Time Video Generation with Pyramid Attention Broadcast** \
-  | <span style="font-style:italic">First Author</span> | <span style="color:green; font-style:italic">Arxiv</span> 
-  | [paper](https://arxiv.org/abs/2408.12588) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/PAB/) |
-
-* **DSP: Dynamic Sequence Parallelism for Multi-Dimensional Transformers** \
-  **Xuanlei Zhao**, Shenggan Cheng, Chang Chen, Zangwei Zheng, Ziming Liu, Zheming Yang, Yang You \
-  <span style="color:green; font-style:italic">Arxiv</span> \
+* DSP: Dynamic Sequence Parallelism for Multi-Dimensional Transformers \
+  <span style="color:green; font-style:italic">Arxiv</span> | <span style="font-style:italic">First Author</span> 
   | [paper](https://arxiv.org/abs/2403.10266) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) |
 
 **System with Low Memory Cost**
 
-* **AutoChunk: Automated Activation Chunk for Memory-Efficient Long Sequence Inference** \
-  **Xuanlei Zhao**, Shenggan Cheng, Guangyang Lu, Jiarui Fang, Haotian Zhou, Bin Jia, Ziming Liu, Yang You \
-  <span style="color:green; font-style:italic">ICLR 2024</span> \
+* AutoChunk: Automated Activation Chunk for Memory-Efficient Long Sequence Inference \
+  <span style="color:green; font-style:italic">ICLR 2024</span> | <span style="font-style:italic">First Author</span> 
   | [paper](https://arxiv.org/abs/2401.10652) | [code](https://github.com/hpcaitech/ColossalAI/tree/main/colossalai/autochunk) |
 
-* **HeteGen: Heterogeneous Parallel Inference for Large Language Models on Resource-Constrained Devices** \
-  **Xuanlei Zhao****<sup>*</sup>**, Bin Jia**<sup>*</sup>**, Haotian Zhou**<sup>*</sup>**, Ziming Liu, Shenggan Cheng, Yang You \
-  <span style="color:green; font-style:italic">MLSys 2024</span> \
+* HeteGen: Heterogeneous Parallel Inference for Large Language Models on Resource-Constrained Devices \
+  <span style="color:green; font-style:italic">MLSys 2024</span> | <span style="font-style:italic">First Author</span> \
   | [paper](https://arxiv.org/abs/2403.01164) |
 
 **System for Machine Learning & Science**
-* **FastFold: Optimizing AlphaFold Training and Inference on GPU Clusters** \
-  Shenggan Cheng, **Xuanlei Zhao**, Guangyang Lu, Jiarui Fang, Tian Zheng, Ruidong Wu, Xiwen Zhang, Jian Peng, Yang You \
-  <span style="color:green; font-style:italic">PPoPP 2024</span> \
+* FastFold: Optimizing AlphaFold Training and Inference on GPU Clusters \
+  <span style="color:green; font-style:italic">PPoPP 2024</span> | <span style="font-style:italic">Second Author</span> 
   | [paper](https://dl.acm.org/doi/10.1145/3627535.3638465) | [code](https://github.com/hpcaitech/FastFold) |
 
 Experience
