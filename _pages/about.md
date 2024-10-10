@@ -54,8 +54,8 @@ Selected Publications ([all](https://oahzxl.github.io/publications/))
 Experience
 ------
 * **Pika** \
-  Host: [Chenlin Meng](https://cs.stanford.edu/~chenlin/)
-  Efficient Video System.
+  Host: [Chenlin Meng](https://cs.stanford.edu/~chenlin/) \
+  Efficient video system.
 
 * **Colossal-AI** \
   Research Engineer Intern \
