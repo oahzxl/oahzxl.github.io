@@ -7,7 +7,7 @@ author_profile: true
 
 ---
 
-See a full list on  [Google Scholar](https://scholar.google.com/citations?user=I5NBOacAAAAJ)  
+See a full list on  [Google Scholar](https://scholar.google.com/citations?user=I5NBOacAAAAJ).
 
 ---
 
