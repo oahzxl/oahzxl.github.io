@@ -57,7 +57,7 @@ Experience
   Research Engineer Intern \
   Host: [Jiarui Fang](https://fangjiarui.github.io/) and [Shenggui Li](https://franklee.xyz/) \
   Core contributor ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors) by 2024) with 38k star, and responsible for features including ZeRO, TP, PP, compiler, and MoE. \
-  *2023.06 - 2023.12*
+  *2022.07 - 2023.12*
 
 Education
 ------
