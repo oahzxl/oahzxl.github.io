@@ -32,7 +32,11 @@ Selected Publications ([all](https://xuefuzhao.github.io/publications/))
   **Xuanlei Zhao****<sup>*</sup>**, Xiaolong Jin**<sup>*</sup>**, Kai Wang**<sup>*</sup>**, Yang You \
   <span style="color:green; font-style:italic">Arxiv</span> \
   | [paper](https://arxiv.org/abs/2408.12588) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/PAB/) |
-  
+
+* **Real-Time Video Generation with Pyramid Attention Broadcast** \
+  | <span style="font-style:italic">First Author</span> | <span style="color:green; font-style:italic">Arxiv</span> 
+  | [paper](https://arxiv.org/abs/2408.12588) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/PAB/) |
+
 * **DSP: Dynamic Sequence Parallelism for Multi-Dimensional Transformers** \
   **Xuanlei Zhao**, Shenggan Cheng, Chang Chen, Zangwei Zheng, Ziming Liu, Zheming Yang, Yang You \
   <span style="color:green; font-style:italic">Arxiv</span> \
@@ -51,7 +55,7 @@ Selected Publications ([all](https://xuefuzhao.github.io/publications/))
   | [paper](https://arxiv.org/abs/2403.01164) |
 
 **System for Machine Learning & Science**
-* **FastFold: FastFold: Optimizing AlphaFold Training and Inference on GPU Clusters** \
+* **FastFold: Optimizing AlphaFold Training and Inference on GPU Clusters** \
   Shenggan Cheng, **Xuanlei Zhao**, Guangyang Lu, Jiarui Fang, Tian Zheng, Ruidong Wu, Xiwen Zhang, Jian Peng, Yang You \
   <span style="color:green; font-style:italic">PPoPP 2024</span> \
   | [paper](https://dl.acm.org/doi/10.1145/3627535.3638465) | [code](https://github.com/hpcaitech/FastFold) |
