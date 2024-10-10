@@ -24,7 +24,7 @@ Open-Source Projects
 * **[Colossal-AI](https://github.com/hpcaitech/ColossalAI): Making large AI models cheaper, faster and more accessible** \
   Core contributor ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors) by 2024) with 38k star.
 
-Selected Publications ([all](https://xuefuzhao.github.io/publications/))
+Selected Publications ([all](https://oahzxl.github.io/publications/))
 ------
 
 **System for Video Models**
