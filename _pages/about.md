@@ -14,7 +14,7 @@ I am actively looking for **summer research internship in 2025**. Please feel fr
 Research
 ------
 
-My current research mainly focuses on **efficient and scalable machine learning systems** recently with a primary emphasis on **video models acceleration**. I am always happy to chat about interesting research ideas, and looking for academic collaborations. Please drop me an email if you are interested in collaborating with me.
+My current research mainly focuses on **efficient and scalable machine learning systems** through parallelism, algorithm, scheduling and compiler and optimization, recently with a primary emphasis on **video models acceleration**. I am always happy to chat about interesting research ideas, and looking for academic collaborations. Please drop me an email if you are interested in collaborating with me.
 
 Open-Source Projects
 ------
