@@ -230,8 +230,8 @@
             <span style="font-size: 0.8em; width: 75%; display: inline-block;">Figure 1: Comparison between <a href="https://github.com/hpcaitech/Open-Sora" target="_blank">bucket parallel</a>, <a href="https://arxiv.org/abs/2307.06304" target="_blank">packed parallel</a> and data-centric parallel (ours).</span>
           </div>
           <p>
-            As shown in Figure 1, <a href="https://github.com/hpcaitech/Open-Sora" target="_blank">bucket parallel</a> will fix sequence parallel size according the longest video in the datasets, and globally adjust batch size for different videos for better balance. However, this approach may struggle to achieve balance with small batch sizes and lead to communication inefficiency for shorter videos. 
-            <a href="https://github.com/hpcaitech/Open-Sora" target="_blank">Packed parallel</a>, while also using a fixed sequence parallel size, can concat different videos in the same bucket, which can achieve better balance. However, it is also introduce redundant communciation and requires a lot of code modifications, reducing its accessibility.
+            As shown in Figure 1, <a href="https://github.com/hpcaitech/Open-Sora" target="_blank">bucket parallel</a> fixes sequence parallel size according the longest video in the datasets, and adjust batch size for different videos for better balance. However, this approach may struggle to achieve balance with small batch sizes and lead to communication inefficiency for shorter videos.
+            <a href="https://arxiv.org/abs/2307.06304" target="_blank">Packed parallel</a>, while also using a fixed sequence parallel size, concats different videos in one batch. This method achieves better balance but introduces redundant communication and requires substantial code modifications, potentially limiting its accessibility.
           </p>
         </div>
 
