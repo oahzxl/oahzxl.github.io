@@ -224,7 +224,8 @@
           <h2 class="title is-4">Motivation</h2>
           <div class="content has-text-justified">
             <p>
-              <a href="https://openai.com/index/video-generation-models-as-world-simulators/" target="_blank">Sora</a> and its successors (<a href="https://ai.meta.com/research/publications/movie-gen-a-cast-of-media-foundation-models/" target="_blank">Movie Gen</a>, <a href="https://github.com/hpcaitech/Open-Sora" target="_blank">Open-Sora</a>, <a href="https://vchitect.intern-ai.org.cn/" target="_blank">Vchitect</a>) have recently achieved remarkable progress in video generation. A notable feature of these models is their training on variable size video datasets, which offers two advantages: enhanced generation quality and flexible output video sizes. However, it introduces significant computational challenges due to the necessary sequence parallelization for long videos and the unbalanced workloads from diverse video sizes.
+              <a href="https://openai.com/index/video-generation-models-as-world-simulators/" target="_blank">Sora</a> and its successors (<a href="https://ai.meta.com/research/publications/movie-gen-a-cast-of-media-foundation-models/" target="_blank">Movie Gen</a>, <a href="https://github.com/hpcaitech/Open-Sora" target="_blank">Open-Sora</a>, <a href="https://vchitect.intern-ai.org.cn/" target="_blank">Vchitect</a>) have recently achieved remarkable progress in video generation. They train on variable size videos (i.e., num frames, aspect ratio, and resolution), which offers two advantages: enhanced generation quality and flexible output video sizes[1]. However, it introduces significant computational challenges (Figure 1a&b) due to the necessary sequence parallel for long videos and the unbalanced workloads from diverse video sizes.
+              <!-- data awareness 实验证明: std+ bubble+ -->
             </p>
             <div class="content has-text-centered">
               <img src="./static/images/dcp_compare.png" style="width: 100%;"><br>
@@ -244,7 +245,7 @@
             </div>
             <div class="content has-text-justified">
               <p>
-                To solve these challenges, we propose <b><span style="color: #ff0000;">D</span><span style="color: #f80007;">a</span><span style="color: #f0000f;">t</span><span style="color: #e90016;">a</span><span style="color: #e2001d;">-</span><span style="color: #db0025;">C</span><span style="color: #d3002c;">e</span><span style="color: #cc0033;">n</span><span style="color: #c5003a;">t</span><span style="color: #bd0042;">r</span><span style="color: #b60049;">i</span><span style="color: #af0050;">c</span><span style="color: #a70058;"> </span><span style="color: #a0005f;">P</span><span style="color: #990066;">a</span><span style="color: #92006e;">r</span><span style="color: #8a0075;">a</span><span style="color: #83007c;">l</span><span style="color: #7c0083;">l</span><span style="color: #74008b;">e</span><span style="color: #6d0092;">l</span></b>. Instead of fixing parallel configs, our method adaptively change parallelism and other settings driven by the incoming data, significantly improving computational efficiency and reducing communication overhead.
+                To address these challenges, we propose <b><span style="color: #ff0000;">D</span><span style="color: #f80007;">a</span><span style="color: #f0000f;">t</span><span style="color: #e90016;">a</span><span style="color: #e2001d;">-</span><span style="color: #db0025;">C</span><span style="color: #d3002c;">e</span><span style="color: #cc0033;">n</span><span style="color: #c5003a;">t</span><span style="color: #bd0042;">r</span><span style="color: #b60049;">i</span><span style="color: #af0050;">c</span><span style="color: #a70058;"> </span><span style="color: #a0005f;">P</span><span style="color: #990066;">a</span><span style="color: #92006e;">r</span><span style="color: #8a0075;">a</span><span style="color: #83007c;">l</span><span style="color: #7c0083;">l</span><span style="color: #74008b;">e</span><span style="color: #6d0092;">l</span></b>, which is data aware. Instead of pre-define (will not change during training) parallel configs, our method adaptively change parallelism and other settings driven by the incoming data, significantly improving computational efficiency and reducing communication overhead.
               </p>
               <p>
                 As shown in Figure 2, our method consists of two main stages: data profiling and data-centric runtime. In data profile stage, we classify videos by size and determine optimal settings for each sequence through efficient layer-wise profiling. At runtime, we first enqueue videos into the batch until the batch is full, and then dynamically balancing each sequences using two strategies: <b>intra-data balance</b> and <b>inter-data balance</b>. Intra-data balance adjusts the settings (e.g. batch size, sequence parallel size) of the sequence, while inter-data balance optimizes settings (e.g. gradient accumulation) across sequences without altering their intrinsic settings.
@@ -252,7 +253,7 @@
             </div>
           </div>
 
-          <h2 class="title is-4">Heterogeneous Activation Checkpointing</h2>
+          <h2 class="title is-4">Pyramid Activation Checkpointing</h2>
           <div class="content has-text-centered">
             <div class="content has-text-centered">
               <img src="./static/images/parallel.png" style="width: 70%;"><br>
