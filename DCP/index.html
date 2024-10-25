@@ -224,7 +224,7 @@
           <h2 class="title is-4">Motivation</h2>
           <div class="content has-text-justified">
             <p>
-              Sora <a href="#ref_sora">[1]</a> and its successors (Movie Gen <a href="#ref_moviegen">[2]</a>, Open-Sora <a href="#ref_opensora">[3]</a>, Vchitect <a href="#ref_vchitect">[4]</a>) have recently achieved remarkable progress in video generation. They train on variable size videos (*i.e.,* num frames, aspect ratio, and resolution), which offers two advantages: enhanced generation quality and flexible output video sizes <a href="#ref_sora">[1]</a>.
+              Sora <a href="#ref_sora">[1]</a> and its successors (Movie Gen <a href="#ref_moviegen">[2]</a>, Open-Sora <a href="#ref_opensora">[3]</a>, Vchitect <a href="#ref_vchitect">[4]</a>) have recently achieved remarkable progress in video generation. They train on variable size videos (<i>i.e.,</i> num frames, aspect ratio, and resolution), which offers two advantages: enhanced generation quality and flexible output video sizes <a href="#ref_sora">[1]</a>.
               <!-- data awareness 实验证明: std+ bubble+ -->
             </p>
 
@@ -236,12 +236,12 @@
             </div>
 
             <p>
-              As shown in Figure <a href="#compare">1</a>, we compare two common parallel methods for any-size videos training. Bucket parallel <a href="#ref_bucket">[5]</a> fixes sequence parallel size based on the longest video, adjusting batch sizes for balance. While straightforward, it suffers from inefficient communication for shorter videos and struggles to achieve balance for small batches.
-              Packed parallel <a href="#ref_packed">[6]</a>, while also fixing sequence parallel size, concats multiple videos in one batch. This method achieves better balance but introduces redundant communication and requires complex code modifications.
+              We compare two common parallel methods for any-size videos training in Figure <a href="#compare">1</a>. Bucket parallel <a href="#ref_bucket">[5]</a> fixes sequence parallel size based on the longest video, adjusting batch sizes for balance.
+              Packed parallel <a href="#ref_packed">[6]</a>, while also fixing sequence parallel size, concats multiple videos in one batch.
             </p>
 
             <p>
-              However, bucket parallel suffers from inefficient communication for shorter videos and struggles to achieve balance for small batches, and packed parallel achieves better balance but introduces redundant communication and requires complex code modifications (Figure <a href="#compare">1(a)(b)</a>). Both methods cannot handle the key challenges including necessary sequence parallel for long videos and the unbalanced workloads from diverse video sizes.
+              However, as demonstrated in Figure <a href="#compare">1(a)</a> and <a href="#compare">1(b)</a>, bucket parallel struggles with workload imbalance at small batch sizes and communication inefficiency for shorter videos, while packed parallel, despite better load balancing, incurs unnecessary communication overhead and requires complex implementation changes. Both approaches fail to addresses two critical challenges in any-size video training: necessary sequence parallel for long videos and the unbalanced workloads from diverse video sizes.
             </p>
           </div>
 
@@ -258,7 +258,7 @@
                 To address these challenges, we propose <b><span style="color: #ff0000;">D</span><span style="color: #f80007;">a</span><span style="color: #f0000f;">t</span><span style="color: #e90016;">a</span><span style="color: #e2001d;">-</span><span style="color: #db0025;">C</span><span style="color: #d3002c;">e</span><span style="color: #cc0033;">n</span><span style="color: #c5003a;">t</span><span style="color: #bd0042;">r</span><span style="color: #b60049;">i</span><span style="color: #af0050;">c</span><span style="color: #a70058;"> </span><span style="color: #a0005f;">P</span><span style="color: #990066;">a</span><span style="color: #92006e;">r</span><span style="color: #8a0075;">a</span><span style="color: #83007c;">l</span><span style="color: #7c0083;">l</span><span style="color: #74008b;">e</span><span style="color: #6d0092;">l</span></b>, a novel parallel method with data awareness. Instead of fixing parallel configs during training, our method adaptively change parallelism and other settings driven by the incoming data, significantly improving computational efficiency and reducing communication overhead.
               </p>
               <p>
-                As shown in Figure <a href="#overview">2</a>, our method consists of two main stages: data profiling and data-centric runtime. In data profile stage, we classify videos by size and determine optimal settings for each sequence through efficient layer-wise profiling. At runtime, we first enqueue videos into the batch until the batch is full, and then dynamically balancing each sequences using two strategies: <b>intra-data balance</b> and <b>inter-data balance</b>. Intra-data balance adjusts the settings (*e.g.,* batch size, sequence parallel size) of the sequence, while inter-data balance optimizes settings (*e.g.,* gradient accumulation) across sequences without altering their intrinsic settings.
+                As shown in Figure <a href="#overview">2</a>, our method consists of two main stages: data profiling and data-centric runtime. In data profile stage, we classify videos by size and determine optimal settings for each sequence through efficient layer-wise profiling. At runtime, we first enqueue videos into the batch until the batch is full, and then dynamically balancing each sequences using two strategies: <b>intra-data balance</b> and <b>inter-data balance</b>. Intra-data balance adjusts the settings (<i>e.g.,</i> batch size, sequence parallel size) of the sequence, while inter-data balance optimizes settings (<i>e.g.,</i> gradient accumulation) across sequences without altering their intrinsic settings.
               </p>
             </div>
           </div>
