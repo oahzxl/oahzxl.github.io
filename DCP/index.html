@@ -224,7 +224,7 @@
           <h2 class="title is-4">Motivation</h2>
           <div class="content has-text-justified">
             <p>
-              <a href="https://openai.com/index/video-generation-models-as-world-simulators/" target="_blank">Sora</a> and its successors (<a href="https://ai.meta.com/research/publications/movie-gen-a-cast-of-media-foundation-models/" target="_blank">Movie Gen</a>, <a href="https://github.com/hpcaitech/Open-Sora" target="_blank">Open-Sora</a>, <a href="https://vchitect.intern-ai.org.cn/" target="_blank">Vchitect</a>) have recently achieved remarkable progress in video generation. They train on variable size videos (i.e., num frames, aspect ratio, and resolution), which offers two advantages: enhanced generation quality and flexible output video sizes[1]. However, it introduces significant computational challenges (Figure 1a&b) due to the necessary sequence parallel for long videos and the unbalanced workloads from diverse video sizes.
+              <a href="#ref1">Sora</a> and its successors (<a href="https://ai.meta.com/research/publications/movie-gen-a-cast-of-media-foundation-models/" target="_blank">Movie Gen</a>, <a href="https://github.com/hpcaitech/Open-Sora" target="_blank">Open-Sora</a>, <a href="https://vchitect.intern-ai.org.cn/" target="_blank">Vchitect</a>) have recently achieved remarkable progress in video generation. They train on variable size videos (i.e., num frames, aspect ratio, and resolution), which offers two advantages: enhanced generation quality and flexible output video sizes[1]. However, it introduces significant computational challenges (Figure 1a&b) due to the necessary sequence parallel for long videos and the unbalanced workloads from diverse video sizes.
               <!-- data awareness 实验证明: std+ bubble+ -->
             </p>
             <div class="content has-text-centered">
@@ -326,7 +326,12 @@
         <div class="column is-full-width">
           <h2 class="title is-3">Related works</h2>
           <div class="content has-text-justified">
-            <p>
+            <ol>
+              <li>
+                <div id="ref1">
+                  Brooks, Tim, Bill Peebles, Connor Holmes, Will DePue, Yufei Guo, Li Jing, David Schnurr, Joe Taylor, Troy Luhman, Eric Luhman, Clarence Ng, Ricky Wang, and Aditya Ramesh. "Video generation models as world simulators." OpenAI Research, 2024.
+                </div>
+              </li>
               <li>
                 Zangwei Zheng, Xiangyu Peng, Tianji Yang, Chenhui Shen, Shenggui Li, Hongxin Liu, Yukun Zhou, Tianyi Li, and Yang You. <a href="https://github.com/hpcaitech/Open-Sora">Open-Sora: Democratizing Efficient Video Production for All</a>. GitHub, 2024.
               </li>
@@ -364,7 +369,7 @@
               <li>
                 Zhengqing Yuan, Ruoxi Chen, Zhaoxu Li, Haolong Jia, Lifang He, Chi Wang, and Lichao Sun. <a href="https://arxiv.org/abs/2403.13248">Mora: Enabling Generalist Video Generation via A Multi-Agent Framework</a>. In CVPR, 2023.
               </li>
-            </p>
+            </ol>
           </div>
 
           <!-- <h2 class="title is-3">Acknowledgments</h2>
