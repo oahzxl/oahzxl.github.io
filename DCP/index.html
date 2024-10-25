@@ -241,7 +241,7 @@
             </p>
 
             <p>
-              However, bucket parallel struggles with workload imbalance at small batch sizes and communication inefficiency for shorter videos (Figure <a href="#compare">1(a)</a>), while packed parallel, despite better load balancing, incurs unnecessary communication overhead and requires complex implementation changes (Figure <a href="#compare">1(b)</a>). Both approaches fail to addresses two critical challenges in any-size video training: necessary sequence parallel for long videos and the unbalanced workloads from diverse video sizes.
+              However, bucket parallel struggles with workload imbalance at small batch sizes and communication inefficiency for shorter videos (Figure <a href="#compare">1(a)</a>), while packed parallel, despite better load balancing, incurs unnecessary communication overhead and requires complex implementation changes (Figure <a href="#compare">1(b)</a>). Both approaches fail to addresses two critical challenges in any-size video training: necessary sequence parallel for long videos and the unbalanced workloads from diverse video sizes, due to their fixed settings and lack of data awareness.
             </p>
           </div>
 
@@ -255,15 +255,15 @@
             </div>
             <div class="content has-text-justified">
               <p>
-                To address these challenges, we propose <b><span style="color: #ff0000;">D</span><span style="color: #f80007;">a</span><span style="color: #f0000f;">t</span><span style="color: #e90016;">a</span><span style="color: #e2001d;">-</span><span style="color: #db0025;">C</span><span style="color: #d3002c;">e</span><span style="color: #cc0033;">n</span><span style="color: #c5003a;">t</span><span style="color: #bd0042;">r</span><span style="color: #b60049;">i</span><span style="color: #af0050;">c</span><span style="color: #a70058;"> </span><span style="color: #a0005f;">P</span><span style="color: #990066;">a</span><span style="color: #92006e;">r</span><span style="color: #8a0075;">a</span><span style="color: #83007c;">l</span><span style="color: #7c0083;">l</span><span style="color: #74008b;">e</span><span style="color: #6d0092;">l</span></b>, a novel parallel method with data awareness. Instead of fixing parallel configs during training, our method adaptively change parallelism and other settings driven by the incoming data, significantly improving computational efficiency and reducing communication overhead.
+                To address these challenges, we propose <b><span style="color: #ff0000;">D</span><span style="color: #f80007;">a</span><span style="color: #f0000f;">t</span><span style="color: #e90016;">a</span><span style="color: #e2001d;">-</span><span style="color: #db0025;">C</span><span style="color: #d3002c;">e</span><span style="color: #cc0033;">n</span><span style="color: #c5003a;">t</span><span style="color: #bd0042;">r</span><span style="color: #b60049;">i</span><span style="color: #af0050;">c</span><span style="color: #a70058;"> </span><span style="color: #a0005f;">P</span><span style="color: #990066;">a</span><span style="color: #92006e;">r</span><span style="color: #8a0075;">a</span><span style="color: #83007c;">l</span><span style="color: #7c0083;">l</span><span style="color: #74008b;">e</span><span style="color: #6d0092;">l</span></b>, an innovative approach that revolutionizes parallel training through data awareness optimization. Instead of fixing parallel configs during training, our method adaptively change parallel and other settings driven by the incoming data, significantly improving computational efficiency and reducing communication overhead.
               </p>
               <p>
                 As shown in Figure <a href="#overview">2</a>, our method consists of two main stages: data profiling and data-centric runtime. In data profile stage, we classify videos by size and determine optimal settings for each sequence through efficient layer-wise profiling. At runtime, we first enqueue videos into the batch until the batch is full, and then dynamically balancing each sequences using two strategies:
                 <li>
-                  <b>Intra-data balance</b> adjusts the settings (<i>e.g.,</i> batch size, sequence parallel size) of the sequence.
+                  <b>Intra-data balance</b> adjusts the intrinsic settings (<i>e.g.,</i> batch size, sequence parallel size) of the sequence.
                 </li>
                 <li>
-                  <b>Inter-data balance</b> optimizes settings (<i>e.g.,</i> gradient accumulation) across sequences without altering their intrinsic settings.
+                  <b>Inter-data balance</b> optimizes among multiple sequences (<i>e.g.,</i> gradient accumulation) without altering their intrinsic settings.
                 </li>
               </p>
             </div>
