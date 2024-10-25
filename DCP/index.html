@@ -224,7 +224,7 @@
           <h2 class="title is-4">Motivation</h2>
           <div class="content has-text-justified">
             <p>
-              <a href="#ref1">Sora</a> and its successors (<a href="https://ai.meta.com/research/publications/movie-gen-a-cast-of-media-foundation-models/" target="_blank">Movie Gen</a>, <a href="https://github.com/hpcaitech/Open-Sora" target="_blank">Open-Sora</a>, <a href="https://vchitect.intern-ai.org.cn/" target="_blank">Vchitect</a>) have recently achieved remarkable progress in video generation. They train on variable size videos (i.e., num frames, aspect ratio, and resolution), which offers two advantages: enhanced generation quality and flexible output video sizes[1]. However, it introduces significant computational challenges (Figure 1a&b) due to the necessary sequence parallel for long videos and the unbalanced workloads from diverse video sizes.
+              Sora <a href="#ref_sora">[1]</a> and its successors (Movie Gen <a href="#ref_moviegen">[2]</a>, Open-Sora <a href="#ref_opensora">[3]</a>, Vchitect <a href="#ref_vchitect">[4]</a>) have recently achieved remarkable progress in video generation. They train on variable size videos (i.e., num frames, aspect ratio, and resolution), which offers two advantages: enhanced generation quality and flexible output video sizes <a href="#ref_sora">[1]</a>. However, it introduces significant computational challenges (Figure 1a&b) due to the necessary sequence parallel for long videos and the unbalanced workloads from diverse video sizes.
               <!-- data awareness 实验证明: std+ bubble+ -->
             </p>
             <div class="content has-text-centered">
@@ -328,46 +328,24 @@
           <div class="content has-text-justified">
             <ol>
               <li>
-                <div id="ref1">
-                  Brooks, Tim, Bill Peebles, Connor Holmes, Will DePue, Yufei Guo, Li Jing, David Schnurr, Joe Taylor, Troy Luhman, Eric Luhman, Clarence Ng, Ricky Wang, and Aditya Ramesh. "Video generation models as world simulators." OpenAI Research, 2024.
+                <div id="ref_sora">
+                  Brooks, Tim, Bill Peebles, Connor Holmes, Will DePue, Yufei Guo, Li Jing, David Schnurr, Joe Taylor, Troy Luhman, Eric Luhman, Clarence Ng, Ricky Wang, and Aditya Ramesh. "<a href="https://openai.com/research/video-generation-models-as-world-simulators" target="_blank">Video generation models as world simulators</a>." 2024.
                 </div>
               </li>
               <li>
-                Zangwei Zheng, Xiangyu Peng, Tianji Yang, Chenhui Shen, Shenggui Li, Hongxin Liu, Yukun Zhou, Tianyi Li, and Yang You. <a href="https://github.com/hpcaitech/Open-Sora">Open-Sora: Democratizing Efficient Video Production for All</a>. GitHub, 2024.
+                <div id="ref_moviegen">
+                  Polyak, Adam, Amit Zohar, Andrew Brown, Andros Tjandra, Animesh Sinha, Ann Lee, Apoorv Vyas et al. "<a href="https://arxiv.org/abs/2410.13720" target="_blank">Movie Gen: A Cast of Media Foundation Models</a>." arXiv preprint arXiv:2410.13720 (2024).
+                </div>
               </li>
               <li>
-                PKU-Yuan Lab and Tuzhan AI etc. <a href="https://github.com/PKU-YuanGroup/Open-Sora-Plan">Open-Sora-Plan</a>. GitHub, 2024.
+                <div id="ref_opensora">
+                  Zangwei Zheng, Xiangyu Peng, Tianji Yang, Chenhui Shen, Shenggui Li, Hongxin Liu, Yukun Zhou, Tianyi Li, and Yang You. "<a href="https://github.com/hpcaitech/Open-Sora" target="_blank">Open-Sora: Democratizing Efficient Video Production for All</a>." GitHub, 2024.
+                </div>
               </li>
               <li>
-                Xin Ma, Yaohui Wang, Gengyun Jia, Xinyuan Chen, Ziwei Liu, Yuan-Fang Li, Cunjian Chen, and Yu Qiao. <a href="https://arxiv.org/abs/2401.03048">Latte: Latent Diffusion Transformer for Video Generation</a>. arXiv, 2024.
-              </li>
-              <li>
-                Xuanlei Zhao, Shenggan Cheng, Chang Chen, Zangwei Zheng, Ziming Liu, Zheming Yang, and Yang You. <a href="https://arxiv.org/abs/2401.03048">DSP: Dynamic Sequence Parallelism for Multi-Dimensional Transformers</a>. arXiv, 2024.
-              </li>
-              <li>
-                Muyang Li, Tianle Cai, Jiaxin Cao, Qinsheng Zhang, Han Cai, Junjie Bai, Yangqing Jia, Ming-Yu Liu, Kai Li, and Song Han. <a href="https://arxiv.org/abs/2402.19481">DistriFusion: Distributed Parallel Inference for High-Resolution Diffusion Models</a>. In CVPR, 2024.
-              </li>
-              <li>
-                Xinyin Ma, Gongfan Fang, and Xinchao Wang. <a href="https://arxiv.org/abs/2312.00858">DeepCache: Accelerating Diffusion Models for Free</a>. In CVPR, 2024.
-              </li>
-              <li>
-                Ziqi Huang, Yinan He, Jiashuo Yu, Fan Zhang, Chenyang Si, Yuming Jiang, Yuanhan Zhang, Tianxing Wu, Qingyang Jin, Nattapol Chanpaisit, Yaohui Wang, Xinyuan Chen, Limin Wang, Dahua Lin, Yu Qiao, and Ziwei Liu. <a href="https://arxiv.org/abs/2311.17982">VBench: Comprehensive Benchmark Suite for Video Generative Models</a>. In CVPR, 2024.
-              </li>
-              <li>
-                David Junhao Zhang, Jay Zhangjie Wu, Jia-Wei Liu, Rui Zhao, Lingmin Ran, Yuchao Gu, Difei Gao, and Mike Zheng Shou. <a href="https://arxiv.org/abs/2406.11816">Show-1: Marrying Pixel and Latent Diffusion Models for Text-to-Video Generation</a>. arXiv, 2024.
-              </li>
-              <li>
-                Uriel Singer, Adam Polyak, Thomas Hayes, Xi Yin, Jie An, Songyang Zhang, Qiyuan Hu, Harry Yang, Oron Ashual, Oran Gafni, Devi Parikh, Sonal Gupta, and Yaniv Taigman. <a href="https://arxiv.org/abs/2209.14792">Make-A-Video: Text-to-Video Generation without Text-Video Data</a>. In ICLR, 2023.
-              </li>
-              <li>
-                Omer Bar-Tal, Hila Chefer, Omer Tov, Charles Herrmann, Roni Paiss, Shiran Zada, Ariel Ephrat, Junhwa Hur, Guanghui Liu, Amit Raj, Yuanzhen Li, Michael Rubinstein, Tomer Michaeli, Oliver Wang, Deqing Sun, Tali Dekel, and Inbar Mosseri. <a href="https://arxiv.org/abs/2401.12945">Lumiere: A Space-Time Diffusion Model for Video Generation</a>. arXiv, 2024.
-              </li>
-              <li>
-                Andreas Blattmann, Robin Rombach, Huan Ling, Tim Dockhorn, Seung Wook Kim, Sanja Fidler, and Karsten Kreis. <a href="https://arxiv.org/abs/2304.08818">Align your Latents:
-                  High-Resolution Video Synthesis with Latent Diffusion Models</a>. In CVPR, 2023.
-              </li>
-              <li>
-                Zhengqing Yuan, Ruoxi Chen, Zhaoxu Li, Haolong Jia, Lifang He, Chi Wang, and Lichao Sun. <a href="https://arxiv.org/abs/2403.13248">Mora: Enabling Generalist Video Generation via A Multi-Agent Framework</a>. In CVPR, 2023.
+                <div id="ref_vchitect">
+                  Vchitect Team. "<a href="https://github.com/PKU-YuanGroup/Open-Sora-Plan">Vchitect-2.0: Parallel Transformer for Scaling Up Video Diffusion Models</a>". GitHub, 2024.
+                </div>
               </li>
             </ol>
           </div>
