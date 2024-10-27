@@ -271,12 +271,12 @@
 
           <h2 class="title is-4">Pyramid Activation Checkpointing</h2>
           <div class="content has-text-centered">
-            <div class="content has-text-centered">
+            <div id="ckpt" class="content has-text-centered">
               <img src="./static/images/dcp_ckpt.png" style="width: 70%;"><br>
-              <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 3: Comparison between original Dynamic Sequence Parallel (DSP) and ours. When temporal attention is broadcasted, we can avoid all communication.</span>
+              <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 3: Demonstration of pyramid activation checkpointing.</span>
             </div>
             <div class="content has-text-justified">
-              To further enhance video generation speed, we improve sequence parallel based on <a href="https://arxiv.org/abs/2403.10266" target="_blank">Dynamic Sequence Parallelism</a> (DSP). Sequence parallelism segments videos into different parts across multiple GPUs, reducing the workload on each GPU and decreasing generation latency. However, DSP introduces significant communication overhead, requiring two all-to-all communications for temporal attention. By broadcasting temporal attention in <span style="color: #e2001d;">P</span><span style="color: #a80057;">A</span><span style="color: #6d0092;">B</span>, we eliminate these communications, as temporal attention no longer needs to be computed. This results in a significant reduction in communication overhead by over 50%, enabling more efficient distributed inference for real-time video generation.
+              In any-size videos training, video sizes follow a pyramid distribution, with short videos constituting the majority and long videos appearing less frequently, as illustrated in Figure <a href="#ckpt">3</a>. Traditional activation checkpointing are limited by longer videos, as longer videos typically require multi-gpu or even intra-node sequence parallelism if not using ckpt. Building upon our data-centric parallel approach, we propose pyramid activation checkpointing, which adaptively applies different ckpt ratios based on video sizes. This approach substantially improves throughput for the dominant shorter videos by using less ckpt, while maintaining communication overhead for longer videos.
             </div>
           </div>
         </div>
