@@ -276,7 +276,9 @@
               <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 3: Demonstration of pyramid activation checkpointing. We apply different ckpt ratios for different sizes of videos, and trade sequence parallel for extra memory due to less ckpt.</span>
             </div>
             <div class="content has-text-justified">
-              In any-size videos training, video sizes follow a pyramid distribution, with short videos constituting the majority and long videos appearing less frequently, as illustrated in Figure <a href="#ckpt">3</a>. Traditional activation checkpointing are limited by longer videos, as longer videos typically require multi-gpu or even intra-node sequence parallelism if not using ckpt. Building upon our data-centric parallel approach, we propose pyramid activation checkpointing, which adaptively applies different ckpt ratios based on video sizes. This approach substantially improves throughput for the dominant shorter videos by using less ckpt, while maintaining communication overhead for longer videos.
+              In any-size videos training, video sizes follow a pyramid distribution, with short videos constituting the majority and long videos appearing less frequently, as illustrated in Figure <a href="#ckpt">3</a>. Traditional activation checkpointing are limited by longer videos, as longer videos typically require multi-gpu or even intra-node sequence parallelism if not using ckpt. 
+              
+              Building upon our data-centric parallel approach, we propose pyramid activation checkpointing, which adaptively applies different ckpt ratios based on video sizes. This approach substantially improves throughput for the dominant shorter videos by using less ckpt, while maintaining communication overhead for longer videos.
             </div>
           </div>
         </div>
