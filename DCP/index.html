@@ -251,7 +251,7 @@
               <div id="overview">
                 <img src="./static/images/dcp_overview.png"><br>
               </div>
-              <span style="font-size: 0.8em; width: 100%; display: inline-block;">Figure 2: We propose pyramid attention broadcast (shown on the right side) which sets different broadcast ranges for three attentions based on their differences. The smaller the variation in attention, the broader the broadcast range. During runtime, we broadcast attention results to the next several steps (shown on the left side) to avoid redundant attention computations. \( x_t \) refers to the features at timestep \( t \).</span>
+              <span style="font-size: 0.8em; width: 100%; display: inline-block;">Figure 2: Overview of Data-Centric Parallel (DCP). \( frame \) denotes the number of frames, \( ar \) the aspect ratio, \( res \) the resolution, \( D_i\) the \( i \)-th device, \( bs \) the batch size, \( grad_acc \) the gradient accumulation steps, and \( sp \) the sequence parallel size.</span>
             </div>
             <div class="content has-text-justified">
               <p>
@@ -273,7 +273,7 @@
           <div class="content has-text-centered">
             <div id="ckpt" class="content has-text-centered">
               <img src="./static/images/dcp_ckpt.png" style="width: 70%;"><br>
-              <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 3: Demonstration of pyramid activation checkpointing.</span>
+              <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 3: Demonstration of pyramid activation checkpointing. We apply different ckpt ratios for different sizes of videos, and trade sequence parallel for extra memory due to less ckpt.</span>
             </div>
             <div class="content has-text-justified">
               In any-size videos training, video sizes follow a pyramid distribution, with short videos constituting the majority and long videos appearing less frequently, as illustrated in Figure <a href="#ckpt">3</a>. Traditional activation checkpointing are limited by longer videos, as longer videos typically require multi-gpu or even intra-node sequence parallelism if not using ckpt. Building upon our data-centric parallel approach, we propose pyramid activation checkpointing, which adaptively applies different ckpt ratios based on video sizes. This approach substantially improves throughput for the dominant shorter videos by using less ckpt, while maintaining communication overhead for longer videos.
