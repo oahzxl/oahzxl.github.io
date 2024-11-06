@@ -215,6 +215,7 @@
       <div class="columns is-centered">
         <div class="column is-full-width">
           <br>
+          <h2 class="title is-3">Method <span style="font-size: 0.8em">- Reduce Imbalance and Communication Through Data-Centric</span></h2>
           <h2 class="title is-4">Motivation <span style="font-size: 0.8em">- Reduce Imbalance and Communication Through Data-Centric</span></h2>
           <div class="content has-text-justified">
             <p>
@@ -292,7 +293,7 @@
         <div class="column is-full-width">
           <h2 class="title is-3">Evaluations</h2>
           
-          <h2 class="title is-4">Speedups</h2>
+          <h2 class="title is-4">End-to-End Speedups</h2>
           <div class="content has-text-centered">
             <img src="./static/images/speedup.png">
           </div>
@@ -301,21 +302,17 @@
               Measured total latency of <span style="color: #e2001d;">P</span><span style="color: #a80057;">A</span><span style="color: #6d0092;">B</span> for different models for generating a single video on 8 NVIDIA H100 GPUs. When utilizing a single GPU, we achieve a speedup ranging from 1.26x to 1.32x, which remains stable across different schedulers. Scaling to multiple GPUs, our method achieves a speedup of up to 10.6x, which almost linearly scales with the number of GPUs due to our efficient improvement of sequence parallel.
             </p>
           </div>
-        </div>
-      </div>
 
-    </div>
-    <br>
-
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column is-full-width">        
-          <div class="content has-text-justified">
-            <h2 class="title is-4">Quantitive Results</h2>
-            <div class="content has-text-centered">
-              <img src="./static/images/eval.png" style="width: 40%;"><br>
-            </div>
+          <h2 class="title is-4">Parallel Analysis</h2>
+          <div class="content has-text-centered">
+            <img src="./static/images/final_heatmap.png" style="width: 40%;"><br>
           </div>
+
+          <h2 class="title is-4">Pyramid Checkpointing Speedups</h2>
+          <div class="content has-text-centered">
+            <img src="./static/images/final_3d_speedup.png" style="width: 40%;"><br>
+          </div>
+
         </div>
       </div>
     </div>
