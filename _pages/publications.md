@@ -14,17 +14,17 @@ See a full list on  [Google Scholar](https://scholar.google.com/citations?user=I
 ## 2024
 * **Real-Time Video Generation with Pyramid Attention Broadcast** \
   **Xuanlei Zhao****<sup>*</sup>**, Xiaolong Jin**<sup>*</sup>**, Kai Wang**<sup>*</sup>**, Yang You \
-  <span style="color:green; font-style:italic">Arxiv</span> \
+  <span style="color:green; font-style:italic">arXiv</span> \
   | [paper](https://arxiv.org/abs/2408.12588) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/PAB/) |
 
 * **Wallfacer: Guiding transformer model training out of the long-context dark forest with n-body problem** \
   Ziming Liu, Shaoyu Wang, Shenggan Cheng, Zhongkai Zhao, Kai Wang, **Xuanlei Zhao**, James Demmel, Yang You \
-  <span style="color:green; font-style:italic">Arxiv</span> \
+  <span style="color:green; font-style:italic">arXiv</span> \
   | [paper](https://arxiv.org/pdf/2407.00611) |
 
 * **DSP: Dynamic Sequence Parallelism for Multi-Dimensional Transformers** \
   **Xuanlei Zhao**, Shenggan Cheng, Chang Chen, Zangwei Zheng, Ziming Liu, Zheming Yang, Yang You \
-  <span style="color:green; font-style:italic">Arxiv</span> \
+  <span style="color:green; font-style:italic">arXiv</span> \
   | [paper](https://arxiv.org/abs/2403.10266) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) |
 
 * **HeteGen: Heterogeneous Parallel Inference for Large Language Models on Resource-Constrained Devices** \

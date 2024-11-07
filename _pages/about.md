@@ -31,11 +31,11 @@ Selected Publications ([all](https://oahzxl.github.io/publications/))
 
 **System for Video Models**
 * Real-Time Video Generation with Pyramid Attention Broadcast \
-  | <span style="color:green; font-style:italic">Arxiv</span> | <span style="font-style:italic">First author</span> 
+  | <span style="color:green; font-style:italic">arXiv</span> | <span style="font-style:italic">First author</span> 
   | [paper](https://arxiv.org/abs/2408.12588) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/PAB/) |
 
 * DSP: Dynamic Sequence Parallelism for Multi-Dimensional Transformers \
-  | <span style="color:green; font-style:italic">Arxiv</span> | <span style="font-style:italic">First author</span> 
+  | <span style="color:green; font-style:italic">arXiv</span> | <span style="font-style:italic">First author</span> 
   | [paper](https://arxiv.org/abs/2403.10266) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) |
 
 **System with Low Memory Cost**
