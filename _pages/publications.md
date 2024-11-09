@@ -12,6 +12,11 @@ See a full list on  [Google Scholar](https://scholar.google.com/citations?user=I
 ---
 
 ## 2024
+* **Training Any-Size Videos with Data-Centric Parallel** \
+  **Geng Zhang****<sup>*</sup>**, Xuanlei Zhao**<sup>*</sup>**, Kai Wang**<sup>†</sup>**, Yang You**<sup>†</sup>** \
+  <span style="color:green; font-style:italic">arXiv</span> \
+  | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/DCP/) |
+
 * **Real-Time Video Generation with Pyramid Attention Broadcast** \
   **Xuanlei Zhao****<sup>*</sup>**, Xiaolong Jin**<sup>*</sup>**, Kai Wang**<sup>*</sup>**, Yang You \
   <span style="color:green; font-style:italic">arXiv</span> \
@@ -41,3 +46,5 @@ See a full list on  [Google Scholar](https://scholar.google.com/citations?user=I
   **Xuanlei Zhao**, Shenggan Cheng, Guangyang Lu, Jiarui Fang, Haotian Zhou, Bin Jia, Ziming Liu, Yang You \
   <span style="color:green; font-style:italic">ICLR 2024</span> \
   | [paper](https://arxiv.org/abs/2401.10652) | [code](https://github.com/hpcaitech/ColossalAI/tree/main/colossalai/autochunk) |
+
+\* indicates equal contribution, † indicates equal corresponding.
