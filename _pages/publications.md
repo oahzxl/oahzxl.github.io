@@ -47,4 +47,4 @@ See a full list on  [Google Scholar](https://scholar.google.com/citations?user=I
   <span style="color:green; font-style:italic">ICLR 2024</span> \
   | [paper](https://arxiv.org/abs/2401.10652) | [code](https://github.com/hpcaitech/ColossalAI/tree/main/colossalai/autochunk) |
 
-\* indicates equal contribution, † indicates equal corresponding.
+\* indicates equal contribution, and † indicates equal corresponding.
