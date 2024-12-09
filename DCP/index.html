@@ -220,7 +220,7 @@
           <h2 class="title is-4">Motivation <span style="font-size: 0.8em">- Reduce Imbalance and Communication Through Data-Centric</span></h2>
           <div class="content has-text-justified">
             <p>
-              Variable sequences training is commonly used in various tasks, such as video generation (Sora <a href="#ref_sora">[1]</a>, Movie Gen <a href="#ref_moviegen">[2]</a>, Open-Sora <a href="#ref_opensora">[3]</a>, HunYuan <a href="#ref_hunyuan">[4]</a>), text generation (Llama-3 <a href="#ref_llama3">[5]</a>), and bioinformatics (AlphaFold <a href="#ref_alphafold">[6]</a>).
+              Variable sequences training is commonly used in various tasks, such as video generation (Sora <a href="#ref_sora">[1]</a>, Movie Gen <a href="#ref_moviegen">[2]</a>, Open-Sora <a href="#ref_opensora">[3]</a>, HunyuanVideo <a href="#ref_hunyuan">[4]</a>), text generation (Llama-3 <a href="#ref_llama3">[5]</a>), and scientific computing (AlphaFold <a href="#ref_alphafold">[6]</a>).
               Such strategy offers them two advantages: enhanced generation quality and flexible output sizes <a href="#ref_sora">[1]</a>.
             </p>
 
@@ -228,7 +228,7 @@
               <div id="compare">
                 <img src="./static/images/dcp_compare.png" style="width: 100%;"><br>
               </div>
-              <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 1: Comparison of parallel methods for any-size video training including bucket parallel <a href="#ref_bucket">[7]</a>, packed parallel <a href="#ref_packed">[8]</a> and data-centric parallel (ours). \( Di \) refers to the \(i \)-th device.</span>
+              <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 1: Comparison of parallel methods for variable sequences training including bucket parallel <a href="#ref_bucket">[7]</a>, packed parallel <a href="#ref_packed">[8]</a> and data-centric parallel (ours). \( Di \) refers to the \(i \)-th device.</span>
             </div>
 
             <p>
@@ -261,7 +261,7 @@
                 To address these challenges, we propose <b><span style="color: #ff0000;">D</span><span style="color: #f80007;">a</span><span style="color: #f0000f;">t</span><span style="color: #e90016;">a</span><span style="color: #e2001d;">-</span><span style="color: #db0025;">C</span><span style="color: #d3002c;">e</span><span style="color: #cc0033;">n</span><span style="color: #c5003a;">t</span><span style="color: #bd0042;">r</span><span style="color: #b60049;">i</span><span style="color: #af0050;">c</span><span style="color: #a70058;"> </span><span style="color: #a0005f;">P</span><span style="color: #990066;">a</span><span style="color: #92006e;">r</span><span style="color: #8a0075;">a</span><span style="color: #83007c;">l</span><span style="color: #7c0083;">l</span><span style="color: #74008b;">e</span><span style="color: #6d0092;">l</span></b>, an innovative approach that transforms parallel training with data awareness. Instead of fixing all configs during training, our method adaptively change parallel and other settings driven by the incoming data, significantly improving computational efficiency and reducing communication overhead.
               </p>
               <p>
-                As shown in Figure <a href="#overview">2</a>, our method consists of two main stages: data profile and data-centric runtime. In data profile stage, we classify videos by size and determine optimal settings for each sequence through fast dual-layer profile. At runtime, we first enqueue videos into the batch until it's full, and then dynamically balance each sequences using two strategies:
+                As shown in Figure <a href="#overview">2</a>, our method consists of two main stages: data profile and data-centric runtime. In data profile stage, we classify sequences by size and determine optimal settings for each sequence through fast dual-layer profile. At runtime, we first enqueue sequences into the batch until it's full, and then dynamically balance each sequences using two strategies:
                 <li>
                   <b>Intra-data balance</b>: adjusts the intrinsic settings (<i>e.g.,</i> batch size, sequence parallel size) of the sequence.
                 </li>
