@@ -30,7 +30,7 @@ Selected Publications ([all](https://oahzxl.github.io/publications/))
 ------
 
 **System for Video Models**
-* Training Any-Size Videos with Data-Centric Parallel \
+* Training Variable Sequences with Data-Centric Parallel \
   | <span style="color:green; font-style:italic">arXiv</span> | co-first author
   | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/DCP/) |
 

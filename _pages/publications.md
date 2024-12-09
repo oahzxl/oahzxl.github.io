@@ -12,7 +12,7 @@ See a full list on  [Google Scholar](https://scholar.google.com/citations?user=I
 ---
 
 ## 2024
-* **Training Any-Size Videos with Data-Centric Parallel** \
+* **Training Variable Sequences with Data-Centric Parallel** \
   Geng Zhang<b><sup>*</sup></b>, <b>Xuanlei Zhao<sup>*</sup></b>, Kai Wang**<sup>†</sup>**, Yang You**<sup>†</sup>** \
   <span style="color:green; font-style:italic">arXiv</span> \
   | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/DCP/) |
