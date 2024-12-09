@@ -220,7 +220,7 @@
           <h2 class="title is-4">Motivation <span style="font-size: 0.8em">- Reduce Imbalance and Communication Through Data-Centric</span></h2>
           <div class="content has-text-justified">
             <p>
-              Variable sequences training is commonly used in various tasks, such as video generation (Sora <a href="#ref_sora">[1]</a> and its successors (Movie Gen <a href="#ref_moviegen">[2]</a>, Open-Sora <a href="#ref_opensora">[3]</a>, Vchitect <a href="#ref_vchitect">[4]</a>)), text generation (GPT-4 <a href="#ref_gpt4">[5]</a>), and image generation (Dalle-E <a href="#ref_dalle-e">[6]</a>).
+              Variable sequences training is commonly used in various tasks, such as video generation (Sora <a href="#ref_sora">[1]</a>, Movie Gen <a href="#ref_moviegen">[2]</a>, Open-Sora <a href="#ref_opensora">[3]</a>, HunYuan <a href="#ref_hunyuan">[4]</a>), text generation (Llama-3 <a href="#ref_llama3">[5]</a>), and bioinformatics (AlphaFold <a href="#ref_alphafold">[6]</a>).
               Such strategy offers them two advantages: enhanced generation quality and flexible output sizes <a href="#ref_sora">[1]</a>.
             </p>
 
@@ -228,12 +228,12 @@
               <div id="compare">
                 <img src="./static/images/dcp_compare.png" style="width: 100%;"><br>
               </div>
-              <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 1: Comparison of parallel methods for any-size video training including bucket parallel <a href="#ref_bucket">[5]</a>, packed parallel <a href="#ref_packed">[6]</a> and data-centric parallel (ours). \( Di \) refers to the \(i \)-th device.</span>
+              <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 1: Comparison of parallel methods for any-size video training including bucket parallel <a href="#ref_bucket">[7]</a>, packed parallel <a href="#ref_packed">[8]</a> and data-centric parallel (ours). \( Di \) refers to the \(i \)-th device.</span>
             </div>
 
             <p>
-              We compare two common parallel methods for variable sequences training in Figure <a href="#compare">1</a>. Bucket parallel <a href="#ref_bucket">[5]</a> fixes sequence parallel size based on the longest sequence, adjusting batch sizes for balance.
-              Packed parallel <a href="#ref_packed">[6]</a>, while also fixing sequence parallel size, concats multiple sequences in one batch.
+              We compare two common parallel methods for variable sequences training in Figure <a href="#compare">1</a>. Bucket parallel <a href="#ref_bucket">[7]</a> fixes sequence parallel size based on the longest sequence, adjusting batch sizes for balance.
+              Packed parallel <a href="#ref_packed">[8]</a>, while also fixing sequence parallel size, concats multiple sequences in one batch.
             </p>
 
             <p>
@@ -364,18 +364,30 @@
               </li>
               <li>
                 <!-- 4 -->
-                <div id="ref_vchitect">
-                  Vchitect Team. "<a href="https://github.com/PKU-YuanGroup/Open-Sora-Plan">Vchitect-2.0: Parallel Transformer for Scaling Up Video Diffusion Models</a>". GitHub, 2024.
+                <div id="ref_hunyuan">
+                  Hunyuan Foundation Model Team. "<a href="https://github.com/Tencent/HunyuanVideo">HunyuanVideo: A Systematic Framework For Large Video Generation Model</a>". arXiv, 2024.
                 </div>
               </li>
               <li>
                 <!-- 5 -->
+                <div id="ref_llama3">
+                  Llama Team. "<a href="https://arxiv.org/abs/2407.21783">The Llama 3 Herd of Models</a>". arXiv, 2024.
+                </div>
+              </li>
+              <li>
+                <!-- 6 -->
+                <div id="ref_alphafold">
+                  Jumper, J., Evans, R., Pritzel, A. et al. "<a href="https://www.nature.com/articles/s41586-021-03819-2">Highly accurate protein structure prediction with AlphaFold</a>". Nature, 596.
+                </div>
+              </li>
+              <li>
+                <!-- 7 -->
                 <div id="ref_bucket">
                   Patrick Esser, Sumith Kulal, Andreas Blattmann, Rahim Entezari, Jonas Müller, Harry Saini, Yam Levi et al. "<a href="https://arxiv.org/abs/2403.03206" target="_blank">Scaling rectified flow transformers for high-resolution image synthesis</a>." ICML, 2024.
                 </div>
               </li>
               <li>
-                <!-- 6 -->
+                <!-- 8 -->
                 <div id="ref_packed">
                   Mostafa Dehghani, Basil Mustafa, Josip Djolonga, Jonathan Heek, Matthias Minderer, Mathilde Caron, Andreas Steiner et al. "<a href="https://arxiv.org/abs/2307.06304" target="_blank">Patch n’pack: Navit, a vision transformer for any aspect ratio and resolution</a>." NeurIPS, 2024.
                 </div>
