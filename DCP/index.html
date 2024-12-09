@@ -186,6 +186,7 @@
   <div class="container is-max-desktop">
     <div class="content has-text-justified">
       <p>
+        <br>
         <b>New Paradigm for Any-Size Video Training <span style="font-size: 1.0em">🚀</span>: Let Data Choose its Parallel!</b>
         We introduce <b><span style="color: #ff0000;">D</span><span style="color: #f80007;">a</span><span style="color: #f0000f;">t</span><span style="color: #e90016;">a</span><span style="color: #e2001d;">-</span><span style="color: #db0025;">C</span><span style="color: #d3002c;">e</span><span style="color: #cc0033;">n</span><span style="color: #c5003a;">t</span><span style="color: #bd0042;">r</span><span style="color: #b60049;">i</span><span style="color: #af0050;">c</span><span style="color: #a70058;"> </span><span style="color: #a0005f;">P</span><span style="color: #990066;">a</span><span style="color: #92006e;">r</span><span style="color: #8a0075;">a</span><span style="color: #83007c;">l</span><span style="color: #7c0083;">l</span><span style="color: #74008b;">e</span><span style="color: #6d0092;">l</span></b> (<span style="color: #e2001d;">D</span><span style="color: #a80057;">C</span><span style="color: #6d0092;">P</span>), a simple but effective approach to accelerate distributed training of any-size videos.
         Unlike previous methods that fix training settings, <span style="color: #e2001d;">D</span><span style="color: #a80057;">C</span><span style="color: #6d0092;">P</span> <b>dyanmically adjusts parallelism and other configs driven by incoming data during runtime</b>.
@@ -243,16 +244,16 @@
           <h2 class="title is-4"><span style="color: #ff0000;">D</span><span style="color: #f80007;">a</span><span style="color: #f0000f;">t</span><span style="color: #e90016;">a</span><span style="color: #e2001d;">-</span><span style="color: #db0025;">C</span><span style="color: #d3002c;">e</span><span style="color: #cc0033;">n</span><span style="color: #c5003a;">t</span><span style="color: #bd0042;">r</span><span style="color: #b60049;">i</span><span style="color: #af0050;">c</span><span style="color: #a70058;"> </span><span style="color: #a0005f;">P</span><span style="color: #990066;">a</span><span style="color: #92006e;">r</span><span style="color: #8a0075;">a</span><span style="color: #83007c;">l</span><span style="color: #7c0083;">l</span><span style="color: #74008b;">e</span><span style="color: #6d0092;">l</span> <span style="font-size: 0.8em">- Let Data Choose its Parallel</span></h2>
           <div class="content has-text-justified">
             <div class="content has-text-centered">
-              <div id="overview">
-                <img src="./static/images/dcp_overview.png"><br>
-              </div>
-              <span style="font-size: 0.8em; width: 100%; display: inline-block;">Figure 2: Overview of Data-Centric Parallel (DCP). \( frame \) - number of frames, \( ar \) - aspect ratio, \( res \) - resolution, \( D_i\) -  the \( i \)-th device, \( bs \) - batch size, \( grad\ acc \) - gradient accumulation steps, and \( sp \) - sequence parallel size.</span>
               <video class="video" autoplay controls muted loop playsinline>
                 <source src="./static/videos/dcp_video_lowres.mp4" type="video/mp4">
               </video>
               <div class="columns is-centered has-text-centered">
                 <span style="font-size: 0.8em; width: 100%; display: inline-block;"><br>Video 2: Overview of Data-Centric Parallel.</span>
               </div>
+              <div id="overview">
+                <img src="./static/images/dcp_overview.png"><br>
+              </div>
+              <span style="font-size: 0.8em; width: 100%; display: inline-block;">Figure 2: Overview of Data-Centric Parallel (DCP). \( frame \) - number of frames, \( ar \) - aspect ratio, \( res \) - resolution, \( D_i\) -  the \( i \)-th device, \( bs \) - batch size, \( grad\ acc \) - gradient accumulation steps, and \( sp \) - sequence parallel size.</span>
             </div>
             <div class="content has-text-justified">
               <p>
