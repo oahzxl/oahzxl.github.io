@@ -187,11 +187,11 @@
     <div class="content has-text-justified">
       <p>
         <br>
-        <b>New Paradigm for Any-Size Video Training <span style="font-size: 1.0em">🚀</span>: Let Data Choose its Parallel!</b>
-        We introduce <b><span style="color: #ff0000;">D</span><span style="color: #f80007;">a</span><span style="color: #f0000f;">t</span><span style="color: #e90016;">a</span><span style="color: #e2001d;">-</span><span style="color: #db0025;">C</span><span style="color: #d3002c;">e</span><span style="color: #cc0033;">n</span><span style="color: #c5003a;">t</span><span style="color: #bd0042;">r</span><span style="color: #b60049;">i</span><span style="color: #af0050;">c</span><span style="color: #a70058;"> </span><span style="color: #a0005f;">P</span><span style="color: #990066;">a</span><span style="color: #92006e;">r</span><span style="color: #8a0075;">a</span><span style="color: #83007c;">l</span><span style="color: #7c0083;">l</span><span style="color: #74008b;">e</span><span style="color: #6d0092;">l</span></b> (<span style="color: #e2001d;">D</span><span style="color: #a80057;">C</span><span style="color: #6d0092;">P</span>), a simple but effective approach to accelerate distributed training of any-size videos.
+        <b>New Paradigm for Varaible Sequences Training <span style="font-size: 1.0em">🚀</span>: Let Data Choose its Parallel!</b>
+        We introduce <b><span style="color: #ff0000;">D</span><span style="color: #f80007;">a</span><span style="color: #f0000f;">t</span><span style="color: #e90016;">a</span><span style="color: #e2001d;">-</span><span style="color: #db0025;">C</span><span style="color: #d3002c;">e</span><span style="color: #cc0033;">n</span><span style="color: #c5003a;">t</span><span style="color: #bd0042;">r</span><span style="color: #b60049;">i</span><span style="color: #af0050;">c</span><span style="color: #a70058;"> </span><span style="color: #a0005f;">P</span><span style="color: #990066;">a</span><span style="color: #92006e;">r</span><span style="color: #8a0075;">a</span><span style="color: #83007c;">l</span><span style="color: #7c0083;">l</span><span style="color: #74008b;">e</span><span style="color: #6d0092;">l</span></b> (<span style="color: #e2001d;">D</span><span style="color: #a80057;">C</span><span style="color: #6d0092;">P</span>), a simple but effective approach to accelerate distributed training of varaible sequences (*e.g.,* videos).
         Unlike previous methods that fix training settings, <span style="color: #e2001d;">D</span><span style="color: #a80057;">C</span><span style="color: #6d0092;">P</span> <b>dyanmically adjusts parallelism and other configs driven by incoming data during runtime</b>.
         This method significantly reduces communication overhead and computational inefficiencies, achieving up to <b>2.1x</b> speedup.
-        As a ease-of-use method, <span style="color: #e2001d;">D</span><span style="color: #a80057;">C</span><span style="color: #6d0092;">P</span> can enpower <b>any</b> video models and parallel methods with <b>minimal code changes</b>.
+        As a ease-of-use method, <span style="color: #e2001d;">D</span><span style="color: #a80057;">C</span><span style="color: #6d0092;">P</span> can enpower <b>any</b> models and parallel methods with <b>minimal code changes</b>.
         <br>
       </p>
     </div>
@@ -220,7 +220,8 @@
           <h2 class="title is-4">Motivation <span style="font-size: 0.8em">- Reduce Imbalance and Communication Through Data-Centric</span></h2>
           <div class="content has-text-justified">
             <p>
-              Sora <a href="#ref_sora">[1]</a> and its successors (Movie Gen <a href="#ref_moviegen">[2]</a>, Open-Sora <a href="#ref_opensora">[3]</a>, Vchitect <a href="#ref_vchitect">[4]</a>) have recently achieved remarkable progress in video generation. They train on variable size videos (<i>i.e.,</i> num frames, aspect ratio, and resolution), which offers two advantages: enhanced generation quality and flexible output video sizes <a href="#ref_sora">[1]</a>.
+              Variable sequences training is commonly used in various tasks, such as video generation (Sora <a href="#ref_sora">[1]</a> and its successors (Movie Gen <a href="#ref_moviegen">[2]</a>, Open-Sora <a href="#ref_opensora">[3]</a>, Vchitect <a href="#ref_vchitect">[4]</a>)), text generation (GPT-4 <a href="#ref_gpt4">[5]</a>), and image generation (Dalle-E <a href="#ref_dalle-e">[6]</a>).
+              Such strategy offers them two advantages: enhanced generation quality and flexible output sizes <a href="#ref_sora">[1]</a>.
             </p>
 
             <div class="content has-text-centered">
@@ -231,12 +232,12 @@
             </div>
 
             <p>
-              We compare two common parallel methods for any-size videos training in Figure <a href="#compare">1</a>. Bucket parallel <a href="#ref_bucket">[5]</a> fixes sequence parallel size based on the longest video, adjusting batch sizes for balance.
-              Packed parallel <a href="#ref_packed">[6]</a>, while also fixing sequence parallel size, concats multiple videos in one batch.
+              We compare two common parallel methods for variable sequences training in Figure <a href="#compare">1</a>. Bucket parallel <a href="#ref_bucket">[5]</a> fixes sequence parallel size based on the longest sequence, adjusting batch sizes for balance.
+              Packed parallel <a href="#ref_packed">[6]</a>, while also fixing sequence parallel size, concats multiple sequences in one batch.
             </p>
 
             <p>
-              However, bucket parallel struggles with workload imbalance at small batch sizes and communication inefficiency for shorter videos, while packed parallel, despite better load balancing, incurs unnecessary communication overhead and requires complex implementation changes. Both approaches fail to addresses two critical challenges in any-size video training: necessary sequence parallel for long videos and the unbalanced workloads from diverse video sizes, due to their fixed settings and lack of data awareness.
+              However, bucket parallel struggles with workload imbalance at small batch sizes and communication inefficiency for shorter sequences, while packed parallel, despite better load balancing, incurs unnecessary communication overhead and requires complex implementation changes. Both approaches fail to addresses two critical challenges in variable sequences training: necessary sequence parallel for long sequences and the unbalanced workloads from diverse sequence sizes, due to their fixed settings and lack of data awareness.
             </p>
           </div>
           <br>
@@ -272,18 +273,18 @@
           </div>
           <br>
 
-          <h2 class="title is-4">Pyramid Activation Checkpointing <span style="font-size: 0.8em">- Adaptive Recompute for Any-Size Videos</span></h2>
+          <h2 class="title is-4">Pyramid Activation Checkpointing <span style="font-size: 0.8em">- Adaptive Recompute for Variable Sequences</span></h2>
           <div class="content has-text-centered">
             <div id="ckpt" class="content has-text-centered">
               <img src="./static/images/dcp_ckpt.png" style="width: 70%;"><br>
-              <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 3: Demonstration of pyramid activation checkpointing. We apply different ckpt ratios for different sizes of videos, and trade sequence parallel for extra memory due to less ckpt.</span>
+              <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 3: Demonstration of pyramid activation checkpointing. We apply different ckpt ratios for different sizes of sequences, and trade sequence parallel for extra memory due to less ckpt.</span>
             </div>
             <div class="content has-text-justified">
               <p>
-                As illustrated in Figure <a href="#ckpt">3</a>, in any-size videos training, video sizes and their memory consumption are highly varied, with short videos using less memory and long videos using more. Selective activation checkpointing are limited by longer videos, as longer videos typically require multi-gpu or even intra-node sequence parallelism if reducing recomputing.
+                As illustrated in Figure <a href="#ckpt">3</a>, in any-size sequences training, sequence sizes and their memory consumption are highly varied, with short sequences using less memory and long sequences using more. Selective activation checkpointing are limited by longer sequences, as longer sequences typically require multi-gpu or even intra-node sequence parallelism if reducing recomputing.
               </p>
               <p>
-                Building upon our data-centric parallel approach, we propose pyramid activation checkpointing, which adaptively applies different ckpt ratios based on video sizes. This approach significantly improves throughput for the shorter videos by less recomputing, while maintaining communication overhead for longer videos, which is even more beneficial in datasets where shorter videos dominate.
+                Building upon our data-centric parallel approach, we propose pyramid activation checkpointing, which adaptively applies different ckpt ratios based on sequence sizes. This approach significantly improves throughput for the shorter sequences by less recomputing, while maintaining communication overhead for longer sequences, which is even more beneficial in datasets where shorter sequences dominate.
               </p>
             </div>
           </div>
