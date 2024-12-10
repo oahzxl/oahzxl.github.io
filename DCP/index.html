@@ -294,7 +294,7 @@
           <div class="content has-text-justified">
 
             <p>
-              We firstly introduce the ICC (Imbalance-Communication-Computation) metric for variable sequences training, which identifies three fundamental factors that determine the overall system performance: workload imbalance, communication overhead, and computation degradation. It can be formally expressed as:
+              We introduce the ICC (Imbalance-Communication-Computation) metric for variable sequences training, which identifies three fundamental factors that determine the overall system performance: workload imbalance, communication overhead, and computation degradation. It can be formally expressed as:
             </p>
             <p>
               $$
@@ -378,6 +378,10 @@
             <img src="./static/images/exp_ckpt.png" style="width: 50%;"><br>
             <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 8: Recompute analysis of DCP.</span>
           </div>
+          <p>
+            Figure <a href="#exp_ckpt">8</a> shows the speedup of Pyramid Activation Checkpointing. Our results show that it achieves significant speedup across most sequence lengths, with particularly notable performance gains for shorter sequences, which dominate most datasets.
+          </p>
+          <br>
 
         </div>
       </div>
