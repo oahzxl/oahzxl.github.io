@@ -240,6 +240,23 @@
               However, bucket parallel struggles with workload imbalance at small batch sizes and communication inefficiency for shorter sequences, while packed parallel, despite better load balancing, incurs unnecessary communication overhead and requires complex implementation changes. Both approaches fail to addresses two critical challenges in variable sequences training: necessary sequence parallel for long sequences and the unbalanced workloads from diverse sequence sizes, due to their fixed settings and lack of data awareness.
             </p>
           </div>
+
+          <h2 class="title is-4">Performance Modeling <span style="font-size: 0.8em">- How to Quantify Performance of Variable Sequences Training?</span></h2>
+          <div class="content has-text-justified">
+
+            <div class="content has-text-centered"> 
+              <div id="roofline">
+                <img src="./static/images/roofline.png" style="width: 100%;"><br>
+              </div>
+              <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 2: Roofline model of variable sequences training.</span>
+            </div>
+
+            <p>
+              We propose a roofline model for variable sequences training in Figure <a href="#roofline">2</a>.
+              We use the model to predict the performance of different parallel methods for variable sequences training.
+            </p>
+
+          </div>
           <br>
 
           <h2 class="title is-4"><span style="color: #ff0000;">D</span><span style="color: #f80007;">a</span><span style="color: #f0000f;">t</span><span style="color: #e90016;">a</span><span style="color: #e2001d;">-</span><span style="color: #db0025;">C</span><span style="color: #d3002c;">e</span><span style="color: #cc0033;">n</span><span style="color: #c5003a;">t</span><span style="color: #bd0042;">r</span><span style="color: #b60049;">i</span><span style="color: #af0050;">c</span><span style="color: #a70058;"> </span><span style="color: #a0005f;">P</span><span style="color: #990066;">a</span><span style="color: #92006e;">r</span><span style="color: #8a0075;">a</span><span style="color: #83007c;">l</span><span style="color: #7c0083;">l</span><span style="color: #74008b;">e</span><span style="color: #6d0092;">l</span> <span style="font-size: 0.8em">- Let Data Choose its Parallel</span></h2>
@@ -254,7 +271,7 @@
               <div id="overview">
                 <img src="./static/images/dcp_overview.png"><br>
               </div>
-              <span style="font-size: 0.8em; width: 100%; display: inline-block;">Figure 2: Overview of Data-Centric Parallel (DCP). \( frame \) - number of frames, \( ar \) - aspect ratio, \( res \) - resolution, \( D_i\) -  the \( i \)-th device, \( bs \) - batch size, \( grad\ acc \) - gradient accumulation steps, and \( sp \) - sequence parallel size.</span>
+              <span style="font-size: 0.8em; width: 100%; display: inline-block;">Figure 3: Overview of Data-Centric Parallel (DCP). \( frame \) - number of frames, \( ar \) - aspect ratio, \( res \) - resolution, \( D_i\) -  the \( i \)-th device, \( bs \) - batch size, \( grad\ acc \) - gradient accumulation steps, and \( sp \) - sequence parallel size.</span>
             </div>
             <div class="content has-text-justified">
               <p>
@@ -277,7 +294,7 @@
           <div class="content has-text-centered">
             <div id="ckpt" class="content has-text-centered">
               <img src="./static/images/dcp_ckpt.png" style="width: 70%;"><br>
-              <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 3: Demonstration of pyramid activation checkpointing. We apply different ckpt ratios for different sizes of sequences, and trade sequence parallel for extra memory due to less ckpt.</span>
+              <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 4: Demonstration of pyramid activation checkpointing. We apply different ckpt ratios for different sizes of sequences, and trade sequence parallel for extra memory due to less ckpt.</span>
             </div>
             <div class="content has-text-justified">
               <p>
@@ -304,7 +321,7 @@
           <h2 class="title is-4">End-to-End Speedups <span style="font-size: 0.8em">- How Fast Can DCP Train?</span></h2>
           <div class="content has-text-centered">
             <img src="./static/images/speedup.png">
-            <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 4: End-to-end speedups of DCP compared with other parallel methods.</span>
+            <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 5: End-to-end speedups of DCP compared with other parallel methods.</span>
           </div>
           <div class="content has-text-justified">
             <p>
@@ -315,19 +332,19 @@
           <h2 class="title is-4">Imbalance Analysis <span style="font-size: 0.8em">- How is Computation Imbalance with DCP?</span></h2>
           <div class="content has-text-centered">
             <img src="./static/images/exp_sp.png" style="width: 100%;"><br>
-            <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 5: Imbalance analysis of DCP.</span>
+            <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 6: Imbalance analysis of DCP.</span>
           </div>
 
           <h2 class="title is-4">Parallel Analysis <span style="font-size: 0.8em">- Why Should We Determine Parallel Size by Data?</span></h2>
           <div class="content has-text-centered">
             <img src="./static/images/exp_sp.png" style="width: 100%;"><br>
-            <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 6: Parallel analysis of DCP.</span>
+            <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 7: Parallel analysis of DCP.</span>
           </div>
 
           <h2 class="title is-4">Recompute Analysis <span style="font-size: 0.8em">- When Can Pyramid Activation Checkpointing Help?</span></h2>
           <div class="content has-text-centered">
             <img src="./static/images/exp_ckpt.png" style="width: 70%;"><br>
-            <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 7: Recompute analysis of DCP.</span>
+            <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 8: Recompute analysis of DCP.</span>
           </div>
 
         </div>
