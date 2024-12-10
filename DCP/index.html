@@ -300,16 +300,16 @@
               ICC(\lambda) = \alpha \cdot \eta_{imb}(\lambda) + \beta \cdot \eta_{comm}(\lambda) + \gamma \cdot \eta_{comp}(\lambda)
               $$
             </p>
-
+            <p>
+              Based on ICC efficiency metric, we propose a roofline performance model to characterize and analyze the training performance of variable-length sequences, as illustrated in Figure 2.
+            </p>
             <div class="content has-text-centered"> 
               <div id="roofline">
                 <img src="./static/images/roofline.png" style="width: 50%;"><br>
               </div>
               <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 2: Roofline model of variable sequences training.</span>
             </div>
-
             <p>
-              Based on ICC efficiency metric, we propose a roofline performance model to characterize and analyze the training performance of variable-length sequences, as illustrated in Figure 2.
               <li>
                 The semi-optimal curve demonstrates the maximum achievable performance through intra-sequence balancing. To achieve better balance, it inevitable introduces reduced computational efficiency due to smaller batch sizes, and increased communication overhead for additional iterations.
               </li>
