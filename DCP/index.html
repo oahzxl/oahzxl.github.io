@@ -252,8 +252,7 @@
             </div>
 
             <p>
-              We propose a comprehensive roofline model to characterize and analyze the performance of variable sequences training, as illustrated in Figure 2. The model introduces the ICC (Imbalance-Communication-Computation) efficiency metric, which encapsulates three fundamental factors that collectively determine the overall system performance: workload imbalance, communication overhead, and computation efficiency.
-              The ICC efficiency can be formally expressed as:
+              We propose a comprehensive roofline model to characterize and analyze the performance of variable sequences training, as illustrated in Figure 2. The model introduces the ICC (Imbalance-Communication-Computation) efficiency metric, which includes three fundamental factors that collectively determine the overall system performance: workload imbalance, communication overhead, and computation efficiency. It can be formally expressed as:
             </p>
             <p>
               $$
@@ -261,14 +260,7 @@
               $$
             </p>
             <p>
-              where \(\lambda\) represents the sequence length distribution parameter
-              \(\eta_{imb}(\lambda)\) quantifies the workload imbalance factor, defined as:
-              $$\eta_{imb}(\lambda) = 1 - \frac{\sigma(\lambda)}{\mu(\lambda)} \cdot \sqrt{\frac{1}{N}}$$
-              \(\eta_{comm}(\lambda)\) characterizes the communication efficiency:
-              $$\eta_{comm}(\lambda) = \exp(-\frac{V_{comm}(\lambda)}{B_{network}})$$
-              $\eta_{comp}(\lambda)$ represents the computation efficiency:
-              $$\eta_{comp}(\lambda) = \min(1, \frac{P_{achieved}(\lambda)}{P_{peak}})$$
-              $\alpha$, $\beta$, and $\gamma$ are weighting coefficients where $\alpha + \beta + \gamma = 1$
+              where \(\lambda\) represents the sequence length distribution parameter, \(\eta_{imb}(\lambda)\) quantifies the workload imbalance ratio, \(\eta_{comm}(\lambda)\) characterizes the communication overhead, and \(\eta_{comp}(\lambda)\) represents the computation efficiency.
             </p>
 
           </div>
