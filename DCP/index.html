@@ -263,10 +263,10 @@
               <p>
                 As shown in Figure <a href="#overview">2</a>, our method consists of two main stages: data profile and data-centric runtime. In data profile stage, we classify sequences by size and determine optimal settings for each sequence through fast dual-layer profile. At runtime, we first enqueue sequences into the batch until it's full, and then dynamically balance each sequences using two strategies:
                 <li>
-                  <b>Intra-data balance</b>: adjusts the intrinsic settings (<i>e.g.,</i> batch size, sequence parallel size) of the sequence.
+                  <b>DCP-inter</b>: adjusts the intrinsic settings (<i>e.g.,</i> batch size, sequence parallel size) of the sequence.
                 </li>
                 <li>
-                  <b>Inter-data balance</b>: optimizes among multiple sequences (<i>e.g.,</i> gradient accumulation) without changing intrinsic settings.
+                  <b>DCP-intra</b>: optimizes among multiple sequences (<i>e.g.,</i> gradient accumulation) without changing intrinsic settings.
                 </li>
               </p>
             </div>
