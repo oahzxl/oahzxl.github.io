@@ -254,7 +254,7 @@
               <div id="overview">
                 <img src="./static/images/dcp_overview.png"><br>
               </div>
-              <span style="font-size: 0.8em; width: 100%; display: inline-block;">Figure 3: Overview of Data-Centric Parallel (DCP). \( frame \) - number of frames, \( ar \) - aspect ratio, \( res \) - resolution, \( D_i\) -  the \( i \)-th device, \( bs \) - batch size, \( grad\ acc \) - gradient accumulation steps, and \( sp \) - sequence parallel size.</span>
+              <span style="font-size: 0.8em; width: 100%; display: inline-block;">Figure 2: Overview of Data-Centric Parallel (DCP). \( frame \) - number of frames, \( ar \) - aspect ratio, \( res \) - resolution, \( D_i\) -  the \( i \)-th device, \( bs \) - batch size, \( grad\ acc \) - gradient accumulation steps, and \( sp \) - sequence parallel size.</span>
             </div>
             <div class="content has-text-justified">
               <p>
@@ -277,7 +277,7 @@
           <div class="content has-text-centered">
             <div id="ckpt" class="content has-text-centered">
               <img src="./static/images/dcp_ckpt.png" style="width: 70%;"><br>
-              <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 4: Demonstration of pyramid activation checkpointing. We apply different ckpt ratios for different sizes of sequences, and trade sequence parallel for extra memory due to less ckpt.</span>
+              <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 3: Demonstration of pyramid activation checkpointing. We apply different ckpt ratios for different sizes of sequences, and trade sequence parallel for extra memory due to less ckpt.</span>
             </div>
             <div class="content has-text-justified">
               <p>
@@ -311,10 +311,10 @@
               <div id="roofline">
                 <img src="./static/images/roofline.png" style="width: 50%;"><br>
               </div>
-              <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 2: Roofline model of variable sequences training.</span>
+              <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 4: Roofline model of variable sequences training.</span>
             </div>
             <p>
-              Based on ICC metric, we propose a roofline performance model to characterize and analyze the training performance of variable-length sequences, as illustrated in Figure 2.
+              Based on ICC metric, we propose a roofline performance model to characterize and analyze the training performance of variable-length sequences, as illustrated in Figure <a href="#roofline">4</a>.
               <li>
                 The semi-optimal curve demonstrates the maximum achievable performance through intra-sequence balancing. To achieve better balance, it inevitable introduces reduced computational efficiency due to smaller batch sizes, and increased communication overhead for additional iterations.
               </li>
