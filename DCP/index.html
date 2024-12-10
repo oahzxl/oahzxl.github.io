@@ -252,14 +252,25 @@
             </div>
 
             <p>
-              We propose a roofline model for variable sequences training in Figure <a href="#roofline">2</a>.
-              We use the model to predict the performance of different parallel methods for variable sequences training.
+              We propose a comprehensive roofline model to characterize and analyze the performance of variable sequences training, as illustrated in Figure 2. The model introduces the ICC (Imbalance-Communication-Computation) efficiency metric, which encapsulates three fundamental factors that collectively determine the overall system performance: workload imbalance, communication overhead, and computation efficiency.
+              The ICC efficiency can be formally expressed as:
             </p>
             <p>
               $$
-              \sum_{i=1}^{n} \frac{1}{i^2} = \frac{\pi^2}{6}
+              ICC(\lambda) = \alpha \cdot \eta_{imb}(\lambda) + \beta \cdot \eta_{comm}(\lambda) + \gamma \cdot \eta_{comp}(\lambda)
               $$
             </p>
+            <p>
+              where $\lambda$ represents the sequence length distribution parameter
+              $\eta_{imb}(\lambda)$ quantifies the workload imbalance factor, defined as:
+              $$\eta_{imb}(\lambda) = 1 - \frac{\sigma(\lambda)}{\mu(\lambda)} \cdot \sqrt{\frac{1}{N}}$$
+              $\eta_{comm}(\lambda)$ characterizes the communication efficiency:
+              $$\eta_{comm}(\lambda) = \exp(-\frac{V_{comm}(\lambda)}{B_{network}})$$
+              $\eta_{comp}(\lambda)$ represents the computation efficiency:
+              $$\eta_{comp}(\lambda) = \min(1, \frac{P_{achieved}(\lambda)}{P_{peak}})$$
+              $\alpha$, $\beta$, and $\gamma$ are weighting coefficients where $\alpha + \beta + \gamma = 1$
+            </p>
+
           </div>
           <br>
 
@@ -297,7 +308,7 @@
           <h2 class="title is-4">Pyramid Activation Checkpointing <span style="font-size: 0.8em">- Adaptive Recompute for Variable Sequences</span></h2>
           <div class="content has-text-centered">
             <div id="ckpt" class="content has-text-centered">
-              <img src="./static/images/dcp_ckpt.png" style="width: 50%;"><br>
+              <img src="./static/images/dcp_ckpt.png" style="width: 70%;"><br>
               <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 4: Demonstration of pyramid activation checkpointing. We apply different ckpt ratios for different sizes of sequences, and trade sequence parallel for extra memory due to less ckpt.</span>
             </div>
             <div class="content has-text-justified">
@@ -347,7 +358,7 @@
 
           <h2 class="title is-4">Recompute Analysis <span style="font-size: 0.8em">- When Can Pyramid Activation Checkpointing Help?</span></h2>
           <div class="content has-text-centered">
-            <img src="./static/images/exp_ckpt.png" style="width: 70%;"><br>
+            <img src="./static/images/exp_ckpt.png" style="width: 50%;"><br>
             <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 8: Recompute analysis of DCP.</span>
           </div>
 
