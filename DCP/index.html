@@ -341,6 +341,7 @@
           <p>
             We conduct experiments on NVIDIA H100 GPUs connected by NVLink and InfiniBand. The evaluation is performed using on Open-Sora v1.2 (1.3B). The sequence distribution follows common video size and variations. We use bucket parallel used in Open-Sora as the baseline method.
           </p>
+          <br>
         
           <h2 class="title is-4">End-to-End Speedups <span style="font-size: 0.8em">- How Much Can DCP Speed Up?</span></h2>
           <div class="content has-text-centered">
@@ -350,21 +351,24 @@
           <p>
             Measured total latency of <span style="color: #e2001d;">D</span><span style="color: #a80057;">C</span><span style="color: #6d0092;">P</span> for different models for generating a single video on 8 NVIDIA H100 GPUs. When utilizing a single GPU, we achieve a speedup ranging from 1.26x to 1.32x, which remains stable across different schedulers. Scaling to multiple GPUs, our method achieves a speedup of up to 10.6x, which almost linearly scales with the number of GPUs due to our efficient improvement of sequence parallel.
           </p>
+          <br>
 
           <h2 class="title is-4">Imbalance Analysis <span style="font-size: 0.8em">- How is Imbalance with DCP?</span></h2>
           <div class="content has-text-centered">
-            <img src="./static/images/bubble.png" style="width: 100%;"><br>
+            <img src="./static/images/bubble.png" style="width: 60%;"><br>
             <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 6: Imbalance analysis of DCP.</span>
           </div>
           <p>
             Figure <a href="#bubble">6</a> illustrates how the imbalance ratio changes with increasing number of GPUs. The baseline method shows faster growth in imbalance, reaching 16.4% when scaled to 32 GPUs. In contrast, <span style="color: #e2001d;">D</span><span style="color: #a80057;">C</span><span style="color: #6d0092;">P</span> demonstrates superior performance, maintaining the lowest imbalance ratio and exhibiting slower growth as GPU count increases. 
           </p>
+          <br>
 
           <h2 class="title is-4">Parallel Analysis <span style="font-size: 0.8em">- Why Should We Determine Parallel Size by Data?</span></h2>
           <div class="content has-text-centered">
             <img src="./static/images/exp_sp.png" style="width: 100%;"><br>
             <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 7: Parallel analysis of DCP.</span>
           </div>
+          <br>
 
           <h2 class="title is-4">Recompute Analysis <span style="font-size: 0.8em">- When Can Pyramid Activation Checkpointing Help?</span></h2>
           <div class="content has-text-centered">
