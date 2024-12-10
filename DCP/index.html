@@ -356,7 +356,7 @@
           <h2 class="title is-4">Imbalance Analysis <span style="font-size: 0.8em">- How is Imbalance with DCP?</span></h2>
           <div class="content has-text-centered">
             <img src="./static/images/bubble.png" style="width: 50%;"><br>
-            <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 6: Imbalance analysis of DCP.</span>
+            <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 6: Imbalance analysis of DCP. DCP is able to maintain low imbalance ratio as the number of GPUs increases.</span>
           </div>
           <p>
             Figure <a href="#bubble">6</a> illustrates how the imbalance ratio changes with increasing number of GPUs. The baseline method shows faster growth in imbalance, reaching 16.4% when scaled to 32 GPUs. In contrast, <span style="color: #e2001d;">D</span><span style="color: #a80057;">C</span><span style="color: #6d0092;">P</span> demonstrates superior performance, maintaining the lowest imbalance ratio and exhibiting slower growth as GPU count increases. 
@@ -366,7 +366,7 @@
           <h2 class="title is-4">Parallel Analysis <span style="font-size: 0.8em">- Why Should We Determine Parallel Size by Data?</span></h2>
           <div class="content has-text-centered">
             <img src="./static/images/exp_sp.png" style="width: 100%;"><br>
-            <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 7: Parallel analysis of DCP.</span>
+            <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 7: Parallel analysis of DCP. DCP is able to achieve better performance than fixed parallel size.</span>
           </div>
           <p>
             Figure <a href="#exp_sp">7</a> illustrates the optimal parallel size and performance improvements across different sequence types. As expected, the optimal parallel size strongly correlates with the total sequence length. Notably, while one might assume smaller parallel sizes would be optimal, larger parallel sizes sometimes can  enhance computational efficiency and achieve better workload balance.
@@ -376,7 +376,7 @@
           <h2 class="title is-4">Recompute Analysis <span style="font-size: 0.8em">- When Can Pyramid Activation Checkpointing Help?</span></h2>
           <div class="content has-text-centered">
             <img src="./static/images/exp_ckpt.png" style="width: 50%;"><br>
-            <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 8: Recompute analysis of DCP.</span>
+            <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 8: Recompute analysis of DCP. PAC achieves significant speedup across most sequence lengths.</span>
           </div>
           <p>
             Figure <a href="#exp_ckpt">8</a> shows the speedup of Pyramid Activation Checkpointing. Our results show that it achieves significant speedup across most sequence lengths, with particularly notable performance gains for shorter sequences, which dominate most datasets.
