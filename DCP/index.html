@@ -339,7 +339,7 @@
         <div class="column is-full-width">
           <h2 class="title is-3">Evaluations</h2>
           <p>
-            We conduct experiments on NVIDIA H100 GPUs connected by NVLink and InfiniBand. The evaluation is performed using on Open-Sora v1.2 (1.3B). The sequence distribution follows common video size and variations. We use bucket parallel used in Open-Sora as the baseline method.
+            We conduct experiments on NVIDIA H100 GPUs connected by NVLink and InfiniBand. The evaluation is performed using on Open-Sora v1.2 (1.1B). The sequence distribution follows common video size and variations. We use bucket parallel used in Open-Sora as the baseline method.
           </p>
           <br>
         
@@ -368,6 +368,9 @@
             <img src="./static/images/exp_sp.png" style="width: 100%;"><br>
             <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 7: Parallel analysis of DCP.</span>
           </div>
+          <p>
+            Figure <a href="#exp_sp">7</a> illustrates the optimal parallel size and performance improvements across different sequence types. As expected, the optimal parallel size strongly correlates with the total sequence length. Notably, while one might assume smaller parallel sizes would be optimal, larger parallel sizes sometimes can  enhance computational efficiency and achieve better workload balance.
+          </p>
           <br>
 
           <h2 class="title is-4">Recompute Analysis <span style="font-size: 0.8em">- When Can Pyramid Activation Checkpointing Help?</span></h2>
