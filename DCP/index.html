@@ -293,18 +293,18 @@
           <div class="content has-text-justified">
 
             <p>
-              We introduce the ICC (Imbalance-Communication-Computation) metric for variable sequences training, which identifies three fundamental factors that determine the overall system performance: workload imbalance, communication overhead, and computation efficiency. It can be formally expressed as:
+              We introduce the ICC (Imbalance-Communication-Computation) metric for variable sequences training, which identifies three fundamental factors that determine the overall system performance: workload imbalance, communication overhead, and computation degradation. It can be formally expressed as:
             </p>
             <p>
               $$
               ICC(\lambda) = \alpha \cdot \eta_{imb}(\lambda) + \beta \cdot \eta_{comm}(\lambda) + \gamma \cdot \eta_{comp}(\lambda)
               $$
               $$
-              \eta_{imb}(\lambda) = \frac{T_{total}(\lambda)}{T_{idle}(\lambda)},\ \ \eta_{comm}(\lambda) = \frac{T_{comp}(\lambda)}{T_{comm}(\lambda)},\ \ \eta_{comp}(\lambda) = \frac{T_{optimal}(\lambda)}{T_{loss}(\lambda)}
+              \eta_{imb}(\lambda) = \frac{T_{total}(\lambda)}{T_{idle}(\lambda)},\ \ \eta_{comm}(\lambda) = \frac{T_{comp}(\lambda)}{T_{comm}(\lambda)},\ \ \eta_{comp}(\lambda) = \frac{T_{optimal}(\lambda)}{T_{degradation}(\lambda)}
               $$
             </p>
             <p>
-              where \( \lambda \) is the sequence distribution, \( T_{total} \) is the total time, \( T_{idle} \) is the idle time, \( T_{comp} \) is the computation time, \( T_{comm} \) is the optiaml communication time, and \( T_{loss} \) is the computation loss time.
+              where \( \lambda \) is the sequence distribution, \( T_{total} \) is the total time, \( T_{idle} \) is the idle time, \( T_{comp} \) is the computation time, \( T_{comm} \) is the optiaml communication time, \( T_{optimal} \) is the optimal computation time, and \( T_{loss} \) is the computation degradation time.
             </p>
 
             <div class="content has-text-centered"> 
