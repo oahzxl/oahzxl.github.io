@@ -240,30 +240,6 @@
               However, bucket parallel struggles with workload imbalance at small batch sizes and communication inefficiency for shorter sequences, while packed parallel, despite better load balancing, incurs unnecessary communication overhead and requires complex implementation changes. Both approaches fail to addresses two critical challenges in variable sequences training: necessary sequence parallel for long sequences and the unbalanced workloads from diverse sequence sizes, due to their fixed settings and lack of data awareness.
             </p>
           </div>
-
-          <h2 class="title is-4">Performance Modeling <span style="font-size: 0.8em">- How to Quantify Efficiency of Variable Sequences Training?</span></h2>
-          <div class="content has-text-justified">
-
-            <div class="content has-text-centered"> 
-              <div id="roofline">
-                <img src="./static/images/roofline.png" style="width: 50%;"><br>
-              </div>
-              <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 2: Roofline model of variable sequences training.</span>
-            </div>
-
-            <p>
-              We propose a comprehensive roofline model to characterize and analyze the performance of variable sequences training, as illustrated in Figure 2. The model introduces the ICC (Imbalance-Communication-Computation) efficiency metric, which includes three fundamental factors that collectively determine the overall system performance: workload imbalance, communication overhead, and computation efficiency. It can be formally expressed as:
-            </p>
-            <p>
-              $$
-              ICC(\lambda) = \alpha \cdot \eta_{imb}(\lambda) + \beta \cdot \eta_{comm}(\lambda) + \gamma \cdot \eta_{comp}(\lambda)
-              $$
-            </p>
-            <p>
-              where \(\lambda\) represents the sequence length distribution parameter, \(\eta_{imb}(\lambda)\) quantifies the workload imbalance ratio, \(\eta_{comm}(\lambda)\) characterizes the communication overhead, and \(\eta_{comp}(\lambda)\) represents the computation efficiency.
-            </p>
-
-          </div>
           <br>
 
           <h2 class="title is-4"><span style="color: #ff0000;">D</span><span style="color: #f80007;">a</span><span style="color: #f0000f;">t</span><span style="color: #e90016;">a</span><span style="color: #e2001d;">-</span><span style="color: #db0025;">C</span><span style="color: #d3002c;">e</span><span style="color: #cc0033;">n</span><span style="color: #c5003a;">t</span><span style="color: #bd0042;">r</span><span style="color: #b60049;">i</span><span style="color: #af0050;">c</span><span style="color: #a70058;"> </span><span style="color: #a0005f;">P</span><span style="color: #990066;">a</span><span style="color: #92006e;">r</span><span style="color: #8a0075;">a</span><span style="color: #83007c;">l</span><span style="color: #7c0083;">l</span><span style="color: #74008b;">e</span><span style="color: #6d0092;">l</span> <span style="font-size: 0.8em">- Let Data Choose its Parallel</span></h2>
@@ -312,6 +288,38 @@
               </p>
             </div>
           </div>
+
+          <h2 class="title is-4">Performance Modeling <span style="font-size: 0.8em">- How to Quantify Efficiency of Variable Sequences Training?</span></h2>
+          <div class="content has-text-justified">
+
+            <p>
+              We introduce the ICC (Imbalance-Communication-Computation) efficiency metric for variable sequences training, which identifies three fundamental factors that determine the overall system performance: workload imbalance, communication overhead, and computation efficiency. It can be formally expressed as:
+            </p>
+            <p>
+              $$
+              ICC(\lambda) = \alpha \cdot \eta_{imb}(\lambda) + \beta \cdot \eta_{comm}(\lambda) + \gamma \cdot \eta_{comp}(\lambda)
+              $$
+            </p>
+
+            <div class="content has-text-centered"> 
+              <div id="roofline">
+                <img src="./static/images/roofline.png" style="width: 50%;"><br>
+              </div>
+              <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 2: Roofline model of variable sequences training.</span>
+            </div>
+
+            <p>
+              Based on ICC efficiency metric, we propose a roofline performance model to characterize and analyze the training performance of variable-length sequences, as illustrated in Figure 2.
+              <li>
+                The semi-optimal curve demonstrates the maximum achievable performance through intra-sequence balancing. To achieve better balance, it inevitable introduces reduced computational efficiency due to smaller batch sizes, and increased communication overhead for additional iterations.
+              </li>
+              <li>
+                The optimal curve represents the peak performance through inter-sequence balancing, showcasing the theoretical maximum efficiency of our proposed method.
+              </li>
+            </p>
+
+          </div>
+
         </div>
       </div>
     </div>
