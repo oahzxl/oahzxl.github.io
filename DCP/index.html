@@ -355,7 +355,7 @@
             <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 5: End-to-end speedups of DCP compared with other parallel methods.</span>
           </div>
           <p>
-            Measured total latency of <span style="color: #e2001d;">D</span><span style="color: #a80057;">C</span><span style="color: #6d0092;">P</span> for different models for generating a single video on 8 NVIDIA H100 GPUs. When utilizing a single GPU, we achieve a speedup ranging from 1.26x to 1.32x, which remains stable across different schedulers. Scaling to multiple GPUs, our method achieves a speedup of up to 10.6x, which almost linearly scales with the number of GPUs due to our efficient improvement of sequence parallel.
+            Measured throughput of <span style="color: #e2001d;">D</span><span style="color: #a80057;">C</span><span style="color: #6d0092;">P</span>  across different sequence length distributions using 32 NVIDIA H100 GPUs. The results demonstrated significant performance improvements: when short sequences are predominant, DCP achieved speedups of up to 2.48x. Notably, even in scenarios dominated by long sequences, DCP maintained substantial performance gains with speedups of 1.28x.
           </p>
           <br>
 
