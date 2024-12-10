@@ -304,10 +304,9 @@
               $$
             </p>
             <p>
-              where \( \lambda \) is the sequence distribution, \( T_{total} \) is the total time, \( T_{idle} \) is the idle time, \( T_{comp} \) is the computation time, \( T_{comm} \) is the optiaml communication time, and \( T_{loss} \) is the  computation loss time.
-              
-              Based on ICC metric, we propose a roofline performance model to characterize and analyze the training performance of variable-length sequences, as illustrated in Figure 2.
+              where \( \lambda \) is the sequence distribution, \( T_{total} \) is the total time, \( T_{idle} \) is the idle time, \( T_{comp} \) is the computation time, \( T_{comm} \) is the optiaml communication time, and \( T_{loss} \) is the computation loss time.
             </p>
+
             <div class="content has-text-centered"> 
               <div id="roofline">
                 <img src="./static/images/roofline.png" style="width: 50%;"><br>
@@ -315,6 +314,7 @@
               <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 2: Roofline model of variable sequences training.</span>
             </div>
             <p>
+              Based on ICC metric, we propose a roofline performance model to characterize and analyze the training performance of variable-length sequences, as illustrated in Figure 2.
               <li>
                 The semi-optimal curve demonstrates the maximum achievable performance through intra-sequence balancing. To achieve better balance, it inevitable introduces reduced computational efficiency due to smaller batch sizes, and increased communication overhead for additional iterations.
               </li>
