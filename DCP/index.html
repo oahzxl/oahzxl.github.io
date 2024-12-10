@@ -261,10 +261,10 @@
               $$
             </p>
             <p>
-              where $\lambda$ represents the sequence length distribution parameter
-              $\eta_{imb}(\lambda)$ quantifies the workload imbalance factor, defined as:
+              where \(\lambda\) represents the sequence length distribution parameter
+              \(\eta_{imb}(\lambda)\) quantifies the workload imbalance factor, defined as:
               $$\eta_{imb}(\lambda) = 1 - \frac{\sigma(\lambda)}{\mu(\lambda)} \cdot \sqrt{\frac{1}{N}}$$
-              $\eta_{comm}(\lambda)$ characterizes the communication efficiency:
+              \(\eta_{comm}(\lambda)\) characterizes the communication efficiency:
               $$\eta_{comm}(\lambda) = \exp(-\frac{V_{comm}(\lambda)}{B_{network}})$$
               $\eta_{comp}(\lambda)$ represents the computation efficiency:
               $$\eta_{comp}(\lambda) = \min(1, \frac{P_{achieved}(\lambda)}{P_{peak}})$$
