@@ -198,7 +198,7 @@
     <div class="container is-max-desktop">
       <div class="content has-text-justified">
         <p>
-          <b>Real-Time Video Generation: Achieved <span style="font-size: 1.3em">🥳</span>!</b> We introduce <span class="custom-emoji"></span><b><span style="color: #ff0000;">P</span><span style="color: #f80007;">y</span><span style="color: #f1000e;">r</span><span style="color: #ea0015;">a</span><span style="color: #e4001c;">m</span><span style="color: #dd0022;">i</span><span style="color: #d60029;">d</span> <span style="color: #cf0030;">A</span><span style="color: #c80037;">t</span><span style="color: #c1003e;">t</span><span style="color: #ba0045;">e</span><span style="color: #b3004c;">n</span><span style="color: #ad0053;">t</span><span style="color: #a60059;">i</span><span style="color: #9f0060;">o</span><span style="color: #980067;">n</span> <span style="color: #91006e;">B</span><span style="color: #8a0075;">r</span><span style="color: #83007c;">o</span><span style="color: #7c0083;">a</span><span style="color: #76008a;">d</span><span style="color: #6f0090;">c</span><span style="color: #680097;">a</span><span style="color: #61009e;">s</span><span style="color: #5a00a5;">t</span></b> (<span style="color: #e2001d;">P</span><span style="color: #a80057;">A</span><span style="color: #6d0092;">B</span>), the first approach that achieves <b>real-time</b> DiT-based video generation. By mitigating redundant attention computation, <span style="color: #e2001d;">P</span><span style="color: #a80057;">A</span><span style="color: #6d0092;">B</span> achieves up to <b>21.6</b> FPS with <b>10.6x</b> acceleration, <b>without sacrificing quality</b> across popular DiT-based video generation models including <a href="https://github.com/hpcaitech/Open-Sora" style="color: blue;">Open-Sora</a>, <a href="https://github.com/PKU-YuanGroup/Open-Sora-Plan" style="color: blue;">Open-Sora-Plan</a>, and <a href="https://github.com/Vchitect/Latte" style="color: blue;">Latte</a>. Notably, as a <b>training-free</b> approach,  <span style="color: #e2001d;">P</span><span style="color: #a80057;">A</span><span style="color: #6d0092;">B</span> can enpower <b>any</b> future DiT-based video generation models with real-time capabilities.
+          abstract XX
           <br>
         </p>
       </div>
@@ -207,14 +207,8 @@
 
   <div class="container is-max-desktop">
     <video class="video" autoplay controls muted loop playsinline>
-      <source src="./static/videos/compare.mp4" type="video/mp4">
+      <source src="./static/videos/demo.mp4" type="video/mp4">
     </video>
-    <div class="columns is-centered">
-      <div class="content has-text-centered">
-        <span style="font-size: 0.8em; width: 80%; display: inline-block;"><br>Video 1: Comparison of video generation speeds between original method and ours. We test on Open-Sora with 5 videos of 4s (96 frames) 480p resolution. Baseline and ours use 1 and 8 NVIDIA H100 GPUs respectively.</span>
-        <br>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -223,43 +217,36 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Pyramid Attention Broadcast</h2>
+        <h2 class="title is-3">Ababa</h2>
         
-        <h2 class="title is-4">Motivation</h2>
+        <h2 class="title is-4">Paragraph1</h2>
         <div class="content has-text-justified">
           <p>
-            Recently, Sora and other DiT-based video generation models have attracted significant attention. However, in contrast to image generation, there are few studies focused on accelerating the inference of DiT-based video generation models. Additionally, the inference cost for generating a single video can be substantial, often requiring tens of GPU minutes or even hours. Therefore, accelerating the inference of video generation models has become urgent for broader GenAI applications.
+            aaa.
           </p>
-          <div class="content has-text-centered">
-            <img src="./static/images/motivation.png" style="width: 50%;"><br>
-            <span style="font-size: 0.8em; width: 75%; display: inline-block;">Figure 1: We compare the attention outputs differences between the current and previous diffusion steps. Differences are quantified using Mean Square Error (MSE) and averaged across all layers for each diffusion step.</span>
-          </div>
         </div>
 
-        <h2 class="title is-4">Implementation</h2>
+        <h2 class="title is-4">Paragraph2</h2>
         <div class="content has-text-justified">
           <p>
-            Our study reveals two key observations of attention mechanisms in video diffusion transformers: Firstly, attention differences across time steps exhibit a U-shaped pattern, with significant variations occurring during the first and last 15% of steps, while the middle 70% of steps are very stable with minor differences. Secondly, within the stable middle segment, the differences varies among attention types: spatial attention varies the most, involving high-frequency elements like edges and textures; temporal attention exhibits mid-frequency variations related to movements and dynamics in videos; cross-modal attention is the most stable, linking text with video content, analogous to low-frequency signals reflecting textual semantics.
+            aaa.
           </p>
-          <div class="content has-text-centered">
-            <img src="./static/images/method.png"><br>
-            <span style="font-size: 0.8em; width: 100%; display: inline-block;">Figure 2: We propose pyramid attention broadcast (shown on the right side) which sets different broadcast ranges for three attentions based on their differences. The smaller the variation in attention, the broader the broadcast range. During runtime, we broadcast attention results to the next several steps (shown on the left side) to avoid redundant attention computations. \( x_t \) refers to the features at timestep \( t \).</span>
-          </div>
-          <div class="content has-text-justified">
-            Building on these insights, we propose <span class="custom-emoji"></span><b><span style="color: #ff0000;">P</span><span style="color: #f80007;">y</span><span style="color: #f1000e;">r</span><span style="color: #ea0015;">a</span><span style="color: #e4001c;">m</span><span style="color: #dd0022;">i</span><span style="color: #d60029;">d</span> <span style="color: #cf0030;">A</span><span style="color: #c80037;">t</span><span style="color: #c1003e;">t</span><span style="color: #ba0045;">e</span><span style="color: #b3004c;">n</span><span style="color: #ad0053;">t</span><span style="color: #a60059;">i</span><span style="color: #9f0060;">o</span><span style="color: #980067;">n</span> <span style="color: #91006e;">B</span><span style="color: #8a0075;">r</span><span style="color: #83007c;">o</span><span style="color: #7c0083;">a</span><span style="color: #76008a;">d</span><span style="color: #6f0090;">c</span><span style="color: #680097;">a</span><span style="color: #61009e;">s</span><span style="color: #5a00a5;">t</span></b> to alleviate unnecessary attention computations. In the middle segment, where attentions show minor differences, we can broadcast one diffusion step's attention outputs to several subsequent steps, thereby significantly reducing computational costs. Furthermore, for more efficient computation and minimum quality loss, we set varied broadcast ranges for different attentions based on their stability and differences. This simple yet effective strategy achieves up to a 35% speedup with negligible quality loss, even without post-training.
-          </div>
         </div>
 
-        <h2 class="title is-4">Parallelism</h2>
-        <div class="content has-text-centered">
-          <div class="content has-text-centered">
-            <img src="./static/images/parallel.png" style="width: 70%;"><br>
-            <span style="font-size: 0.8em; width: 80%; display: inline-block;">Figure 3: Comparison between original Dynamic Sequence Parallel (DSP) and ours. When temporal attention is broadcasted, we can avoid all communication.</span>
-          </div>
-          <div class="content has-text-justified">
-            To further enhance video generation speed, we improve sequence parallel based on <a href="https://arxiv.org/abs/2403.10266" target="_blank">Dynamic Sequence Parallelism</a> (DSP). Sequence parallelism segments videos into different parts across multiple GPUs, reducing the workload on each GPU and decreasing generation latency. However, DSP introduces significant communication overhead, requiring two all-to-all communications for temporal attention. By broadcasting temporal attention in <span style="color: #e2001d;">P</span><span style="color: #a80057;">A</span><span style="color: #6d0092;">B</span>, we eliminate these communications, as temporal attention no longer needs to be computed. This results in a significant reduction in communication overhead by over 50%, enabling more efficient distributed inference for real-time video generation.
-          </div>
+        <h2 class="title is-4">Paragraph3</h2>
+        <div class="content has-text-justified">
+          <p>
+            aaa.
+          </p>
         </div>
+
+        <h2 class="title is-4">Paragraph4</h2>
+        <div class="content has-text-justified">
+          <p>
+            aaa.
+          </p>
+        </div>
+
       </div>
     </div>
   </div>
