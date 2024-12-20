@@ -290,14 +290,6 @@
   <section class="hero is-light is-small">
     <div class="hero-body">
       <div class="container is-max-desktop has-text-centered">
-        <h2 class="title is-3">GigaGAN: Large-scale GAN for Text-to-Image Synthesis</h2>
-        <div class="content has-text-justified">
-          <p>
-            <!--<b>A large 1B-parameter GAN model for text-to-image, with a competitive FID, disentangled latent space, and a fast upsampler for generating 4K outputs.</b>-->
-            <b>Can GANs also be trained on a large dataset for a general text-to-image synthesis task?</b> We present our 1B-parameter GigaGAN, achieving lower FID than Stable Diffusion v1.5, DALL·E 2, and Parti-750M. It generates 512px outputs at 0.13s, orders of magnitude faster than diffusion and autoregressive models, and inherits the disentangled, continuous, and controllable latent space of GANs. We also train a fast upsampler that can generate 4K images from the low-res outputs of text-to-image models.
-            <br> 
-          </p>
-        </div>
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item item-t2i0">
             <img id="myt2i0" src="./static/images/Text2img.png"
@@ -315,32 +307,7 @@
       </div>
     </div>
   </section>
-  <div class="hero-body">
-    <div class="container is-max-desktop has-text-centered">
-      <h2 class="title is-3">GigaGAN: Large-scale GAN for Text-to-Image Synthesis</h2>
-      <div class="content has-text-justified">
-        <p>
-          <!--<b>A large 1B-parameter GAN model for text-to-image, with a competitive FID, disentangled latent space, and a fast upsampler for generating 4K outputs.</b>-->
-          <b>Can GANs also be trained on a large dataset for a general text-to-image synthesis task?</b> We present our 1B-parameter GigaGAN, achieving lower FID than Stable Diffusion v1.5, DALL·E 2, and Parti-750M. It generates 512px outputs at 0.13s, orders of magnitude faster than diffusion and autoregressive models, and inherits the disentangled, continuous, and controllable latent space of GANs. We also train a fast upsampler that can generate 4K images from the low-res outputs of text-to-image models.
-          <br> 
-        </p>
-      </div>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-t2i0">
-          <img id="myt2i0" src="./static/images/eval.png"
-          class="interpolation-image"/>
-        </div>
-        <div class="item item-t2i1">
-          <img id="myt2i1" src="./static/images/method.png"
-          class="interpolation-image"/>
-        </div>
-        <div class="item item-t2i1">
-          <img id="myt2i1" src="./static/images/pyramid.png"
-          class="interpolation-image"/>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
   <div class="container is-max-desktop">
     <div class="columns is-centered">
@@ -348,20 +315,26 @@
         <h2 class="title is-3">Evaluations</h2>
         
         <h2 class="title is-4">Qualitative Results</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-t2i0">
-            <img id="myt2i0" src="./static/images/speedup.png"
-            class="interpolation-image"/>
-          </div>
-          <div class="item item-t2i1">
-            <img id="myt2i1" src="./static/images/speedup.png"
-            class="interpolation-image"/>
-          </div>
-          <div class="item item-t2i1">
-            <img id="myt2i1" src="./static/images/speedup.png"
-            class="interpolation-image"/>
+      
+        <div class="container is-max-desktop has-text-centered">
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item item-t2i0">
+              <img id="myt2i0" src="./static/images/Text2img.png"
+              class="interpolation-image"/>
+            </div>
+            <div class="item item-t2i1">
+              <img id="myt2i1" src="./static/images/Text2img2.jpg"
+              class="interpolation-image"/>
+            </div>
+            <div class="item item-t2i1">
+              <img id="myt2i1" src="./static/images/Text2img3.jpg"
+              class="interpolation-image"/>
+            </div>
           </div>
         </div>
+
+
+
         <div class="content has-text-justified">
           <p>
             Measured total latency of <span style="color: #e2001d;">P</span><span style="color: #a80057;">A</span><span style="color: #6d0092;">B</span> for different models for generating a single video on 8 NVIDIA H100 GPUs. When utilizing a single GPU, we achieve a speedup ranging from 1.26x to 1.32x, which remains stable across different schedulers. Scaling to multiple GPUs, our method achieves a speedup of up to 10.6x, which almost linearly scales with the number of GPUs due to our efficient improvement of sequence parallel.
