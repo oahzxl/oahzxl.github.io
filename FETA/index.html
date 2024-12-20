@@ -252,19 +252,19 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Ababa</h2>
+        <h2 class="title is-3">Enhance-A-Video</h2>
         
-        <h2 class="title is-4">Paragraph1</h2>
+        <!-- <h2 class="title is-4">Paragraph1</h2> -->
         <div class="content has-text-justified">
           <p>
-            aaa.
+            Diffusion Transformers (DiTs) open a new era of video generation [1][2][3]. Despite these advances, existing models have difficulty capturing crucial details. Video enhancement could be an intuitive approach, where two goals are considered: 1. maintaining consistency; 2. improving visual quality.
           </p>
         </div>
 
-        <h2 class="title is-4">Paragraph2</h2>
+        <!-- <h2 class="title is-4">Paragraph2</h2> -->
         <div class="content has-text-justified">
           <p>
-            aaa.
+            The temporal attention plays a crucial role in ensuring consistency among frames, further preserving the details. To better understand the effect of temporal attention, we visualize the temporal attention patterns across various blocks.
           </p>
         </div>
 
@@ -272,17 +272,17 @@
           <img src="./static/images/attn_map.png" style="width: 80%;">
         </div>
 
-        <h2 class="title is-4">Paragraph3</h2>
+        <!-- <h2 class="title is-4">Paragraph3</h2> -->
         <div class="content has-text-justified">
           <p>
-            aaa.
+            Our visualizations reveal a key observation: attention weights among frames (non-diagonal) are significantly lower than those along the diagonal, which may lead to inconsistency among frames. Could we improve video quality by utilizing temporal attention?
           </p>
         </div>
 
         <h2 class="title is-4">Paragraph4</h2>
         <div class="content has-text-justified">
           <p>
-            aaa.
+            The consistency among frames is a little bit like the consistency among tokens in LLMs. The consistency among frames is similar to that among tokens in LLMs. Temperature parameter (tau) pre-softmax is used in LLMs to control attention distribution to balance between focused and diverse token selection [1][2][3].
           </p>
         </div>
 
@@ -293,7 +293,10 @@
         <h2 class="title is-4">Paragraph5</h2>
         <div class="content has-text-justified">
           <p>
-            aaa.
+            Inspired by the above analysis, we are the <b>first</b> to find temperature of temporal attention determines the intensity of cross-frame correlation, with higher values enabling broader temporal context attention. We adjust the temporal attention outputs as a training-free enhancement that can be directly applied to existing video models.
+          </p>
+          <p>
+            Specifically, we design an Enhance Block as a parallel branch. This branch computes the average of non-diagonal elements of temporal attention maps as cross-frame intensity (CFI). An enhanced temperature parameter multiplies the CFI to enhance the temporal attention output.
           </p>
         </div>
 
