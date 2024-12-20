@@ -98,7 +98,24 @@
     background-size: cover;
     vertical-align: middle;
     line-height: 1;
-}
+  }
+
+  .interpolation-video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .results-carousel .item {
+    margin: 10px;
+    overflow: hidden;
+    padding: 20px;
+    font-size: 0;
+  }
+  
+  .results-carousel video {
+    margin: 0;
+  }
 
 </style>
 
@@ -296,16 +313,19 @@
         <div class="container is-max-desktop has-text-centered">
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item item-t2i0">
-              <img id="myt2i0" src="./static/videos/demo.mp4"
-              class="interpolation-image"/>
+              <video autoplay muted loop playsinline class="interpolation-video">
+                <source src="./static/videos/demo.mp4" type="video/mp4">
+              </video>
             </div>
             <div class="item item-t2i1">
-              <img id="myt2i1" src="./static/videos/demo.mp4"
-              class="interpolation-image"/>
+              <video autoplay muted loop playsinline class="interpolation-video">
+                <source src="./static/videos/demo.mp4" type="video/mp4">
+              </video>
             </div>
             <div class="item item-t2i1">
-              <img id="myt2i1" src="./static/videos/demo.mp4"
-              class="interpolation-image"/>
+              <video autoplay muted loop playsinline class="interpolation-video">
+                <source src="./static/videos/demo.mp4" type="video/mp4">
+              </video>
             </div>
           </div>
         </div>
