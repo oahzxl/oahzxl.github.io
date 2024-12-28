@@ -14,7 +14,7 @@ I am actively looking for **summer research internship in 2025**. Please feel fr
 Research
 ------
 
-My current research mainly focuses on **efficient and scalable machine learning** through parallelism, algorithm, scheduling and compiler, recently with a primary emphasis on **video models acceleration**. 
+My current research mainly focuses on **efficient and scalable machine learning** through algorithm, parallelism, scheduling and compiler, recently with a primary emphasis on **video models acceleration**. 
 
 I am always happy to chat about interesting research ideas, and looking for academic collaborations and interns. Please drop me an email if you are interested in collaborating with me.
 
@@ -30,6 +30,7 @@ Selected Publications ([all](https://oahzxl.github.io/publications/))
 ------
 
 **Acceleration for Video Models**
+
 * Real-Time Video Generation with Pyramid Attention Broadcast \
   | <span style="color:green; font-style:italic">arXiv</span> | first author
   | [paper](https://arxiv.org/abs/2408.12588) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/PAB/) |

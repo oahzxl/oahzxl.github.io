@@ -13,7 +13,7 @@ See a full list on [Google Scholar](https://scholar.google.com/citations?user=I5
 
 ## 2024
 * **Training Variable Sequences with Data-Centric Parallel** \
-  Geng Zhang<b><sup>*</sup></b>, <u>Xuanlei Zhao</u><b><sup>*</sup></b>, Kai Wang<b><sup>†</sup></b>, Yang You<b><sup>†</sup></b>** \
+  Geng Zhang<b><sup>*</sup></b>, <u>Xuanlei Zhao</u><b><sup>*</sup></b>, Kai Wang<b><sup>†</sup></b>, Yang You<b><sup>†</sup></b> \
   <span style="color:green; font-style:italic">arXiv</span> \
   | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/DCP/) |
 
@@ -47,4 +47,4 @@ See a full list on [Google Scholar](https://scholar.google.com/citations?user=I5
   <span style="color:green; font-style:italic">ICLR 2024</span> \
   | [paper](https://arxiv.org/abs/2401.10652) | [code](https://github.com/hpcaitech/ColossalAI/tree/main/colossalai/autochunk) |
 
-\* indicates equal contribution, and † indicates equal corresponding.
+<b><sup>*</sup></b> indicates equal contribution, and <b><sup>†</sup></b> indicates equal corresponding.
