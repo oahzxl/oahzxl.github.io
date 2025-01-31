@@ -32,7 +32,7 @@ Selected Publications ([all](https://oahzxl.github.io/publications/))
 **Acceleration for Video Models**
 
 * Real-Time Video Generation with Pyramid Attention Broadcast \
-  | <span style="color:green; font-style:italic">arXiv</span> | first author
+  | <span style="color:green; font-style:italic">ICLR 2025</span> | first author
   | [paper](https://arxiv.org/abs/2408.12588) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/PAB/) |
 
 * Training Variable Sequences with Data-Centric Parallel \

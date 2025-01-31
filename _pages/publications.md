@@ -19,7 +19,7 @@ See a full list on [Google Scholar](https://scholar.google.com/citations?user=I5
 
 * **Real-Time Video Generation with Pyramid Attention Broadcast** \
   <u>Xuanlei Zhao</u><b><sup>*</sup></b>, Xiaolong Jin<b><sup>*</sup></b>, Kai Wang<b><sup>*</sup></b>, Yang You \
-  <span style="color:green; font-style:italic">arXiv</span> \
+  <span style="color:green; font-style:italic">ICLR 2025</span> \
   | [paper](https://arxiv.org/abs/2408.12588) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/PAB/) |
 
 * **Wallfacer: Guiding transformer model training out of the long-context dark forest with n-body problem** \
