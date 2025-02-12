@@ -11,7 +11,25 @@ See a full list on [Google Scholar](https://scholar.google.com/citations?user=I5
 
 ---
 
+## 2025
+
+* **Enhance-A-Video: Better Generated Video for Free** \
+  Yang Luo, <u>Xuanlei Zhao</u>, Mengzhao Chen, Kaipeng Zhang, Wenqi Shao, Kai Wang, Zhangyang Wang, Yang You \
+  <span style="color:green; font-style:italic">arXiv</span> \
+  | [paper](https://arxiv.org/abs/2502.07508) | [code](https://github.com/NUS-HPC-AI-Lab/Enhance-A-Video) |
+
+* **Concerto: Automatic Communication Optimization and Scheduling for Large-Scale Deep Learning** \
+  Shenggan Cheng, Shengjie Lin, Lansong Diao, Hao Wu, Siyu Wang, Chang Si, Ziming Liu, <u>Xuanlei Zhao</u>, Jiangsu Du, Wei Lin, Yang You \
+  <span style="color:green; font-style:italic">ASPLOS 2025</span> \
+  | [paper](https://dl.acm.org/doi/abs/10.1145/3669940.3707223) |
+
 ## 2024
+
+* **Faster Vision Mamba is Rebuilt in Minutes via Merged Token Re-training** \
+  Mingjia Shi, Yuhao Zhou, Ruiji Yu, Zekai Li, Zhiyuan Liang, <u>Xuanlei Zhao</u>, Xiaojiang Peng, Tanmay Rajpurohit, Shanmukha Ramakrishna Vedantam, Wangbo Zhao, Kai Wang, Yang You
+  <span style="color:green; font-style:italic">arXiv</span> \
+  | [paper](https://arxiv.org/abs/2412.12496) |
+
 * **Training Variable Sequences with Data-Centric Parallel** \
   Geng Zhang<b><sup>*</sup></b>, <u>Xuanlei Zhao</u><b><sup>*</sup></b>, Kai Wang<b><sup>†</sup></b>, Yang You<b><sup>†</sup></b> \
   <span style="color:green; font-style:italic">arXiv</span> \
