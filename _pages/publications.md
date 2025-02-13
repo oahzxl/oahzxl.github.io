@@ -37,7 +37,7 @@ See a full list on [Google Scholar](https://scholar.google.com/citations?user=I5
 
 * **Wallfacer: Guiding transformer model training out of the long-context dark forest with n-body problem** \
   Ziming Liu, Shaoyu Wang, Shenggan Cheng, Zhongkai Zhao, Kai Wang, <u>Xuanlei Zhao</u>, James Demmel, Yang You \
-  |<span style="color:green; font-style:italic">arXiv</span> | [paper](https://arxiv.org/pdf/2407.00611) |
+  | <span style="color:green; font-style:italic">arXiv</span> | [paper](https://arxiv.org/pdf/2407.00611) |
 
 * **DSP: Dynamic Sequence Parallelism for Multi-Dimensional Transformers** \
   <u>Xuanlei Zhao</u>, Shenggan Cheng, Chang Chen, Zangwei Zheng, Ziming Liu, Zheming Yang, Yang You \
