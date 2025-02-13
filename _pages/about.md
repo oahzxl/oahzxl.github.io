@@ -47,6 +47,7 @@ Selected Publications ([all](https://oahzxl.github.io/publications/))
   | [paper](https://arxiv.org/abs/2403.01164) |
 
 **Efficient AI for Science**
+
 * FastFold: Optimizing AlphaFold Training and Inference on GPU Clusters \
   | <span style="color:green; font-style:italic">PPoPP 2024</span> | second author
   | [paper](https://dl.acm.org/doi/10.1145/3627535.3638465) | [code](https://github.com/hpcaitech/FastFold) |
@@ -76,6 +77,7 @@ Education
 * **National University of Singapore** \
   Ph.D. in Computer Science \
   *2024.01 - now* \
+* **National University of Singapore** \
   M.S. in Computer Science \
   *2022.08 - 2023.12*
 * **Huazhong University of Science and Technology** \
