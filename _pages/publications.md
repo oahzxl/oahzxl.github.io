@@ -42,7 +42,8 @@ See a full list on [Google Scholar](https://scholar.google.com/citations?user=I5
 
 * **DSP: Dynamic Sequence Parallelism for Multi-Dimensional Transformers** \
   <u>Xuanlei Zhao</u>, Shenggan Cheng, Chang Chen, Zangwei Zheng, Ziming Liu, Zheming Yang, Yang You \
-  | <span style="color:green;">arXiv</span> | [paper](https://arxiv.org/abs/2403.10266) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) |
+  <span style="color:green;">arXiv</span> \
+  | [paper](https://arxiv.org/abs/2403.10266) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) |
 
 * **HeteGen: Heterogeneous Parallel Inference for Large Language Models on Resource-Constrained Devices** \
   <u>Xuanlei Zhao</u><b><sup>\*</sup></b>, Bin Jia<b><sup>\*</sup></b>, Haotian Zhou<b><sup>\*</sup></b>, Ziming Liu, Shenggan Cheng, Yang You \

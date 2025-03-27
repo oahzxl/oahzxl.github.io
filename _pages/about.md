@@ -82,10 +82,10 @@ Education
 ------
 * **National University of Singapore** \
   Ph.D. in Computer Science \
-  *2024.01 - now*
+  2024.01 - now
 * **National University of Singapore** \
   M.S. in Computer Science \
-  *2022.08 - 2023.12*
+  2022.08 - 2023.12
 * **Huazhong University of Science and Technology** \
   B.S. in Computer Science & Electronic Information \
-  *2018.09 - 2022.06*
+  2018.09 - 2022.06
