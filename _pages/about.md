@@ -12,7 +12,7 @@ Hi! I am a second-year PhD student in Computer Science at National University of
 Research
 ------
 
-My current research mainly focuses on **efficient and scalable machine learning** through algorithm, parallelism, scheduling and compiler optimization, recently with a primary emphasis on **efficient video generation**. 
+My current research mainly focuses on **efficient and scalable machine learning** through algorithm and infrastructure co-optimization, recently with a primary emphasis on **efficient video generation**.
 
 I am always happy to chat about interesting research ideas, and looking for academic collaborations and interns. Please drop me an email if you are interested in collaborating with me.
 
@@ -59,10 +59,9 @@ Selected Publications ([all](https://oahzxl.github.io/publications/))
 Open-Source Projects
 ------
 
-* **[VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys): An Easy and Efficient System for Video Generation** \
-  Project lead.
-* **[Colossal-AI](https://github.com/hpcaitech/ColossalAI): Making large AI models cheaper, faster and more accessible** \
-  Core contributor ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors) by 2024) with 38k star.
+* **[VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys): An Easy and Efficient System for Video Generation**
+
+* **[Colossal-AI](https://github.com/hpcaitech/ColossalAI): Making large AI models cheaper, faster and more accessible**
 
 Experience
 ------
