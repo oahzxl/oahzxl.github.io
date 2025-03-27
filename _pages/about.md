@@ -9,8 +9,6 @@ redirect_from:
 
 Hi! I am a second-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. Previously, I collaborated at [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/) and interned at [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
 
-I am actively looking for **summer research internship in 2025**. Please feel free to reach out if there are any opportunities available.
-
 Research
 ------
 
@@ -24,32 +22,38 @@ Selected Publications ([all](https://oahzxl.github.io/publications/))
 
 **Efficient Video Generation**
 
-* Real-Time Video Generation with Pyramid Attention Broadcast \
-  | <span style="color:green; font-style:italic">ICLR 2025</span> | first author
+* <b>Real-Time Video Generation with Pyramid Attention Broadcast</b> \
+  <span style="color:green; font-style:italic">International Conference on Learning Representations (ICLR), 2025</span> \
+  <u>Xuanlei Zhao</u><b><sup>\*</sup></b>, Xiaolong Jin<b><sup>\*</sup></b>, Kai Wang<b><sup>*</sup></b>, Yang You \
   | [paper](https://arxiv.org/abs/2408.12588) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/PAB/) |
 
-* Training Variable Sequences with Data-Centric Parallel \
-  | <span style="color:green; font-style:italic">arXiv</span> | co-first author
+* <b>Training Variable Sequences with Data-Centric Parallel</b> \
+  <span style="color:green; font-style:italic">arXiv</span> \
+  Geng Zhang<b><sup>\*</sup></b>, <u>Xuanlei Zhao</u><b><sup>\*</sup></b>, Kai Wang<b><sup>†</sup></b>, Yang You<b><sup>†</sup></b> \
   | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/DCP/) |
 
-* DSP: Dynamic Sequence Parallelism for Multi-Dimensional Transformers \
-  | <span style="color:green; font-style:italic">arXiv</span> | first author
+* <b>DSP: Dynamic Sequence Parallelism for Multi-Dimensional Transformers</b> \
+  <span style="color:green; font-style:italic">arXiv</span> \
+  <u>Xuanlei Zhao</u>, Shenggan Cheng, Chang Chen, Zangwei Zheng, Ziming Liu, Zheming Yang, Yang You \
   | [paper](https://arxiv.org/abs/2403.10266) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) |
 
 **Efficient Memory Cost**
 
-* AutoChunk: Automated Activation Chunk for Memory-Efficient Long Sequence Inference \
-  | <span style="color:green; font-style:italic">ICLR 2024</span> | first author
+* <b>AutoChunk: Automated Activation Chunk for Memory-Efficient Long Sequence Inference</b> \
+  <span style="color:green; font-style:italic">International Conference on Learning Representations (ICLR), 2024</span> \
+  <u>Xuanlei Zhao</u>, Shenggan Cheng, Guangyang Lu, Jiarui Fang, Haotian Zhou, Bin Jia, Ziming Liu, Yang You \
   | [paper](https://arxiv.org/abs/2401.10652) | [code](https://github.com/hpcaitech/ColossalAI/tree/main/colossalai/autochunk) |
 
-* HeteGen: Heterogeneous Parallel Inference for Large Language Models on Resource-Constrained Devices \
-  | <span style="color:green; font-style:italic">MLSys 2024</span> | first author
+* <b>HeteGen: Heterogeneous Parallel Inference for Large Language Models on Resource-Constrained Devices</b> \
+  <span style="color:green; font-style:italic">Annual Conference on Machine Learning and Systems (MLSys), 2024</span> \
+  <u>Xuanlei Zhao</u><b><sup>\*</sup></b>, Bin Jia<b><sup>\*</sup></b>, Haotian Zhou<b><sup>\*</sup></b>, Ziming Liu, Shenggan Cheng, Yang You \
   | [paper](https://arxiv.org/abs/2403.01164) |
 
 **Efficient AI for Science**
 
-* FastFold: Optimizing AlphaFold Training and Inference on GPU Clusters \
-  | <span style="color:green; font-style:italic">PPoPP 2024</span> | second author
+* <b>FastFold: Optimizing AlphaFold Training and Inference on GPU Clusters</b> \
+  <span style="color:green; font-style:italic">Annual Symposium on Principles and Practice of Parallel Programming (PPoPP), 2024</span> \
+  Shenggan Cheng, <u>Xuanlei Zhao</u>, Guangyang Lu, Jiarui Fang, Tian Zheng, Ruidong Wu, Xiwen Zhang, Jian Peng, Yang You \
   | [paper](https://dl.acm.org/doi/10.1145/3627535.3638465) | [code](https://github.com/hpcaitech/FastFold) |
 
 Open-Source Projects
@@ -62,15 +66,17 @@ Open-Source Projects
 
 Experience
 ------
+* **Adobe** \
+  Research Intern \
+  Host: [Yan Kang](https://research.adobe.com/person/yan-kang/)
+
 * **Pika** \
-  Host: [Chenlin Meng](https://cs.stanford.edu/~chenlin/) \
-  Efficient video system.
+  Research Intern \
+  Host: [Chenlin Meng](https://cs.stanford.edu/~chenlin/)
 
 * **Colossal-AI** \
-  Research Engineer Intern \
-  Host: [Jiarui Fang](https://fangjiarui.github.io/) and [Shenggui Li](https://franklee.xyz/) \
-  Core contributor ([ranked 5th](https://github.com/hpcaitech/ColossalAI/graphs/contributors) by 2024) with 38k star, and responsible for features including ZeRO, TP, PP, compiler, and MoE. \
-  *2022.07 - 2023.12*
+  Research Intern \
+  Host: [Jiarui Fang](https://fangjiarui.github.io/), [Shenggui Li](https://franklee.xyz/)
 
 Education
 ------
