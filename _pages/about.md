@@ -23,36 +23,36 @@ Selected Publications ([all](https://oahzxl.github.io/publications/))
 **Efficient Video Generation**
 
 * <b>Real-Time Video Generation with Pyramid Attention Broadcast</b> \
-  <span style="color:green; font-style:italic">International Conference on Learning Representations (ICLR), 2025</span> \
+  <span style="color:green;">International Conference on Learning Representations (ICLR), 2025</span> \
   <u>Xuanlei Zhao</u><b><sup>\*</sup></b>, Xiaolong Jin<b><sup>\*</sup></b>, Kai Wang<b><sup>*</sup></b>, Yang You \
   | [paper](https://arxiv.org/abs/2408.12588) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/PAB/) |
 
 * <b>Training Variable Sequences with Data-Centric Parallel</b> \
-  <span style="color:green; font-style:italic">arXiv</span> \
+  <span style="color:green;">arXiv</span> \
   Geng Zhang<b><sup>\*</sup></b>, <u>Xuanlei Zhao</u><b><sup>\*</sup></b>, Kai Wang<b><sup>†</sup></b>, Yang You<b><sup>†</sup></b> \
   | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/DCP/) |
 
 * <b>DSP: Dynamic Sequence Parallelism for Multi-Dimensional Transformers</b> \
-  <span style="color:green; font-style:italic">arXiv</span> \
+  <span style="color:green;">arXiv</span> \
   <u>Xuanlei Zhao</u>, Shenggan Cheng, Chang Chen, Zangwei Zheng, Ziming Liu, Zheming Yang, Yang You \
   | [paper](https://arxiv.org/abs/2403.10266) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) |
 
 **Efficient Memory Cost**
 
 * <b>AutoChunk: Automated Activation Chunk for Memory-Efficient Long Sequence Inference</b> \
-  <span style="color:green; font-style:italic">International Conference on Learning Representations (ICLR), 2024</span> \
+  <span style="color:green;">International Conference on Learning Representations (ICLR), 2024</span> \
   <u>Xuanlei Zhao</u>, Shenggan Cheng, Guangyang Lu, Jiarui Fang, Haotian Zhou, Bin Jia, Ziming Liu, Yang You \
   | [paper](https://arxiv.org/abs/2401.10652) | [code](https://github.com/hpcaitech/ColossalAI/tree/main/colossalai/autochunk) |
 
 * <b>HeteGen: Heterogeneous Parallel Inference for Large Language Models on Resource-Constrained Devices</b> \
-  <span style="color:green; font-style:italic">Annual Conference on Machine Learning and Systems (MLSys), 2024</span> \
+  <span style="color:green;">Annual Conference on Machine Learning and Systems (MLSys), 2024</span> \
   <u>Xuanlei Zhao</u><b><sup>\*</sup></b>, Bin Jia<b><sup>\*</sup></b>, Haotian Zhou<b><sup>\*</sup></b>, Ziming Liu, Shenggan Cheng, Yang You \
   | [paper](https://arxiv.org/abs/2403.01164) |
 
 **Efficient AI for Science**
 
 * <b>FastFold: Optimizing AlphaFold Training and Inference on GPU Clusters</b> \
-  <span style="color:green; font-style:italic">Annual Symposium on Principles and Practice of Parallel Programming (PPoPP), 2024</span> \
+  <span style="color:green;">Annual Symposium on Principles and Practice of Parallel Programming (PPoPP), 2024</span> \
   Shenggan Cheng, <u>Xuanlei Zhao</u>, Guangyang Lu, Jiarui Fang, Tian Zheng, Ruidong Wu, Xiwen Zhang, Jian Peng, Yang You \
   | [paper](https://dl.acm.org/doi/10.1145/3627535.3638465) | [code](https://github.com/hpcaitech/FastFold) |
 
