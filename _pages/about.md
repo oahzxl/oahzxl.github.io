@@ -33,7 +33,7 @@ Selected Publications ([all](https://oahzxl.github.io/publications/))
   | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/DCP/) |
 
 * <b>DSP: Dynamic Sequence Parallelism for Multi-Dimensional Transformers</b> \
-  <span style="color:green;">arXiv</span> \
+  <span style="color:green;">International Conference on Machine Learning (ICML), 2025</span> \
   <u>Xuanlei Zhao</u>, Shenggan Cheng, Chang Chen, Zangwei Zheng, Ziming Liu, Zheming Yang, Yang You \
   | [paper](https://arxiv.org/abs/2403.10266) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) |
 
