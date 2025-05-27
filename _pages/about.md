@@ -63,13 +63,6 @@ Open-Source Projects
 
 * **[Colossal-AI](https://github.com/hpcaitech/ColossalAI): Making large AI models cheaper, faster and more accessible**
 
-Experience
-------
-
-* **Colossal-AI** \
-  Research Intern \
-  Host: [Jiarui Fang](https://fangjiarui.github.io/), [Shenggui Li](https://franklee.xyz/)
-
 Education
 ------
 * **National University of Singapore** \
