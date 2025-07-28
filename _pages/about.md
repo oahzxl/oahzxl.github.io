@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I am a second-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. Previously, I interned at [Adobe] with [Yan Kang](https://research.adobe.com/person/yan-kang/), [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/) and collaborated at [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/).
+Hi! I am a second-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. Previously, I interned at [Adobe](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/), [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/) and collaborated at [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/).
 
 Research
 ------
@@ -28,7 +28,6 @@ Selected Publications ([all](https://oahzxl.github.io/publications/))
   | [paper](https://arxiv.org/abs/2408.12588) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/PAB/) |
 
 * <b>Training Variable Sequences with Data-Centric Parallel</b> \
-  <span style="color:green;">arXiv</span> \
   Geng Zhang<b><sup>\*</sup></b>, <u>Xuanlei Zhao</u><b><sup>\*</sup></b>, Kai Wang<b><sup>†</sup></b>, Yang You<b><sup>†</sup></b> \
   | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) | [blog](https://oahzxl.github.io/DCP/) |
 
@@ -88,3 +87,5 @@ Education
 * **Huazhong University of Science and Technology** \
   B.S. in Computer Science & Electronic Information \
   2018.09 - 2022.06
+
+Last update: 2025/07/28

@@ -13,10 +13,25 @@ See a full list on [Google Scholar](https://scholar.google.com/citations?user=I5
 
 ## 2025
 
-* **Enhance-A-Video: Better Generated Video for Free** \
-  Yang Luo, <u>Xuanlei Zhao</u>, Mengzhao Chen, Kaipeng Zhang, Wenqi Shao, Kai Wang, Zhangyang Wang, Yang You \
+* **Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights** \
+  Zhiyuan Liang, Dongwen Tang, Yuhao Zhou, <u>Xuanlei Zhao</u>, Mingjia Shi, Wangbo Zhao, Zekai Li, Peihao Wang, Konstantin Schürholt, Damian Borth, Michael M Bronstein, Yang You, Zhangyang Wang, Kai Wang \
   <span style="color:green;">arXiv</span> \
-  | [paper](https://arxiv.org/abs/2502.07508) | [code](https://github.com/NUS-HPC-AI-Lab/Enhance-A-Video) |
+  | [paper](https://arxiv.org/abs/2506.16406) | [code](https://github.com/jerryliang24/Drag-and-Drop-LLMs) | [blog](https://jerryliang24.github.io/DnD//) |
+
+* **REPA Works Until It Doesn't: Early-Stopped, Holistic Alignment Supercharges Diffusion Training** \
+  Ziqiao Wang, Wangbo Zhao, Yuhao Zhou, Zekai Li, Zhiyuan Liang, Mingjia Shi, <u>Xuanlei Zhao</u>, Pengfei Zhou, Kaipeng Zhang, Zhangyang Wang, Kai Wang, Yang You \
+  <span style="color:green;">arXiv</span> \
+  | [paper](https://arxiv.org/abs/2505.16792) |
+
+* **DD-Ranking: Rethinking the Evaluation of Dataset Distillation** \
+  Zekai Li, Xinhao Zhong, Samir Khaki, Zhiyuan Liang, Yuhao Zhou, Mingjia Shi, Ziqiao Wang, <u>Xuanlei Zhao</u>, Wangbo Zhao, Ziheng Qin, Mengxuan Wu, Pengfei Zhou, Haonan Wang, David Junhao Zhang, Jia-Wei Liu, Shaobo Wang, Dai Liu, Linfeng Zhang, Guang Li, Kun Wang, Zheng Zhu, Zhiheng Ma, Joey Tianyi Zhou, Jiancheng Lv, Yaochu Jin, Peihao Wang, Kaipeng Zhang, Lingjuan Lyu, Yiran Huang, Zeynep Akata, Zhiwei Deng, Xindi Wu, George Cazenavette, Yuzhang Shang, Justin Cui, Jindong Gu, Qian Zheng, Hao Ye, Shuo Wang, Xiaobo Wang, Yan Yan, Angela Yao, Mike Zheng Shou, Tianlong Chen, Hakan Bilen, Baharan Mirzasoleiman, Manolis Kellis, Konstantinos N. Plataniotis, Zhangyang Wang, Bo Zhao, Yang You, Kai Wang \
+  <span style="color:green;">arXiv</span> \
+  | [paper](https://arxiv.org/abs/2505.13300) | [code](https://github.com/NUS-HPC-AI-Lab/DD-Ranking) | [blog](https://nus-hpc-ai-lab.github.io/DD-Ranking/) |
+
+* **Dynamic Vision Mamba** \
+  ZMengxuan Wu, Zekai Li, Zhiyuan Liang, Moyang Li, <u>Xuanlei Zhao</u>, Samir Khaki, Zheng Zhu, Xiaojiang Peng, Konstantinos N Plataniotis, Kai Wang, Wangbo Zhao, Yang You \
+  <span style="color:green;">arXiv</span> \
+  | [paper](https://arxiv.org/abs/2504.04787) | [code](https://github.com/NUS-HPC-AI-Lab/DyVM) |
 
 * **Concerto: Automatic Communication Optimization and Scheduling for Large-Scale Deep Learning** \
   Shenggan Cheng, Shengjie Lin, Lansong Diao, Hao Wu, Siyu Wang, Chang Si, Ziming Liu, <u>Xuanlei Zhao</u>, Jiangsu Du, Wei Lin, Yang You \
@@ -42,7 +57,7 @@ See a full list on [Google Scholar](https://scholar.google.com/citations?user=I5
 
 * **DSP: Dynamic Sequence Parallelism for Multi-Dimensional Transformers** \
   <u>Xuanlei Zhao</u>, Shenggan Cheng, Chang Chen, Zangwei Zheng, Ziming Liu, Zheming Yang, Yang You \
-  <span style="color:green;">arXiv</span> \
+  <span style="color:green;">International Conference on Machine Learning (ICML), 2025</span> \
   | [paper](https://arxiv.org/abs/2403.10266) | [code](https://github.com/NUS-HPC-AI-Lab/VideoSys) |
 
 * **HeteGen: Heterogeneous Parallel Inference for Large Language Models on Resource-Constrained Devices** \
