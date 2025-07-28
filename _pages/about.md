@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I am a second-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology.
+Hi! I am a second-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. Previously, I interned at [Adobe] with [Yan Kang](https://research.adobe.com/person/yan-kang/), [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/) and collaborated at [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/).
 
 Research
 ------
@@ -62,6 +62,20 @@ Open-Source Projects
 * **[VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys): An Easy and Efficient System for Video Generation**
 
 * **[Colossal-AI](https://github.com/hpcaitech/ColossalAI): Making large AI models cheaper, faster and more accessible**
+
+Experience
+------
+
+* **Adobe** \
+  Research Intern \
+  Host: [Yan Kang](https://research.adobe.com/person/yan-kang/)
+
+* **Pika** \
+  Host: [Chenlin Meng](https://cs.stanford.edu/~chenlin/)
+
+* **Colossal-AI** \
+  Research Intern \
+  Host: [Jiarui Fang](https://fangjiarui.github.io/), [Shenggui Li](https://franklee.xyz/)
 
 Education
 ------
