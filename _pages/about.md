@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I am a second-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. Previously, I interned at [Adobe](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/), [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/) and collaborated at [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/).
+Hi! I am a second-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. I currently intern at [Adobe](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/). Previously, I collaborated at [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/) and interned at [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
 
 Research
 ------
