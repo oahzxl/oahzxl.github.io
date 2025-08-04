@@ -99,9 +99,9 @@ My current research mainly focuses on efficient AI, including:
 
 
 # 💻 Internships
-- *2025.07 - now*, [Adobe Research](https://www.adobe.com/), Research Intern. Mentor: [Yan Kang](https://research.adobe.com/person/yan-kang/).
-- *2024 - 2024*, [Pika](https://pika.art/). Mentor: [Chenlin Meng](https://cs.stanford.edu/~chenlin/).
-- *2022.07 - 2023.12*, [Colossal-AI](https://github.com/hpcaitech/ColossalAI), Research Intern. Mentor: [Jiarui Fang](https://fangjiarui.github.io/).
+- *2025.07 - now*, [Adobe Research](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/).
+- *2024 - 2024*, [Pika](https://pika.art/) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/).
+- *2022.07 - 2023.12*, [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
 
 
 # 📖 Educations
