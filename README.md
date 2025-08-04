@@ -1,4 +1,3 @@
-## REMINDER: If you want to fork or clone this repo, please remove the last line in _pages/about.md. THANK YOU!
 
 <h1 align="center">
 AcadHomepage
