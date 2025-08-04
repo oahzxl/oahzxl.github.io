@@ -9,11 +9,11 @@ redirect_from:
 ---
 
 <span class='anchor' id='about-me'></span>
-Hi! I am a second-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. I currently intern at [Adobe](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/). Previously, I collaborated at [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/) and interned at [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
+Hi!
+
+I am a second-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. I currently intern at [Adobe](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/). Previously, I collaborated at [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/) and interned at [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
 
 My current research mainly focuses on **efficient and scalable machine learning** through algorithm and infrastructure co-optimization, recently with a primary emphasis on **efficient video generation**.
-
-I am always happy to chat about interesting research ideas, and looking for academic collaborations and interns. Please drop me an email if you are interested in collaborating with me.
 
 
 # 🔥 News
@@ -23,6 +23,8 @@ I am always happy to chat about interesting research ideas, and looking for acad
 - *2023.01*: I join TikTok <img src='./images/tiktok.png' style='width: 6em;'> as a speech research scientist in Singapore!
 - *2022.02*: I release a modern and responsive academic personal [homepage template](https://github.com/RayeRen/acad-homepage.github.io). Welcome to STAR and FORK!
 
+
+<span class='anchor' id='publications'></span>
 
 # 📝 Selected Publications ([all](https://scholar.google.com/citations?user=I5NBOacAAAAJ))
 ## 📽️ Efficient Video Generation
@@ -79,12 +81,13 @@ I am always happy to chat about interesting research ideas, and looking for acad
   </li>
 </ul>
 
+<!-- 
 ## Others
 - `NeurIPS 2023` [Unsupervised Video Domain Adaptation for Action Recognition: A Disentanglement Perspective](https://openreview.net/forum?id=Rp4PA0ez0m), Pengfei Wei, Lingdong Kong, Xinghua Qu, **Yi Ren**, et al.
-- ``ACM-MM 2022`` [Video-Guided Curriculum Learning for Spoken Video Grounding](), Yan Xia, Zhou Zhao, Shangwei Ye, Yang Zhao, Haoyuan Li, **Yi Ren**
+- ``ACM-MM 2022`` [Video-Guided Curriculum Learning for Spoken Video Grounding](), Yan Xia, Zhou Zhao, Shangwei Ye, Yang Zhao, Haoyuan Li, **Yi Ren** -->
 
 
-# 🎖 Honors and Awards
+<!-- # 🎖 Honors and Awards
 - *2021.10* Tencent Scholarship (Top 1%)
 - *2021.10* National Scholarship (Top 1%)
 - *2020.12* [Baidu Scholarship](https://baike.baidu.com/item/%E7%99%BE%E5%BA%A6%E5%A5%96%E5%AD%A6%E9%87%91/9929412) (10 students in the world each year)
@@ -93,26 +96,21 @@ I am always happy to chat about interesting research ideas, and looking for acad
 - *2020.12* [ByteDance Scholars Program](https://ur.bytedance.com/scholarship) (10 students in China each year)
 - *2020.10* Tianzhou Chen Scholarship (Top 1%)
 - *2020.10* National Scholarship (Top 1%)
-- *2015.10* National Scholarship (Undergraduate) (Top 1%)
-
-
-# 📖 Educations
-- *2019.06 - 2022.04*, Master, Zhejiang University, Hangzhou.
-- *2015.09 - 2019.06*, Undergraduate, Chu Kochen Honors College, Zhejiang Univeristy, Hangzhou.
-- *2012.09 - 2015.06*, Luqiao Middle School, Taizhou.
-
-
-# 💬 Invited Talks
-- *2022.02*, Hosted MLNLP seminar \| [\[Video\]](https://www.bilibili.com/video/BV1wF411x7qh)
-- *2021.06*, Audio & Speech Synthesis, Huawei internal talk
-- *2021.03*, Non-autoregressive Speech Synthesis, PaperWeekly & biendata \| [\[video\]](https://www.bilibili.com/video/BV1uf4y1t7Hr/)
-- *2020.12*, Non-autoregressive Speech Synthesis, Huawei Noah's Ark Lab internal talk
+- *2015.10* National Scholarship (Undergraduate) (Top 1%) -->
 
 
 # 💻 Internships
-- *2021.06 - 2021.09*, Alibaba, Hangzhou.
-- *2019.05 - 2020.02*, [EnjoyMusic](https://enjoymusic.ai/), Hangzhou.
-- *2019.02 - 2019.05*, [YiWise](https://www.yiwise.com/), Hangzhou.
-- *2018.08 - 2019.02*, [MSRA, machine learning Group](https://www.microsoft.com/en-us/research/group/machine-learning-research-group/), Beijing.
-- *2018.01 - 2018.06*, [NetEase, AI department](https://hr.163.com/zc/12-ai/index.html), Hangzhou.
-- *2017.08 - 2018.12*, DashBase (acquired by [Cisco](https://blogs.cisco.com/news/349511)), Hangzhou.
+- *2025.07 - now*, [Adobe Research](https://www.adobe.com/), Research Intern. Mentor: [Yan Kang](https://research.adobe.com/person/yan-kang/).
+- *2024 - 2024*, [Pika](https://pika.art/), Research Intern. Mentor: [Chenlin Meng](https://cs.stanford.edu/~chenlin/).
+- *2022.07 - 2023.12*, [Colossal-AI](https://github.com/hpcaitech/ColossalAI), Research Intern. Mentor: [Jiarui Fang](https://fangjiarui.github.io/).
+
+
+# 📖 Educations
+- *2024.01 - now*, Ph.D. in Computer Science, National University of Singapore
+- *2022.08 - 2023.12*, M.S. in Computer Science, National University of Singapore
+- *2018.09 - 2022.06*, B.S. in Computer Science & Electrical Information, Huazhong University of Science and Technology
+
+
+# 💬 Invited Talks
+- *2024.07*, Real-Time Video Generation with Pyramid Attention Broadcast, Ventures \| [\[video\]](https://www.techbeat.net/talk-info?id=892)
+- *2024.06*, Speedup for Video Generation, Bytedance internal talk

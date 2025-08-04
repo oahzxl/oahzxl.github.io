@@ -1,5 +1,0 @@
-Hi! I am a second-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. I currently intern at [Adobe](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/). Previously, I collaborated at [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/) and interned at [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
-
-My current research mainly focuses on **efficient and scalable machine learning** through algorithm and infrastructure co-optimization, recently with a primary emphasis on **efficient video generation**.
-
-I am always happy to chat about interesting research ideas, and looking for academic collaborations and interns. Please drop me an email if you are interested in collaborating with me.
