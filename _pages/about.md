@@ -22,11 +22,11 @@ My current research mainly focuses on efficient AI, including:
 
 # 🔥 News
 - *2025.07*: Join [Adobe Research](https://www.adobe.com/) as research intern in Seattle.
-- *2025.05*: [DSP](https://arxiv.org/abs/2403.10266) is accepted by ICML 2025!
-- *2025.01*: [PAB](https://arxiv.org/abs/2408.12588) is accepted by ICLR 2025 and integrated into [Diffusers](https://huggingface.co/docs/diffusers/en/api/cache#diffusers.PyramidAttentionBroadcastConfig)!
-- *2024.03*: Release [VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys) for efficient training and inference of video models.
-- *2024.02*: [HeteGen](https://arxiv.org/abs/2403.01164) is accepted by MLSys 2024!
-- *2024.01*: [AutoChunk](https://arxiv.org/abs/2401.10652) is accepted by ICLR 2024!
+- *2025.05*: [DSP](https://arxiv.org/abs/2403.10266) accepted by ICML 2025!
+- *2025.01*: [PAB](https://arxiv.org/abs/2408.12588) accepted by ICLR 2025 and integrated into [Diffusers](https://huggingface.co/docs/diffusers/en/api/cache#diffusers.PyramidAttentionBroadcastConfig)!
+- *2024.03*: Release [VideoSys (OpenDiT)](https://github.com/NUS-HPC-AI-Lab/VideoSys) for efficient training and inference of video models.
+- *2024.02*: [HeteGen](https://arxiv.org/abs/2403.01164) accepted by MLSys 2024!
+- *2024.01*: [AutoChunk](https://arxiv.org/abs/2401.10652) accepted by ICLR 2024!
 - *2024.01*: Start my PhD journey!
 
 
@@ -91,13 +91,6 @@ My current research mainly focuses on efficient AI, including:
   </li>
 </ul>
 
-<hr>
-
-<!-- 
-## Others
-- `NeurIPS 2023` [Unsupervised Video Domain Adaptation for Action Recognition: A Disentanglement Perspective](https://openreview.net/forum?id=Rp4PA0ez0m), Pengfei Wei, Lingdong Kong, Xinghua Qu, **Yi Ren**, et al.
-- ``ACM-MM 2022`` [Video-Guided Curriculum Learning for Spoken Video Grounding](), Yan Xia, Zhou Zhao, Shangwei Ye, Yang Zhao, Haoyuan Li, **Yi Ren** -->
-
 
 # 💡 Open-Source Projects
 - **[VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys)**: An Easy and Efficient System for Video Generation <img src='https://img.shields.io/github/stars/NUS-HPC-AI-Lab/VideoSys.svg?style=social&label=Star' alt="sym" height="100%">
@@ -118,5 +111,5 @@ My current research mainly focuses on efficient AI, including:
 
 
 # 💬 Invited Talks
-- *2024.07*, Real-Time Video Generation with Pyramid Attention Broadcast, Ventures \| [\[video\]](https://www.techbeat.net/talk-info?id=892)
+- *2024.07*, Real-Time Video Generation with Pyramid Attention Broadcast, Ventures [\[video\]](https://www.techbeat.net/talk-info?id=892)
 - *2024.07*, Speedup for Video Generation, Bytedance internal talk
