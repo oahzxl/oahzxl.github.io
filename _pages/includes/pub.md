@@ -20,13 +20,14 @@
 
 <ul>
   <li>
-    <code class="language-plaintext highlighter-rouge">ICLR 2023</code><strong>Real-Time Video Generation with Pyramid Attention Broadcast</strong>
+    <code class="language-plaintext highlighter-rouge">ICLR 2025</code> <strong>Real-Time Video Generation with Pyramid Attention Broadcast</strong>
     <div style="display: inline">
         <a href="https://arxiv.org/abs/2408.1258"> [paper]</a>
         <a href="https://github.com/NUS-HPC-AI-Lab/VideoSys"> [code]</a>
         <a href="https://oahzxl.github.io/PAB/"> [blog]</a>
     </div>
-    <div><i><u>Xuanlei Zhao</u><b><sup>\*</sup></b>, Xiaolong Jin<b><sup>\*</sup></b>, Kai Wang<b><sup>*</sup></b>, Yang You</i></div>
+    <img src='https://img.shields.io/github/stars/NUS-HPC-AI-Lab/VideoSys.svg?style=social&label=Star' alt="sym" height="90%">
+    <div><i><u>Xuanlei Zhao</u><b><sup>*</sup></b>, Xiaolong Jin<b><sup>*</sup></b>, Kai Wang<b><sup>*</sup></b>, Yang You</i></div>
   </li>
   <li>
     <strong> Introducing Visual Perception Token into Multimodal Large Language Model. ICCV 2025</strong>
