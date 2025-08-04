@@ -302,6 +302,7 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
   </li>
 
   <li>
+    ``AAAI 2024``
     <strong>Isomorphic Pruning for Vision Models. ECCV 2024. </strong>
     <div style="display: inline">
         <a href="https://arxiv.org/abs/2407.04616"> [paper]</a>
