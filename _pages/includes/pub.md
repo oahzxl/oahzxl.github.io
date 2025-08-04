@@ -57,7 +57,7 @@
   </li>
 
   <li>
-    <code>ICLR 2023</code> <strong> Adversarial Self-Supervised Data-Free Distillation for Text Classification. EMNLP 2020. </strong>
+    <code class="language-plaintext highlighter-rouge">ICLR 2023</code> <strong> Adversarial Self-Supervised Data-Free Distillation for Text Classification. EMNLP 2020. </strong>
     <div style="display: inline">
         <a href="https://aclanthology.org/2020.emnlp-main.499.pdf"> [paper]</a>
         <a href="https://slideslive.com/38938706/adversarial-selfsupervised-datafree-distillation-for-text-classification"> [video]</a>
