@@ -1,7 +1,7 @@
 
 # 📝 Publications 
 
-## Efficient Video Generation
+## 📽️ Efficient Video Generation
 
 
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2019</div><img src='images/fs.png' alt="sym" width="100%"></div></div>
@@ -20,53 +20,13 @@
 
 <ul>
   <li>
-    `ICLR 2023` <strong> Diffusion Model is Effectively Its Own Teacher. CVPR 2025. </strong>
+    <code class="language-plaintext highlighter-rouge">ICLR 2023</code><strong>Real-Time Video Generation with Pyramid Attention Broadcast</strong>
     <div style="display: inline">
-        <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Ma_Diffusion_Model_is_Effectively_Its_Own_Teacher_CVPR_2025_paper.pdf"> [paper]</a>
-        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
-        <div class="abstract"  style="overflow: hidden; display: none;">  
-            <p> In this paper, we introduce a novel self-distillation paradigm for improving the performance of diffusion models. Previous studies have shown that introducing a teacher to distill the diffusion model can enhance its sampling efficiency. We raise an intriguing question: can the diffusion model itself serve as its teacher to further improve the performance of itself? To this end, we propose a new paradigm called Self Step-Distillation (SSD). The core idea of SSD is to integrate the predictions or the intermediate activations of the diffusion model at each timestep with its preceding timestep through a fusion mechanism. We propose two forms, explicit SSD and implicit SSD (iSSD), to perform N-step to N-step distillation from the diffusion model itself to achieve improved image quality. We further elucidate the relationship between SSD and high-order solver, highlighting their underlying relationship. The effectiveness of SSD is validated through extensive experiments on diffusion transformers of various sizes and across different sampling steps. Our results show that this novel self-distillation paradigm can significantly enhance performance. Additionally, our method is compatible with the distillation method designed for few-step inference. Notably, with iSSD trained less than one epoch, we obtain a 32-step DiT-XL/2 achieving an FID of 1.99, outperforming the original 250-step DiT-XL/2 with an FID of 2.26. We further validate the effectiveness of our method on text-to-image diffusion models, such as Stable Diffusion, and also observe notable improvement in image quality. </p>
-        </div>
+        <a href="https://arxiv.org/abs/2408.1258"> [paper]</a>
+        <a href="https://github.com/NUS-HPC-AI-Lab/VideoSys"> [code]</a>
+        <a href="https://oahzxl.github.io/PAB/"> [blog]</a>
     </div>
-    <div><i><strong>Xinyin Ma</strong>, Runpeng Yu, Songhua Liu, Gongfan Fang, Xinchao Wang. </i></div>
-  </li>
-
-  <li>
-    <span>`ICLR 2023`</span> <strong> Prompting to distill: Boosting Data-Free Knowledge Distillation via Reinforced Prompt. IJCAI 2022. </strong>
-    <div style="display: inline">
-        <a href="https://www.ijcai.org/proceedings/2022/0596.pdf"> [paper]</a>
-        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
-        <div class="abstract"  style="overflow: hidden; display: none;">  
-            <p> Data-free knowledge distillation (DFKD) conducts knowledge distillation via eliminating the dependence of original training data, and has recently achieved impressive results in accelerating pre-trained language models. At the heart of DFKD is toreconstruct a synthetic dataset by invertingthe parameters of the uncompressed model. Prior DFKD approaches, however, havelargely relied on hand-crafted priors of the target data distribution for the reconstruction, which can be inevitably biased and often incompetent to capture the intrinsic distributions. To address this problem, we propose a prompt-based method, termed as PromptDFD, that allows us to take advantage of learned language priors, which effectively harmonizes the synthetic sentences to be semantically and grammatically correct. Specifically, PromptDFD leverages a pre-trained generative model to provide language priors and introduces a reinforced topic prompter to control data synthesis, making the generated samples thematically relevant and semantically plausible, and thus friendly to downstream tasks. As shown in our experiments, the proposed method substantially improves the synthesis quality and achieves considerable improvements on distillation performance. In some cases, PromptDFD even gives rise to results on par with those from the data-driven knowledge distillation with access to the original training data. </p>
-        </div>
-    </div>
-    <div><i><strong>Xinyin Ma</strong>, Xinchao Wang, Gongfan Fang, Yongliang Shen, Weiming Lu. </i></div>
-  </li>
-  
-  <li>
-    <span>``ICLR 2023``</span><strong> MuVER: Improving First-Stage Entity Retrieval with Multi-View Entity Representations. EMNLP 2021 Short. </strong>
-    <div style="display: inline">
-        <a href="https://aclanthology.org/2021.emnlp-main.205.pdf"> [paper]</a>
-        <a href="https://github.com/alibaba-nlp/muver"> [code]</a>
-        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
-        <div class="abstract"  style="overflow: hidden; display: none;">  
-            <p> Entity retrieval, which aims at disambiguating mentions to canonical entities from massive KBs, is essential for many tasks in natural language processing. Recent progress in entity retrieval shows that the dual-encoder structure is a powerful and efficient framework to nominate candidates if entities are only identified by descriptions. However, they ignore the property that meanings of entity mentions diverge in different contexts and are related to various portions of descriptions, which are treated equally in previous works. In this work, we propose Multi-View Entity Representations (MuVER), a novel approach for entity retrieval that constructs multi-view representations for entity descriptions and approximates the optimal view for mentions via a heuristic searching method. Our method achieves the state-of-the-art performance on ZESHEL and improves the quality of candidates on three standard Entity Linking datasets. </p>
-        </div>
-    </div>
-    <div><i><strong>Xinyin Ma</strong>, Yong Jiang, Nguyen Bach, Tao Wang, Zhongqiang Huang, Fei Huang, Weiming Lu.</i></div>
-  </li>
-
-  <li>
-    <code class="language-plaintext highlighter-rouge">ICLR 2023</code> <strong> Adversarial Self-Supervised Data-Free Distillation for Text Classification. EMNLP 2020. </strong>
-    <div style="display: inline">
-        <a href="https://aclanthology.org/2020.emnlp-main.499.pdf"> [paper]</a>
-        <a href="https://slideslive.com/38938706/adversarial-selfsupervised-datafree-distillation-for-text-classification"> [video]</a>
-        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
-        <div class="abstract"  style="overflow: hidden; display: none;">  
-            <p> Large pre-trained transformer-based language models have achieved impressive results on a wide range of NLP tasks. In the past few years, Knowledge Distillation(KD) has become a popular paradigm to compress a computationally expensive model to a resource-efficient lightweight model. However, most KD algorithms, especially in NLP, rely on the accessibility of the original training dataset, which may be unavailable due to privacy issues. To tackle this problem, we propose a novel two-stage data-free distillation method, named Adversarial self-Supervised Data-Free Distillation (AS-DFD), which is designed for compressing large-scale transformer-based models (e.g., BERT). To avoid text generation in discrete space, we introduce a Plug & Play Embedding Guessing method to craft pseudo embeddings from the teacher’s hidden knowledge. Meanwhile, with a self-supervised module to quantify the student’s ability, we adapt the difficulty of pseudo embeddings in an adversarial training manner. To the best of our knowledge, our framework is the first data-free distillation framework designed for NLP tasks. We verify the effectiveness of our method on several text classification datasets. </p>
-        </div>
-    </div>
-    <div><i><strong>Xinyin Ma</strong>, Yongliang Shen, Gongfan Fang, Chen Chen, Chenghao Jia, Weiming Lu.</i></div>
+    <div><i><u>Xuanlei Zhao</u><b><sup>\*</sup></b>, Xiaolong Jin<b><sup>\*</sup></b>, Kai Wang<b><sup>*</sup></b>, Yang You</i></div>
   </li>
   <li>
     <strong> Introducing Visual Perception Token into Multimodal Large Language Model. ICCV 2025</strong>
