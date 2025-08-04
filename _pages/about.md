@@ -11,17 +11,19 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 Hi!
 
-I am a second-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. I currently intern at [Adobe](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/). Previously, I collaborated at [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/) and interned at [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
+I am a second-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. I currently intern at [Adobe Research](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/). Previously, I collaborated at [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/) and interned at [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
 
 My current research mainly focuses on **efficient and scalable machine learning** through algorithm and infrastructure co-optimization, recently with a primary emphasis on **efficient video generation**.
 
 
 # 🔥 News
-- *2024.03*: 🎉 Two papers are accepted by ICLR 2024
-- *2023.05*: 🎉 Five papers are accepted by ACL 2023
-- *2023.01*: DiffSinger was introduced in [a very popular video](https://www.bilibili.com/video/BV1uM411t7ZJ) (2000k+ views) in Bilibili!
-- *2023.01*: I join TikTok <img src='./images/tiktok.png' style='width: 6em;'> as a speech research scientist in Singapore!
-- *2022.02*: I release a modern and responsive academic personal [homepage template](https://github.com/RayeRen/acad-homepage.github.io). Welcome to STAR and FORK!
+- *2025.07*: Join Adobe Research as a research intern in Seattle!
+- *2025.05*: [DSP](https://arxiv.org/abs/2403.10266) is accepted by ICML 2025!
+- *2025.01*: [PAB](https://arxiv.org/abs/2408.12588) is accepted by ICLR 2025!
+- *2024.03*: Release [VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys) for efficient training and inference of video models!
+- *2024.02*: [HeteGen](https://arxiv.org/abs/2403.01164) is accepted by MLSys 2024!
+- *2024.01*: [AutoChunk](https://arxiv.org/abs/2401.10652) is accepted by ICLR 2024!
+- *2024.01*: Start my PhD journey!
 
 
 <span class='anchor' id='publications'></span>
@@ -32,11 +34,11 @@ My current research mainly focuses on **efficient and scalable machine learning*
   <li>
     <code class="language-plaintext highlighter-rouge">ICLR 2025</code> <strong>Real-Time Video Generation with Pyramid Attention Broadcast</strong>
     <div style="display: inline">
-        <a href="https://arxiv.org/abs/2408.1258"> [paper]</a>
+        <a href="https://arxiv.org/abs/2408.12588"> [paper]</a>
         <a href="https://github.com/NUS-HPC-AI-Lab/VideoSys"> [code]</a>
         <a href="https://oahzxl.github.io/PAB/"> [blog]</a>
     </div>
-    <img src='https://img.shields.io/github/stars/NUS-HPC-AI-Lab/VideoSys.svg?style=social&label=Star' alt="sym" height="90%">
+    <img src='https://img.shields.io/github/stars/NUS-HPC-AI-Lab/VideoSys.svg?style=social&label=Star' alt="sym" height="100%">
     <div><i><u>Xuanlei Zhao</u><b><sup>*</sup></b>, Xiaolong Jin<b><sup>*</sup></b>, Kai Wang<b><sup>*</sup></b>, Yang You</i></div>
   </li>
   <li>
@@ -76,7 +78,7 @@ My current research mainly focuses on **efficient and scalable machine learning*
         <a href="https://dl.acm.org/doi/10.1145/3627535.3638465"> [paper]</a>
         <a href="https://github.com/hpcaitech/FastFold"> [code]</a>
     </div>
-    <img src='https://img.shields.io/github/stars/hpcaitech/FastFold.svg?style=social&label=Star' alt="sym" height="90%">
+    <img src='https://img.shields.io/github/stars/hpcaitech/FastFold.svg?style=social&label=Star' alt="sym" height="100%">
     <div><i>Shenggan Cheng, <u>Xuanlei Zhao</u>, Guangyang Lu, Jiarui Fang, Tian Zheng, Ruidong Wu, Xiwen Zhang, Jian Peng, Yang You</i></div>
   </li>
 </ul>
@@ -98,6 +100,13 @@ My current research mainly focuses on **efficient and scalable machine learning*
 - *2020.10* National Scholarship (Top 1%)
 - *2015.10* National Scholarship (Undergraduate) (Top 1%) -->
 
+# 💡 Open-Source Projects
+
+- **[VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys)**: An Easy and Efficient System for Video Generation <img src='https://img.shields.io/github/stars/NUS-HPC-AI-Lab/VideoSys.svg?style=social&label=Star' alt="sym" height="100%">
+
+- **[Colossal-AI](https://github.com/hpcaitech/ColossalAI)**: Making large AI models cheaper, faster and more accessible <img src='https://img.shields.io/github/stars/hpcaitech/ColossalAI.svg?style=social&label=Star' alt="sym" height="100%">
+
+- **[FastFold](https://github.com/hpcaitech/FastFold)**: Optimizing AlphaFold Training and Inference on GPU Clusters <img src='https://img.shields.io/github/stars/hpcaitech/FastFold.svg?style=social&label=Star' alt="sym" height="100%">
 
 # 💻 Internships
 - *2025.07 - now*, [Adobe Research](https://www.adobe.com/), Research Intern. Mentor: [Yan Kang](https://research.adobe.com/person/yan-kang/).
