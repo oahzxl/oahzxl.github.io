@@ -17,10 +17,10 @@ My current research mainly focuses on **efficient and scalable machine learning*
 
 
 # 🔥 News
-- *2025.07*: Join [Adobe Research](https://www.adobe.com/) as research intern in Seattle!
+- *2025.07*: Join [Adobe Research](https://www.adobe.com/) as research intern in Seattle.
 - *2025.05*: [DSP](https://arxiv.org/abs/2403.10266) is accepted by ICML 2025!
 - *2025.01*: [PAB](https://arxiv.org/abs/2408.12588) is accepted by ICLR 2025 and integrated into [Diffusers](https://huggingface.co/docs/diffusers/en/api/cache#diffusers.PyramidAttentionBroadcastConfig)!
-- *2024.03*: Release [VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys) for efficient training and inference of video models!
+- *2024.03*: Release [VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys) for efficient training and inference of video models.
 - *2024.02*: [HeteGen](https://arxiv.org/abs/2403.01164) is accepted by MLSys 2024!
 - *2024.01*: [AutoChunk](https://arxiv.org/abs/2401.10652) is accepted by ICLR 2024!
 - *2024.01*: Start my PhD journey!
@@ -110,7 +110,7 @@ My current research mainly focuses on **efficient and scalable machine learning*
 
 # 💻 Internships
 - *2025.07 - now*, [Adobe Research](https://www.adobe.com/), Research Intern. Mentor: [Yan Kang](https://research.adobe.com/person/yan-kang/).
-- *2024 - 2024*, [Pika](https://pika.art/), Research Intern. Mentor: [Chenlin Meng](https://cs.stanford.edu/~chenlin/).
+- *2024 - 2024*, [Pika](https://pika.art/). Mentor: [Chenlin Meng](https://cs.stanford.edu/~chenlin/).
 - *2022.07 - 2023.12*, [Colossal-AI](https://github.com/hpcaitech/ColossalAI), Research Intern. Mentor: [Jiarui Fang](https://fangjiarui.github.io/).
 
 
@@ -122,4 +122,4 @@ My current research mainly focuses on **efficient and scalable machine learning*
 
 # 💬 Invited Talks
 - *2024.07*, Real-Time Video Generation with Pyramid Attention Broadcast, Ventures \| [\[video\]](https://www.techbeat.net/talk-info?id=892)
-- *2024.06*, Speedup for Video Generation, Bytedance internal talk
+- *2024.07*, Speedup for Video Generation, Bytedance internal talk
