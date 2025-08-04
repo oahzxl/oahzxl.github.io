@@ -15,7 +15,7 @@ I am a second-year PhD student in Computer Science at National University of Sin
 
 My current research mainly focuses on efficient AI, including:
 
-- Efficient diffusion models, mainly for video generation.
+- Efficient diffusion and autoregressive models, e.g., for video generation.
 - Efficient machine learning system, with parallelism and low-level optimization.
 - Co-optimization of algorithm and infrastructure.
 
@@ -55,6 +55,8 @@ My current research mainly focuses on efficient AI, including:
   </li>
 </ul>
 
+<hr>
+
 ## 🧹 Efficient Memory Cost
 <ul>
   <li>
@@ -74,6 +76,8 @@ My current research mainly focuses on efficient AI, including:
   </li>
 </ul>
 
+<hr>
+
 ## 🔬 Efficient AI for Science
 <ul>
   <li>
@@ -87,30 +91,19 @@ My current research mainly focuses on efficient AI, including:
   </li>
 </ul>
 
+<hr>
+
 <!-- 
 ## Others
 - `NeurIPS 2023` [Unsupervised Video Domain Adaptation for Action Recognition: A Disentanglement Perspective](https://openreview.net/forum?id=Rp4PA0ez0m), Pengfei Wei, Lingdong Kong, Xinghua Qu, **Yi Ren**, et al.
 - ``ACM-MM 2022`` [Video-Guided Curriculum Learning for Spoken Video Grounding](), Yan Xia, Zhou Zhao, Shangwei Ye, Yang Zhao, Haoyuan Li, **Yi Ren** -->
 
 
-<!-- # 🎖 Honors and Awards
-- *2021.10* Tencent Scholarship (Top 1%)
-- *2021.10* National Scholarship (Top 1%)
-- *2020.12* [Baidu Scholarship](https://baike.baidu.com/item/%E7%99%BE%E5%BA%A6%E5%A5%96%E5%AD%A6%E9%87%91/9929412) (10 students in the world each year)
-- *2020.12* [AI Chinese new stars](https://mp.weixin.qq.com/s?__biz=MzA4NzQ5MTA2NA==&mid=2653639431&idx=1&sn=25b6368c1954419b9090840347d9a27d&chksm=8be75b90bc90d286a5af3ef8e610e822d705dc3cf4382b45e3f14489f3e7ec4fd8c95ed0eceb&mpshare=1&scene=2&srcid=0511LMlj9Qv9DeIZAjMjYAU9&sharer_sharetime=1620731348139&sharer_shareid=631c113940cb81f34895aa25ab14422a#rd) (100 worldwide each year)
-- *2020.12* [AI Chinese New Star Outstanding Scholar](https://mp.weixin.qq.com/s?__biz=MzA4NzQ5MTA2NA==&mid=2653639431&idx=1&sn=25b6368c1954419b9090840347d9a27d&chksm=8be75b90bc90d286a5af3ef8e610e822d705dc3cf4382b45e3f14489f3e7ec4fd8c95ed0eceb&mpshare=1&scene=2&srcid=0511LMlj9Qv9DeIZAjMjYAU9&sharer_sharetime=1620731348139&sharer_shareid=631c113940cb81f34895aa25ab14422a#rd) (10 candidates worldwide each year)
-- *2020.12* [ByteDance Scholars Program](https://ur.bytedance.com/scholarship) (10 students in China each year)
-- *2020.10* Tianzhou Chen Scholarship (Top 1%)
-- *2020.10* National Scholarship (Top 1%)
-- *2015.10* National Scholarship (Undergraduate) (Top 1%) -->
-
 # 💡 Open-Source Projects
-
 - **[VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys)**: An Easy and Efficient System for Video Generation <img src='https://img.shields.io/github/stars/NUS-HPC-AI-Lab/VideoSys.svg?style=social&label=Star' alt="sym" height="100%">
-
 - **[Colossal-AI](https://github.com/hpcaitech/ColossalAI)**: Making large AI models cheaper, faster and more accessible <img src='https://img.shields.io/github/stars/hpcaitech/ColossalAI.svg?style=social&label=Star' alt="sym" height="100%">
-
 - **[FastFold](https://github.com/hpcaitech/FastFold)**: Optimizing AlphaFold Training and Inference on GPU Clusters <img src='https://img.shields.io/github/stars/hpcaitech/FastFold.svg?style=social&label=Star' alt="sym" height="100%">
+
 
 # 💻 Internships
 - *2025.07 - now*, [Adobe Research](https://www.adobe.com/), Research Intern. Mentor: [Yan Kang](https://research.adobe.com/person/yan-kang/).
