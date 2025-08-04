@@ -19,7 +19,7 @@ My current research mainly focuses on **efficient and scalable machine learning*
 # 🔥 News
 - *2025.07*: Join [Adobe Research](https://www.adobe.com/) as research intern in Seattle!
 - *2025.05*: [DSP](https://arxiv.org/abs/2403.10266) is accepted by ICML 2025!
-- *2025.01*: [PAB](https://arxiv.org/abs/2408.12588) is accepted by ICLR 2025!
+- *2025.01*: [PAB](https://arxiv.org/abs/2408.12588) is accepted by ICLR 2025 and integrated into [Diffusers](https://huggingface.co/docs/diffusers/en/api/cache#diffusers.PyramidAttentionBroadcastConfig)!
 - *2024.03*: Release [VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys) for efficient training and inference of video models!
 - *2024.02*: [HeteGen](https://arxiv.org/abs/2403.01164) is accepted by MLSys 2024!
 - *2024.01*: [AutoChunk](https://arxiv.org/abs/2401.10652) is accepted by ICLR 2024!
