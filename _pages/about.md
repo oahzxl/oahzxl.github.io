@@ -110,6 +110,7 @@ My current research mainly focuses on efficient AI, including:
   </li>
 </ul>
 
+<br>
 
 # 💡 Open-Source Projects
 - **[VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys)** (Project Lead): An Easy and Efficient System for Video Generation <img src='https://img.shields.io/github/stars/NUS-HPC-AI-Lab/VideoSys.svg?style=social&label=Star' alt="sym" height="100%">
