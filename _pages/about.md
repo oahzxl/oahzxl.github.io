@@ -93,9 +93,9 @@ My current research mainly focuses on efficient AI, including:
 
 
 # 💡 Open-Source Projects
-- **[VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys)**: An Easy and Efficient System for Video Generation <img src='https://img.shields.io/github/stars/NUS-HPC-AI-Lab/VideoSys.svg?style=social&label=Star' alt="sym" height="100%">
-- **[Colossal-AI](https://github.com/hpcaitech/ColossalAI)**: Making large AI models cheaper, faster and more accessible <img src='https://img.shields.io/github/stars/hpcaitech/ColossalAI.svg?style=social&label=Star' alt="sym" height="100%">
-- **[FastFold](https://github.com/hpcaitech/FastFold)**: Optimizing AlphaFold Training and Inference on GPU Clusters <img src='https://img.shields.io/github/stars/hpcaitech/FastFold.svg?style=social&label=Star' alt="sym" height="100%">
+- **[VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys)**(Project Lead): An Easy and Efficient System for Video Generation <img src='https://img.shields.io/github/stars/NUS-HPC-AI-Lab/VideoSys.svg?style=social&label=Star' alt="sym" height="100%">
+- **[Colossal-AI](https://github.com/hpcaitech/ColossalAI)**(Top Contributor): Making large AI models cheaper, faster and more accessible <img src='https://img.shields.io/github/stars/hpcaitech/ColossalAI.svg?style=social&label=Star' alt="sym" height="100%">
+- **[FastFold](https://github.com/hpcaitech/FastFold)** (Top Contributor): Optimizing AlphaFold Training and Inference on GPU Clusters <img src='https://img.shields.io/github/stars/hpcaitech/FastFold.svg?style=social&label=Star' alt="sym" height="100%">
 
 
 # 💻 Internships
