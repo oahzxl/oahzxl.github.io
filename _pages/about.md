@@ -24,7 +24,7 @@ My current research mainly focuses on efficient AI, including:
 - *2025.07*: Join [Adobe Research](https://www.adobe.com/) as research intern in Seattle.
 - *2025.05*: [DSP](https://arxiv.org/abs/2403.10266) accepted by ICML 2025!
 - *2025.01*: [PAB](https://arxiv.org/abs/2408.12588) accepted by ICLR 2025 and integrated into [Diffusers](https://huggingface.co/docs/diffusers/en/api/cache#diffusers.PyramidAttentionBroadcastConfig)!
-- *2024.03*: Release [VideoSys (OpenDiT)](https://github.com/NUS-HPC-AI-Lab/VideoSys) for efficient training and inference of video models.
+- *2024.03*: Release [VideoSys (OpenDiT)](https://github.com/NUS-HPC-AI-Lab/VideoSys), an efficient training and inference system for video models.
 - *2024.02*: [HeteGen](https://arxiv.org/abs/2403.01164) accepted by MLSys 2024!
 - *2024.01*: [AutoChunk](https://arxiv.org/abs/2401.10652) accepted by ICLR 2024!
 - *2024.01*: Start my PhD journey!
@@ -43,7 +43,7 @@ My current research mainly focuses on efficient AI, including:
         <a href="https://oahzxl.github.io/PAB/"> [blog]</a>
     </div>
     <img src='https://img.shields.io/github/stars/NUS-HPC-AI-Lab/VideoSys.svg?style=social&label=Star' alt="sym" height="100%">
-    <div><i><u>Xuanlei Zhao</u><b><sup>*</sup></b>, Xiaolong Jin<b><sup>*</sup></b>, Kai Wang<b><sup>*</sup></b>, Yang You</i></div>
+    <div><i><u>Xuanlei Zhao</u><b><sup>*</sup></b>, Xiaolong Jin<b><sup>*</sup></b>, Kai Wang<b><sup>*†</sup></b>, Yang You<b><sup>†</sup></b></i></div>
   </li>
   <li>
     <code class="language-plaintext highlighter-rouge">ICML 2025</code> <strong>DSP: Dynamic Sequence Parallelism for Multi-Dimensional Transformers</strong>
