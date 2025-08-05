@@ -98,7 +98,7 @@ My current research mainly focuses on efficient AI, including:
         <a href="https://jerryliang24.github.io/DnD/"> [blog]</a>
     </div>
     <img src='https://img.shields.io/github/stars/jerryliang24/Drag-and-Drop-LLMs.svg?style=social&label=Star' alt="sym" height="100%">
-    <div><i>Zhiyuan Liang, Dongwen Tang, Yuhao Zhou, <u>Xuanlei Zhao</u>, Mingjia Shi, Wangbo Zhao, Zekai Li, Peihao Wang, Konstantin Schürholt, Damian Borth, Michael M. Bronstein, Yang You, Zhangyang Wang, Kai Wang</i></div>
+    <div><i>Zhiyuan Liang<b><sup>*</sup></b>, Dongwen Tang, Yuhao Zhou, <u>Xuanlei Zhao</u>, Mingjia Shi, Wangbo Zhao, Zekai Li, Peihao Wang, Konstantin Schürholt, Damian Borth, Michael M. Bronstein, Yang You, Zhangyang Wang<b><sup>*</sup></b>, Kai Wang<b><sup>*</sup></b></i></div>
   </li>
 </ul>
 
