@@ -110,7 +110,7 @@ My current research mainly focuses on efficient AI, including:
   </li>
 </ul>
 
-<div style="height: 0.5em;"></div>
+<div style="height: 0.25em;"></div>
 
 # 💡 Open-Source Projects
 - **[VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys)** (Project Lead): An Easy and Efficient System for Video Generation <img src='https://img.shields.io/github/stars/NUS-HPC-AI-Lab/VideoSys.svg?style=social&label=Star' alt="sym" height="100%">
