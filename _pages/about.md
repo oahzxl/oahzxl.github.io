@@ -54,6 +54,14 @@ My current research mainly focuses on efficient AI, including:
     </div>
     <div><i><u>Xuanlei Zhao</u>, Shenggan Cheng, Chang Chen, Zangwei Zheng, Ziming Liu, Zheming Yang, Yang You</i></div>
   </li>
+  <li>
+    <strong>Training Variable Sequences with Data-Centric Parallel</strong>
+    <div style="display: inline">
+        <a href="https://github.com/NUS-HPC-AI-Lab/VideoSys"> [code]</a>
+        <a href="https://oahzxl.github.io/DCP/"> [blog]</a>
+    </div>
+    <div><i>Geng Zhang<b><sup>*</sup></b>, <u>Xuanlei Zhao</u><b><sup>*</sup></b>, Kai Wang<b><sup>†</sup></b>, Yang You<b><sup>†</sup></b></i></div>
+  </li>
 </ul>
 
 <hr>
@@ -91,7 +99,7 @@ My current research mainly focuses on efficient AI, including:
 ## 🕹️ Efficient Model Adaptation
 <ul>
   <li>
-    <code class="language-plaintext highlighter-rouge">arXiv</code> <strong>Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights</strong>
+    <strong>Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights</strong>
     <div style="display: inline">
         <a href="https://arxiv.org/abs/2506.16406"> [paper]</a>
         <a href="https://github.com/jerryliang24/Drag-and-Drop-LLMs"> [code]</a>
