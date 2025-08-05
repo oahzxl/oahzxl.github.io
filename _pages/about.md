@@ -9,9 +9,9 @@ redirect_from:
 ---
 
 <span class='anchor' id='about-me'></span>
-Hi!
+Hi there!
 
-I am a second-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. I currently intern at [Adobe Research](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/). Previously, I collaborated at [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/) and interned at [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
+I am Xuanlei Zhao, a second-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. I currently intern at [Adobe Research](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/). Previously, I collaborated at [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/) and [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
 
 My current research mainly focuses on efficient AI, including:
 
@@ -101,13 +101,13 @@ My current research mainly focuses on efficient AI, including:
 # 💻 Internships
 - *2025.07 - now*, [Adobe Research](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/).
 - *2024 - 2024*, [Pika](https://pika.art/) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/).
-- *2022.07 - 2023.12*, [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
+- *2022.07 - 2023.12*, [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/) and [Shenggui Li](https://franklee.xyz/).
 
 
 # 📖 Educations
-- *2024.01 - now*, Ph.D. in Computer Science, National University of Singapore
-- *2022.08 - 2023.12*, M.S. in Computer Science, National University of Singapore
-- *2018.09 - 2022.06*, B.S. in Computer Science & Electrical Information, Huazhong University of Science and Technology
+- *2024.01 - now*, PhD in Computer Science, National University of Singapore
+- *2022.08 - 2023.12*, Master in Computer Science, National University of Singapore
+- *2018.09 - 2022.06*, Bachelor in Computer Science & Electrical Information, Huazhong University of Science and Technology
 
 
 # 💬 Invited Talks
