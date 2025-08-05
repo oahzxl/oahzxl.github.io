@@ -17,6 +17,7 @@ My current research mainly focuses on efficient AI, including:
 
 - Efficient diffusion and autoregressive models, e.g., for video generation.
 - Efficient machine learning system, with parallelism and low-level optimization.
+- Efficient foundation model adaptation, with parameter generation.
 - Co-optimization of algorithm and infrastructure.
 
 
@@ -57,7 +58,7 @@ My current research mainly focuses on efficient AI, including:
 
 <hr>
 
-## 🧹 Efficient Memory Cost
+## 🧹 Efficient System Optimization
 <ul>
   <li>
     <code class="language-plaintext highlighter-rouge">ICLR 2024</code> <strong>AutoChunk: Automated Activation Chunk for Memory-Efficient Long Sequence Inference</strong>
@@ -74,12 +75,6 @@ My current research mainly focuses on efficient AI, including:
     </div>
     <div><i><u>Xuanlei Zhao</u><b><sup>*</sup></b>, Bin Jia<b><sup>*</sup></b>, Haotian Zhou<b><sup>*</sup></b>, Ziming Liu, Shenggan Cheng, Yang You</i></div>
   </li>
-</ul>
-
-<hr>
-
-## 🔬 Efficient AI for Science
-<ul>
   <li>
     <code class="language-plaintext highlighter-rouge">PPoPP 2024</code> <strong>FastFold: Optimizing AlphaFold Training and Inference on GPU Clusters</strong>
     <div style="display: inline">
@@ -88,6 +83,22 @@ My current research mainly focuses on efficient AI, including:
     </div>
     <img src='https://img.shields.io/github/stars/hpcaitech/FastFold.svg?style=social&label=Star' alt="sym" height="100%">
     <div><i>Shenggan Cheng, <u>Xuanlei Zhao</u>, Guangyang Lu, Jiarui Fang, Tian Zheng, Ruidong Wu, Xiwen Zhang, Jian Peng, Yang You</i></div>
+  </li>
+</ul>
+
+<hr>
+
+## 🕹️ Efficient Model Adaptation
+<ul>
+  <li>
+    <code class="language-plaintext highlighter-rouge">arXiv</code> <strong>Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights</strong>
+    <div style="display: inline">
+        <a href="https://arxiv.org/abs/2506.16406"> [paper]</a>
+        <a href="https://github.com/jerryliang24/Drag-and-Drop-LLMs"> [code]</a>
+        <a href="https://jerryliang24.github.io/DnD/"> [blog]</a>
+    </div>
+    <img src='https://img.shields.io/github/stars/jerryliang24/Drag-and-Drop-LLMs.svg?style=social&label=Star' alt="sym" height="100%">
+    <div><i>Zhiyuan Liang, Dongwen Tang, Yuhao Zhou, <u>Xuanlei Zhao</u>, Mingjia Shi, Wangbo Zhao, Zekai Li, Peihao Wang, Konstantin Schürholt, Damian Borth, Michael M. Bronstein, Yang You, Zhangyang Wang, Kai Wang</i></div>
   </li>
 </ul>
 
