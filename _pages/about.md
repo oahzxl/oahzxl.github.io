@@ -34,7 +34,7 @@ My current research mainly focuses on efficient AI, including:
 <span class='anchor' id='publications'></span>
 
 # 📝 Selected Publications ([all](https://scholar.google.com/citations?user=I5NBOacAAAAJ))
-## 📽️ Efficient Video Generation
+## 🎬 Efficient Video Generation
 <ul>
   <li>
     <code class="language-plaintext highlighter-rouge">ICLR 2025</code> <strong>Real-Time Video Generation with Pyramid Attention Broadcast</strong>
@@ -66,7 +66,7 @@ My current research mainly focuses on efficient AI, including:
 
 <hr>
 
-## 🧹 Efficient System Optimization
+## ⚙️ Efficient System Optimization
 <ul>
   <li>
     <code class="language-plaintext highlighter-rouge">ICLR 2024</code> <strong>AutoChunk: Automated Activation Chunk for Memory-Efficient Long Sequence Inference</strong>
@@ -110,7 +110,7 @@ My current research mainly focuses on efficient AI, including:
   </li>
 </ul>
 
-<div style="height: 0.25em;"></div>
+<div style="height: 0.2em;"></div>
 
 # 💡 Open-Source Projects
 - **[VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys)** (Project Lead): An Easy and Efficient System for Video Generation <img src='https://img.shields.io/github/stars/NUS-HPC-AI-Lab/VideoSys.svg?style=social&label=Star' alt="sym" height="100%">
