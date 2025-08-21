@@ -11,13 +11,13 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 Hi there!
 
-I am Xuanlei Zhao, a second-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. I currently intern at [Adobe Research](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/). Previously, I collaborated at [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/) and interned at [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
+I am Xuanlei Zhao, a second-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. I currently intern at [Adobe Research](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/) and [Yuanjun Xiong](https://yjxiong.me/). Previously, I collaborated at [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/) and interned at [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
 
 My current research mainly focuses on efficient AI, including:
 
 - Efficient diffusion and autoregressive models, e.g., for video generation.
 - Efficient machine learning system, with parallelism and low-level optimization.
-- Efficient foundation model adaptation, with parameter generation.
+- Efficient foundation model customization, with parameter generation.
 - Co-optimization of algorithm and infrastructure.
 
 
@@ -96,7 +96,7 @@ My current research mainly focuses on efficient AI, including:
 
 <hr>
 
-## 🕹️ Efficient Model Adaptation
+## 🕹️ Efficient Model Customization
 <ul>
   <li>
     <strong>Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights</strong>
@@ -119,7 +119,7 @@ My current research mainly focuses on efficient AI, including:
 
 
 # 💻 Internships
-- *2025.07 - now*, [Adobe Research](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/).
+- *2025.07 - now*, [Adobe Research](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/) and [Yuanjun Xiong](https://yjxiong.me/).
 - *2024 - 2024*, [Pika](https://pika.art/) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/).
 - *2022.07 - 2023.12*, [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/) and [Shenggui Li](https://franklee.xyz/).
 
