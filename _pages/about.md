@@ -99,7 +99,7 @@ My current research mainly focuses on efficient AI, including:
 ## 🕹️ Efficient Model Customization
 <ul>
   <li>
-    <strong>Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights</strong>
+    <code class="language-plaintext highlighter-rouge">NeurIPS 2025</code> <strong>Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights</strong>
     <div style="display: inline">
         <a href="https://arxiv.org/abs/2506.16406"> [paper]</a>
         <a href="https://github.com/jerryliang24/Drag-and-Drop-LLMs"> [code]</a>
