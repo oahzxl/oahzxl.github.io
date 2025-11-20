@@ -265,10 +265,7 @@
 
 
         <div class="content has-text-centered">
-          <img src="./static/images/overview.png" style="width: 80%;">
-          <p>
-            Overview of V-ReasonBench pipeline. The benchmark covers four reasoning dimensions, integrates both synthetic and real-world scenarios, and supports reproducible, large-scale evaluation of video reasoning capabilities.
-          </p>
+          <img src="./static/images/overview.png" style="width: 100%;">
         </div>
 
         <!-- <br>
@@ -281,25 +278,10 @@
           </p>
         </div>
 
-        <!-- <h2 class="title is-4">Paragraph4</h2> -->
-        <div class="content has-text-justified">
-          <p>
-            The consistency among frames is similar to that among tokens in LLMs. Temperature parameter (tau) pre-softmax is used in LLMs to control attention distribution to balance between focused and diverse token selection [1][2][3].
-          </p>
-        </div>
+        <h2 class="title is-3">V-ReasonBench Results of Recent Video Generation Models</h2>
 
         <div class="content has-text-centered">
-          <img src="./static/images/result.png" style="width: 50%;">
-        </div>
-
-        <!-- <h2 class="title is-4">Paragraph5</h2> -->
-        <div class="content has-text-justified">
-          <p>
-            Inspired by the above analysis, we are the <b>first</b> to find temperature of temporal attention determines the intensity of cross-frame correlation, with higher values enabling broader temporal context attention. We adjust the temporal attention outputs as a training-free enhancement that can be directly applied to existing video models.
-          </p>
-          <p>
-            Specifically, we design an Enhance Block as a parallel branch. This branch computes the average of non-diagonal elements of temporal attention maps as cross-frame intensity (CFI). An enhanced temperature parameter multiplies the CFI to enhance the temporal attention output.
-          </p>
+          <img src="./static/images/result.png" style="width: 60%;">
         </div>
 
       </div>
