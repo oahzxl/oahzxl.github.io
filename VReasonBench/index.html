@@ -257,217 +257,92 @@
           </p>
         </div>
 
-        <h2 class="title is-3">Results of Recent Video Generation Models</h2>
-        <div class="content has-text-centered">
-          <img src="./static/images/result.png" style="width: 60%;">
-        </div>
-        <p>
-          Model-level overall and per-dimension performance on V-ReasonBench. A pass@5 score for each model is calculated within each dimension and presented accordingly.
-        </p>
-        <div class="content has-text-centered">
-          <img src="./static/images/result2.png" style="width: 60%;">
-        </div>
-        <p>
-          Summary of V-ReasonBench performance across video models. The figure illustrates how six video generation models perform on 13 reasoning tasks, with scores rescaled within each dimension to enable direct comparison.
-        </p>
-
-        <h2 class="title is-3">Reasoning Task Coverage and Video Totals</h2>
-        <div class="content has-text-centered">
-          <img src="./static/images/task.png" style="width: 60%;">
-        </div>
-        <p>
-          Overview of reasoning dimensions, tasks, and number of videos in V-ReasonBench. Each instance is an initial–final image pair, with each model generating five videos for pass@5 evaluation.
-        </p>
-
-        <h2 class="title is-3">Precise and Reliable Evaluation</h2>
-        <div class="content has-text-centered">
-          <img src="./static/images/eval1.png" style="width: 60%;">
-        </div>
-        <p>
-          Example failure case from Sequence Completion task illustrating the limitations of VLM-based automatic evaluation. Although the underlying rule is simple, the VLM incorrectly assesses the model's output due to difficulties in recognizing small grid cells and fine structural differences.
-        </p>
-        <div class="content has-text-centered">
-          <img src="./static/images/eval2.png" style="width: 60%;">
-        </div>
-        <p>
-          Human–alignment validation of our benchmark's scoring pipeline. Each point compares binary Pass/Unpass decisions from the automatic evaluation with human judgments across six reasoning categories.
-        </p>
-
-        <h2 class="title is-3">Reasoning Patterns in Video Generation</h2>
-        <div class="content has-text-centered">
-          <img src="./static/images/pattern.png" style="width: 60%;">
-        </div>
-        <p>
-          Example from the Seedance-1.0-Lite model on the horizontal visual symmetry task. The model introduces additional decorative patterns across the mirrored axis, illustrating its tendency to enrich visual appearance rather than preserve original geometric form.
-        </p>
-
-        <h2 class="title is-3">Influence of Duration on Video Reasoning</h2>
-        <div class="content has-text-centered">
-          <img src="./static/images/duration.png" style="width: 60%;">
-        </div>
-        <p>
-          Effect of video duration on reasoning outcomes of Sora2 in the Chain-of-Frame setting. Each row compares model generations with different “thinking” durations for tasks such as Sudoku and Rule Following. Although longer durations correspond to longer reasoning processes (4s vs. 8s, 5s vs. 10s), the resulting outputs do not consistently improve.
-        </p>
-
-        <h2 class="title is-3">Video Models vs. Image Models</h2>
-        <div class="content has-text-centered">
-          <img src="./static/images/vs.png" style="width: 60%;">
-        </div>
-        <p>
-          Comparison between Veo-3.1 (video model) and NanoBanana (image model) on Block Sliding (left) and Code Execution (right). Video models leverage the Chain-of-Frames process to simulate intermediate states, enabling stronger performance on tasks that require causal or temporal reasoning, although intermediate transitions may still appear physically inconsistent. Image models provide clean and stable outputs and excel at text-based tasks such as code execution, but their single-frame reasoning limits their ability to capture the underlying physical dynamics.
-        </p>
-
-        <h2 class="title is-3">Hallucination in Video Reasoning</h2>
-        <div class="content has-text-centered">
-          <img src="./static/images/hall.png" style="width: 60%;">
-        </div>
-        <p>
-          Examples of hallucinations in the Chain-of-Frame reasoning process. Each row shows a trajectory from input to output, where the final frame is correct but intermediate frames display unrealistic or physically inconsistent transitions.
-        </p>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="hero is-small">
-  <div class="container is-max-desktop hero-body">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Evaluations</h2>
-        
-        <h2 class="title is-4">Qualitative Results</h2>
-        
-        <h2 class="title is-5">HunyuanVideo</h2>
-        <div class="container is-max-desktop has-text-centered">
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="item item-t2i0">
-              <video autoplay muted loop playsinline class="interpolation-video">
-                <source src="./static/videos/hy_tesla.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-t2i1">
-              <video autoplay muted loop playsinline class="interpolation-video">
-                <source src="./static/videos/hy_girl-tesla.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-t2i1">
-              <video autoplay muted loop playsinline class="interpolation-video">
-                <source src="./static/videos/hy_baseball.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-        </div>
-        <br>
-
-        <h2 class="title is-5">CogVideoX-2B</h2>
-        <div class="container is-max-desktop has-text-centered">
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="item item-t2i0">
-              <video autoplay muted loop playsinline class="interpolation-video">
-                <source src="./static/videos/cog_balloon.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-t2i1">
-              <video autoplay muted loop playsinline class="interpolation-video">
-                <source src="./static/videos/cog_corgi.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-t2i1">
-              <video autoplay muted loop playsinline class="interpolation-video">
-                <source src="./static/videos/cog_jr-train.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-        </div>
-        <br>
-
-        <h2 class="title is-5">Open-Sora v1.2</h2>
-        <div class="container is-max-desktop has-text-centered">
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="item item-t2i0">
-              <video autoplay muted loop playsinline class="interpolation-video">
-                <source src="./static/videos/os_cake.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-t2i1">
-              <video autoplay muted loop playsinline class="interpolation-video">
-                <source src="./static/videos/os_car-blue.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-t2i1">
-              <video autoplay muted loop playsinline class="interpolation-video">
-                <source src="./static/videos/os_stairs.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-        </div>
-
-        <div class="content has-text-justified">
-          <p>
-            <br>The experimental results reveals significant improvements in video enhancement across all tested models. When examining the HunyuanVideo results, the enhanced version demonstrates superior contrast and clarity, particularly noticeable in the more realistic wheels and charging station. 
-          </p>
-        </div>
-
-        <h2 class="title is-4">Temperature Analysis</h2>
-        <div class="container is-max-desktop">
-          <video class="video" autoplay controls muted loop playsinline>
-            <source src="./static/videos/temperature.mp4" type="video/mp4">
-          </video>
-          <p>
-            The increase of temperature leads to more details and creativity. However, extreme high temperatures indicates illogical content and video distortion.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">        
-        <div class="content has-text-justified">
-          <h2 class="title is-4">Quantitive Results</h2>
+        <div class="content has-text-justified">>
+          <h2 class="title is-3">Results of Recent Video Generation Models</h2>
           <div class="content has-text-centered">
-            <img src="./static/images/eval.png" style="width: 40%;"><br>
+            <img src="./static/images/result.png" style="width: 60%;">
           </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-</section>
-
-<section class="hero is-small">
-  <div class="container is-max-desktop hero-body">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related works</h2>
-        <div class="content has-text-justified">
           <p>
-            <li>
-              Brooks, Tim, Bill Peebles, Connor Holmes, Will DePue, Yufei Guo, Li Jing, David Schnurr, Joe Taylor, Troy Luhman, Eric Luhman, Clarence Ng, Ricky Wang and Aditya Ramesh. “Video generation models as world simulators.“ OpenAI Research (2024).
-            </li>
-            <li>
-              Kong, Weijie, Qi Tian, Zijian Zhang, Rox Min, Zuozhuo Dai, Jin Zhou, Jia-Liang Xiong, Xin Li, Bo Wu, Jianwei Zhang, Kathrina Wu, Qin Lin, Junkun Yuan, Yanxin Long, Aladdin Wang, Andong Wang, Changlin Li, Duojun Huang, Fan Yang, Hao Tan, Hongmei Wang, Jacob Song, Jiawang Bai, Jianbing Wu, Jinbao Xue, Joey Wang, Kai Wang, Mengyang Liu, Peng-Yu Li, Shuai Li, Weiyan Wang, Wenqing Yu, Xi Deng, Yang Li, Yi Chen, Yutao Cui, Yuanbo Peng, Zhen Yu, Zhiyu He, Zhiyong Xu, Zixiang Zhou, Zunnan Xu, Yang-Dan Tao, Qinglin Lu, Songtao Liu, Daquan Zhou, Hongfa Wang, Yong Yang, Di Wang, Yuhong Liu, Jie Jiang and Caesar Zhong. “HunyuanVideo: A Systematic Framework For Large Video Generative Models.” (2024).
-            </li>
-            <li>
-              Yang, Zhuoyi, Jiayan Teng, Wendi Zheng, Ming Ding, Shiyu Huang, Jiazheng Xu, Yuanming Yang, Wenyi Hong, Xiaohan Zhang, Guanyu Feng, Da Yin, Xiaotao Gu, Yuxuan Zhang, Weihan Wang, Yean Cheng, Ting Liu, Bin Xu, Yuxiao Dong and Jie Tang. “CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer.” ArXiv abs/2408.06072 (2024).
-            </li>
-            <li>
-              Wang, Pei-Hsin, Sheng-Iou Hsieh, Shih-Chieh Chang, Yu-Ting Chen, Jia-Yu Pan, Wei Wei and Da-Chang Juan. “Contextual Temperature for Language Modeling.” ArXiv abs/2012.13575 (2019).
-            </li>
-            <li>
-              Wang, Chi, Susan Liu and Ahmed Hassan Awadallah. “Cost-Effective Hyperparameter Optimization for Large Language Model Generation Inference.” ArXiv abs/2303.04673 (2023).
-            </li>
-            <li>
-              Renze, Matthew and Erhan Guven. “The Effect of Sampling Temperature on Problem Solving in Large Language Models.” ArXiv abs/2402.05201 (2024).
-            </li>
+            Model-level overall and per-dimension performance on V-ReasonBench. A pass@5 score for each model is calculated within each dimension and presented accordingly.
+          </p>
+          <div class="content has-text-centered">
+            <img src="./static/images/result2.png" style="width: 60%;">
+          </div>
+          <p>
+            Summary of V-ReasonBench performance across video models. The figure illustrates how six video generation models perform on 13 reasoning tasks, with scores rescaled within each dimension to enable direct comparison.
+          </p>
+        </div>
+
+        <div class="content has-text-justified">
+          <h2 class="title is-3">Reasoning Task Coverage and Video Totals</h2>
+          <div class="content has-text-centered">
+            <img src="./static/images/task.png" style="width: 60%;">
+          </div>
+          <p>
+            Overview of reasoning dimensions, tasks, and number of videos in V-ReasonBench. Each instance is an initial–final image pair, with each model generating five videos for pass@5 evaluation.
+          </p>
+        </div>
+
+        <div class="content has-text-justified">
+          <h2 class="title is-3">Precise and Reliable Evaluation</h2>
+          <div class="content has-text-centered">
+            <img src="./static/images/eval1.png" style="width: 60%;">
+          </div>
+          <p>
+            Example failure case from Sequence Completion task illustrating the limitations of VLM-based automatic evaluation. Although the underlying rule is simple, the VLM incorrectly assesses the model's output due to difficulties in recognizing small grid cells and fine structural differences.
+          </p>
+          <div class="content has-text-centered">
+            <img src="./static/images/eval2.png" style="width: 60%;">
+          </div>
+          <p>
+            Human–alignment validation of our benchmark's scoring pipeline. Each point compares binary Pass/Unpass decisions from the automatic evaluation with human judgments across six reasoning categories.
+          </p>
+        </div>
+
+        <div class="content has-text-justified">
+          <h2 class="title is-3">Reasoning Patterns in Video Generation</h2>
+          <div class="content has-text-centered">
+            <img src="./static/images/pattern.png" style="width: 60%;">
+          </div>
+          <p>
+            Example from the Seedance-1.0-Lite model on the horizontal visual symmetry task. The model introduces additional decorative patterns across the mirrored axis, illustrating its tendency to enrich visual appearance rather than preserve original geometric form.
+          </p>
+        </div>
+
+        <div class="content has-text-justified">
+          <h2 class="title is-3">Influence of Duration on Video Reasoning</h2>
+          <div class="content has-text-centered">
+            <img src="./static/images/duration.png" style="width: 60%;">
+          </div>
+          <p>
+            Effect of video duration on reasoning outcomes of Sora2 in the Chain-of-Frame setting. Each row compares model generations with different “thinking” durations for tasks such as Sudoku and Rule Following. Although longer durations correspond to longer reasoning processes (4s vs. 8s, 5s vs. 10s), the resulting outputs do not consistently improve.
+          </p>
+        </div>
+
+        <div class="content has-text-justified">
+          <h2 class="title is-3">Video Models vs. Image Models</h2>
+          <div class="content has-text-centered">
+            <img src="./static/images/vs.png" style="width: 60%;">
+          </div>
+          <p>
+            Comparison between Veo-3.1 (video model) and NanoBanana (image model) on Block Sliding (left) and Code Execution (right). Video models leverage the Chain-of-Frames process to simulate intermediate states, enabling stronger performance on tasks that require causal or temporal reasoning, although intermediate transitions may still appear physically inconsistent. Image models provide clean and stable outputs and excel at text-based tasks such as code execution, but their single-frame reasoning limits their ability to capture the underlying physical dynamics.
+          </p>
+        </div>
+
+        <div class="content has-text-justified">
+          <h2 class="title is-3">Hallucination in Video Reasoning</h2>
+          <div class="content has-text-centered">
+            <img src="./static/images/hall.png" style="width: 60%;">
+          </div>
+          <p>
+            Examples of hallucinations in the Chain-of-Frame reasoning process. Each row shows a trajectory from input to output, where the final frame is correct but intermediate frames display unrealistic or physically inconsistent transitions.
           </p>
         </div>
       </div>
     </div>
   </div>
-
 </section>
+
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
