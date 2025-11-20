@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<meta property='og:title' content='V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models'/>
+<meta property='og:description' content='V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models'/>
+<meta property='og:url' content='https://oahzxl.github.io/Enhance_A_Video/'/>
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='663' />
+<!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
+<meta property="og:type" content='website'/>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models">
+  <meta name="keywords" content="V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models</title>
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/tab_gallery.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="stylesheet" href="juxtapose/css/juxtapose.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/magnifier.js"></script>
+  <link href="https://fonts.cdnfonts.com/css/menlo" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/image_card_fader.css">
+  <link rel="stylesheet" href="./static/css/image_card_slider.css">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Patrick+Hand|Google+Sans|Noto+Sans|Castoro|Lato|Open+Sans&effect=shadow-multiple|emboss|3d"> 
+  <!-- <link rel="icon" href="./static/images/pyramid.png" type="image/x-icon"> -->
+  <!-- <link rel="shortcut icon" href="./static/images/pyramid.png" type="image/x-icon"> -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/tab_gallery.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="juxtapose/css/juxtapose.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/magnifier.js"></script>
+  <link href="https://fonts.cdnfonts.com/css/menlo" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/image_card_fader.css">
+  <link rel="stylesheet" href="./static/css/image_card_slider.css">
+</head>
+
+<style>
+  @import url('https://fonts.cdnfonts.com/css/menlo');
+
+  .video-table td, .video-table th {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-weight: normal;
+  }
+  .first-col {
+    width: 7%;
+    vertical-align: middle;
+  }
+  .other-col {
+    width: 31%;
+  }
+  body {
+    font-family: "Lato", sans-serif;
+    font-size: 1.1em;
+  }
+  .title.is-3 {
+    font-weight: 900;
+    font-size: 2.0rem;
+  }
+  .title.is-4 {
+    font-weight: 700;
+    font-size: 1.7rem;
+  }
+  .custom-emoji {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    background-image: url('./static/images/pyramid.png');
+    background-size: cover;
+    vertical-align: middle;
+    line-height: 1;
+  }
+
+  .interpolation-video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .results-carousel .item {
+    margin: 10px;
+    overflow: hidden;
+    padding: 20px;
+    font-size: 0;
+  }
+  
+  .results-carousel video {
+    margin: 0;
+  }
+
+</style>
+
+
+<body>
+  <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <br><br>
+          <h1 class="title is-2 publication-title" style="font-size: 1.95rem">
+            V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models
+          </h1>
+          
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://yangluo7.github.io/" target="_blank">Yang Luo</a><sup>1†</sup>,&nbsp;</span>
+            <span class="author-block">
+              <a href="https://oahzxl.github.io/" target="_blank">Xuanlei Zhao</a><sup>1†</sup>,&nbsp;</span>
+            <span class="author-block">
+              <a href="baijiong-lin.github.io" target="_blank">Baijiong Lin</a><sup>2†</sup>,&nbsp;</span>
+            <span class="author-block">
+              <a href="" target="_blank">Lingting Zhu</a><sup></sup>,&nbsp;</span>
+            <span class="author-block">
+              <a href="" target="_blank">Liyao Tang</a><sup></sup>,&nbsp;</span>
+            <span class="author-block">
+              <a href="" target="_blank">Yuqi Liu</a><sup></sup>,&nbsp;</span>
+            <span class="author-block">
+              <a href="https://www.yingcong.me/" target="_blank">Ying-Cong Chen</a><sup>2</sup>,&nbsp;</span>
+            <span class="author-block">
+              <a href="" target="_blank">Shengju Qian</a><sup></sup>,&nbsp;</span>
+            <span class="author-block">
+              <a href="" target="_blank">Xin Wang</a><sup></sup>,&nbsp;</span>
+            <span class="author-block">
+              <a href="https://www.comp.nus.edu.sg/~youy/" target="_blank">Yang You</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>National University of Singapore&nbsp;&nbsp;</span>
+            <span class="author-block"><sup>2</sup>Hong Kong University of Science and Technology (Guangzhou)&nbsp;&nbsp;</span>
+            <span class="author-block"><sup>3</sup>The University of Texas at Austin</span>
+          </div>
+
+          <!-- <div class="is-size-5 publication-authors">
+            {xuanlei, kai.wang, youy}@comp.nus.edu.sg&nbsp;&nbsp;&nbsp;jin509@purdue.edu
+          </div> -->
+
+          <div class="is-size-5 publication-authors">
+            († indicates corresponding author)
+          </div>
+
+          <!-- <div class="is-size-5 publication-venue">
+            in XXX
+          </div> -->
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/NUS-HPC-AI-Lab/Enhance-A-Video" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- paper -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2502.07508" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- doc -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/NUS-HPC-AI-Lab/VideoSys/blob/master/docs/pab.md" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-book"></i>
+                  </span>
+                  <span>Doc</span>
+                  </a>
+              </span> -->
+              <!-- twitter -->
+              <span class="link-block">
+                <a href="https://x.com/YangL_7/status/1870116980717695243" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                  <span>Twitter</span>
+                </a>
+              </span>
+              <!-- bibtex -->
+              <span class="link-block">
+                <a href="#bibtex"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-obp"></i>
+                  </span>
+                  <span>BibTex</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="container is-max-desktop has-text-centered">
+        <p>
+          <h2 class="title is-4">Improving Your Generated Video for Free!</h2>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container is-max-desktop">
+    <video class="video" autoplay controls muted loop playsinline>
+      <source src="./static/videos/demo.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <br>
+        <h2 class="title is-3">Enhance-A-Video</h2>
+        
+        <!-- <h2 class="title is-4">Paragraph1</h2> -->
+        <div class="content has-text-justified">
+          <p>
+            Diffusion Transformers (DiTs) open a new era of video generation [1][2][3]. Despite these advances, existing models have difficulty capturing crucial details. Video enhancement could be an intuitive approach, where two goals are considered: 1. maintaining consistency; 2. improving visual quality.
+          </p>
+        </div>
+
+        <!-- <h2 class="title is-4">Paragraph2</h2> -->
+        <div class="content has-text-justified">
+          <p>
+            The temporal attention plays a crucial role in ensuring consistency among frames, further preserving the details. To better understand the effect of temporal attention, we visualize the temporal attention patterns across various blocks.
+          </p>
+        </div>
+
+        <div class="content has-text-centered">
+          <img src="./static/images/attn_map.jpg" style="width: 80%;">
+          <p>
+            The temporal attention maps for layer 2, 14, and 26.
+          </p>
+        </div>
+
+        <!-- <h2 class="title is-4">Paragraph3</h2> -->
+        <div class="content has-text-justified">
+          <p>
+            Our visualizations reveal a key observation: attention weights among frames (non-diagonal) are significantly lower than those along the diagonal, which may lead to inconsistency among frames. Could we improve video quality by utilizing temporal attention?
+          </p>
+        </div>
+
+        <!-- <h2 class="title is-4">Paragraph4</h2> -->
+        <div class="content has-text-justified">
+          <p>
+            The consistency among frames is similar to that among tokens in LLMs. Temperature parameter (tau) pre-softmax is used in LLMs to control attention distribution to balance between focused and diverse token selection [1][2][3].
+          </p>
+        </div>
+
+        <div class="content has-text-centered">
+          <img src="./static/images/method.png" style="width: 70%;">
+        </div>
+
+        <!-- <h2 class="title is-4">Paragraph5</h2> -->
+        <div class="content has-text-justified">
+          <p>
+            Inspired by the above analysis, we are the <b>first</b> to find temperature of temporal attention determines the intensity of cross-frame correlation, with higher values enabling broader temporal context attention. We adjust the temporal attention outputs as a training-free enhancement that can be directly applied to existing video models.
+          </p>
+          <p>
+            Specifically, we design an Enhance Block as a parallel branch. This branch computes the average of non-diagonal elements of temporal attention maps as cross-frame intensity (CFI). An enhanced temperature parameter multiplies the CFI to enhance the temporal attention output.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="container is-max-desktop hero-body">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Evaluations</h2>
+        
+        <h2 class="title is-4">Qualitative Results</h2>
+        
+        <h2 class="title is-5">HunyuanVideo</h2>
+        <div class="container is-max-desktop has-text-centered">
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item item-t2i0">
+              <video autoplay muted loop playsinline class="interpolation-video">
+                <source src="./static/videos/hy_tesla.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-t2i1">
+              <video autoplay muted loop playsinline class="interpolation-video">
+                <source src="./static/videos/hy_girl-tesla.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-t2i1">
+              <video autoplay muted loop playsinline class="interpolation-video">
+                <source src="./static/videos/hy_baseball.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <h2 class="title is-5">CogVideoX-2B</h2>
+        <div class="container is-max-desktop has-text-centered">
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item item-t2i0">
+              <video autoplay muted loop playsinline class="interpolation-video">
+                <source src="./static/videos/cog_balloon.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-t2i1">
+              <video autoplay muted loop playsinline class="interpolation-video">
+                <source src="./static/videos/cog_corgi.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-t2i1">
+              <video autoplay muted loop playsinline class="interpolation-video">
+                <source src="./static/videos/cog_jr-train.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <h2 class="title is-5">Open-Sora v1.2</h2>
+        <div class="container is-max-desktop has-text-centered">
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item item-t2i0">
+              <video autoplay muted loop playsinline class="interpolation-video">
+                <source src="./static/videos/os_cake.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-t2i1">
+              <video autoplay muted loop playsinline class="interpolation-video">
+                <source src="./static/videos/os_car-blue.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-t2i1">
+              <video autoplay muted loop playsinline class="interpolation-video">
+                <source src="./static/videos/os_stairs.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="content has-text-justified">
+          <p>
+            <br>The experimental results reveals significant improvements in video enhancement across all tested models. When examining the HunyuanVideo results, the enhanced version demonstrates superior contrast and clarity, particularly noticeable in the more realistic wheels and charging station. 
+          </p>
+        </div>
+
+        <h2 class="title is-4">Temperature Analysis</h2>
+        <div class="container is-max-desktop">
+          <video class="video" autoplay controls muted loop playsinline>
+            <source src="./static/videos/temperature.mp4" type="video/mp4">
+          </video>
+          <p>
+            The increase of temperature leads to more details and creativity. However, extreme high temperatures indicates illogical content and video distortion.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">        
+        <div class="content has-text-justified">
+          <h2 class="title is-4">Quantitive Results</h2>
+          <div class="content has-text-centered">
+            <img src="./static/images/eval.png" style="width: 40%;"><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</section>
+
+<section class="hero is-small">
+  <div class="container is-max-desktop hero-body">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Related works</h2>
+        <div class="content has-text-justified">
+          <p>
+            <li>
+              Brooks, Tim, Bill Peebles, Connor Holmes, Will DePue, Yufei Guo, Li Jing, David Schnurr, Joe Taylor, Troy Luhman, Eric Luhman, Clarence Ng, Ricky Wang and Aditya Ramesh. “Video generation models as world simulators.“ OpenAI Research (2024).
+            </li>
+            <li>
+              Kong, Weijie, Qi Tian, Zijian Zhang, Rox Min, Zuozhuo Dai, Jin Zhou, Jia-Liang Xiong, Xin Li, Bo Wu, Jianwei Zhang, Kathrina Wu, Qin Lin, Junkun Yuan, Yanxin Long, Aladdin Wang, Andong Wang, Changlin Li, Duojun Huang, Fan Yang, Hao Tan, Hongmei Wang, Jacob Song, Jiawang Bai, Jianbing Wu, Jinbao Xue, Joey Wang, Kai Wang, Mengyang Liu, Peng-Yu Li, Shuai Li, Weiyan Wang, Wenqing Yu, Xi Deng, Yang Li, Yi Chen, Yutao Cui, Yuanbo Peng, Zhen Yu, Zhiyu He, Zhiyong Xu, Zixiang Zhou, Zunnan Xu, Yang-Dan Tao, Qinglin Lu, Songtao Liu, Daquan Zhou, Hongfa Wang, Yong Yang, Di Wang, Yuhong Liu, Jie Jiang and Caesar Zhong. “HunyuanVideo: A Systematic Framework For Large Video Generative Models.” (2024).
+            </li>
+            <li>
+              Yang, Zhuoyi, Jiayan Teng, Wendi Zheng, Ming Ding, Shiyu Huang, Jiazheng Xu, Yuanming Yang, Wenyi Hong, Xiaohan Zhang, Guanyu Feng, Da Yin, Xiaotao Gu, Yuxuan Zhang, Weihan Wang, Yean Cheng, Ting Liu, Bin Xu, Yuxiao Dong and Jie Tang. “CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer.” ArXiv abs/2408.06072 (2024).
+            </li>
+            <li>
+              Wang, Pei-Hsin, Sheng-Iou Hsieh, Shih-Chieh Chang, Yu-Ting Chen, Jia-Yu Pan, Wei Wei and Da-Chang Juan. “Contextual Temperature for Language Modeling.” ArXiv abs/2012.13575 (2019).
+            </li>
+            <li>
+              Wang, Chi, Susan Liu and Ahmed Hassan Awadallah. “Cost-Effective Hyperparameter Optimization for Large Language Model Generation Inference.” ArXiv abs/2303.04673 (2023).
+            </li>
+            <li>
+              Renze, Matthew and Erhan Guven. “The Effect of Sampling Temperature on Problem Solving in Large Language Models.” ArXiv abs/2402.05201 (2024).
+            </li>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title"><a id="bibtex">BibTeX</a></h2>
+    <pre><code>@misc{luo2025enhanceavideobettergeneratedvideo,
+      title={V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models}, 
+      author={Yang Luo and Xuanlei Zhao and Mengzhao Chen and Kaipeng Zhang and Wenqi Shao and Kai Wang and Zhangyang Wang and Yang You},
+      year={2025},
+      eprint={2502.07508},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2502.07508}, 
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Website adapted from the following <a href="https://nerfies.github.io">source code</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="juxtapose/js/juxtapose.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>    
+
+</body>
+</html>
