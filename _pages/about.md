@@ -11,7 +11,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 Hi there!
 
-I am Xuanlei Zhao, a second-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. I currently intern at [Adobe Research](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/) and [Yuanjun Xiong](https://yjxiong.me/). Previously, I collaborated at [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/) and interned at [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
+I am Xuanlei Zhao, a second-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. I currently intern at [Tencent HunYuan](https://hunyuan.tencent.com/) with [Kai Wang](https://kaiwang960112.github.io/). Previously, I interned at [Adobe Research](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/) and [Yuanjun Xiong](https://yjxiong.me/), [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/), and [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
 
 My current research mainly focuses on efficient AI, including:
 
@@ -22,7 +22,8 @@ My current research mainly focuses on efficient AI, including:
 
 
 # 🔥 News
-- *2025.07*: Join [Adobe Research](https://www.adobe.com/) as research intern in Seattle.
+- *2025.12*: Join [Tencent HunYuan](https://hunyuan.tencent.com/) as research intern.
+- *2025.07*: Join [Adobe Research](https://www.adobe.com/) as research intern.
 - *2025.05*: [DSP](https://arxiv.org/abs/2403.10266) accepted by ICML 2025!
 - *2025.01*: [PAB](https://arxiv.org/abs/2408.12588) accepted by ICLR 2025 and integrated into [Diffusers](https://huggingface.co/docs/diffusers/en/api/cache#diffusers.PyramidAttentionBroadcastConfig)!
 - *2024.03*: Release [VideoSys (OpenDiT)](https://github.com/NUS-HPC-AI-Lab/VideoSys), an efficient training and inference system for video models.
