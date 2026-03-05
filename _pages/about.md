@@ -11,29 +11,58 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 Hi there!
 
-I am Xuanlei Zhao, a second-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. I currently intern at [Adobe Research](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/) and [Yuanjun Xiong](https://yjxiong.me/). Previously, I collaborated at [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/) and interned at [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
+I am Xuanlei Zhao, a third-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. Previously, I interned at [Tencent Hunyuan](https://hunyuan.tencent.com/) with [Kai Wang](https://kaiwang960112.github.io/), [Adobe Research](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/) and [Yuanjun Xiong](https://yjxiong.me/),  [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/), [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
 
 My current research mainly focuses on efficient AI, including:
 
+- Efficient parameter generation, for scaling and customizing foundation models.
 - Efficient diffusion and autoregressive models, e.g., for video generation.
 - Efficient machine learning system, with parallelism and low-level optimization.
-- Efficient foundation model customization, with parameter generation.
 - Co-optimization of algorithm and infrastructure.
 
 
-# 🔥 News
+<!-- # 🔥 News
 - *2025.07*: Join [Adobe Research](https://www.adobe.com/) as research intern in Seattle.
 - *2025.05*: [DSP](https://arxiv.org/abs/2403.10266) accepted by ICML 2025!
 - *2025.01*: [PAB](https://arxiv.org/abs/2408.12588) accepted by ICLR 2025 and integrated into [Diffusers](https://huggingface.co/docs/diffusers/en/api/cache#diffusers.PyramidAttentionBroadcastConfig)!
 - *2024.03*: Release [VideoSys (OpenDiT)](https://github.com/NUS-HPC-AI-Lab/VideoSys), an efficient training and inference system for video models.
 - *2024.02*: [HeteGen](https://arxiv.org/abs/2403.01164) accepted by MLSys 2024!
 - *2024.01*: [AutoChunk](https://arxiv.org/abs/2401.10652) accepted by ICLR 2024!
-- *2024.01*: Start my PhD journey!
+- *2024.01*: Start my PhD journey! -->
 
 
 <span class='anchor' id='publications'></span>
 
 # 📝 Selected Publications ([all](https://scholar.google.com/citations?user=I5NBOacAAAAJ))
+
+
+## 🕹️ Efficient Parameter Generation
+<ul>
+  <li>
+    <strong>HY-WU (Part I): An Extensible Functional Neural Memory Framework and An Instantiation in Text-Guided Image Editing
+</strong>
+    <div style="display: inline">
+        <a href="https://github.com/Tencent-Hunyuan/HY-WU/blob/main/assets/report.pdf"> [paper]</a>
+        <a href="https://github.com/Tencent-Hunyuan/HY-WU"> [code]</a>
+        <a href="https://tencent-hy-wu.github.io/"> [blog]</a>
+    </div>
+    <img src='https://img.shields.io/github/stars/Tencent-Hunyuan/HY-WU.svg?style=social&label=Star' alt="sym" height="100%">
+    <div>Tencent HY Team</div>
+  </li>
+  <li>
+    <code class="language-plaintext highlighter-rouge">NeurIPS 2025</code> <strong>Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights</strong>
+    <div style="display: inline">
+        <a href="https://arxiv.org/abs/2506.16406"> [paper]</a>
+        <a href="https://github.com/jerryliang24/Drag-and-Drop-LLMs"> [code]</a>
+        <a href="https://jerryliang24.github.io/DnD/"> [blog]</a>
+    </div>
+    <img src='https://img.shields.io/github/stars/jerryliang24/Drag-and-Drop-LLMs.svg?style=social&label=Star' alt="sym" height="100%">
+    <div><i>Zhiyuan Liang<b><sup>*</sup></b>, Dongwen Tang, Yuhao Zhou, <u>Xuanlei Zhao</u>, Mingjia Shi, Wangbo Zhao, Zekai Li, Peihao Wang, Konstantin Schürholt, Damian Borth, Michael M. Bronstein, Yang You, Zhangyang Wang<b><sup>*</sup></b>, Kai Wang<b><sup>*</sup></b></i></div>
+  </li>
+</ul>
+
+<hr>
+
 ## 🎬 Efficient Video Generation
 <ul>
   <li>
@@ -94,33 +123,19 @@ My current research mainly focuses on efficient AI, including:
   </li>
 </ul>
 
-<hr>
-
-## 🕹️ Efficient Model Customization
-<ul>
-  <li>
-    <code class="language-plaintext highlighter-rouge">NeurIPS 2025</code> <strong>Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights</strong>
-    <div style="display: inline">
-        <a href="https://arxiv.org/abs/2506.16406"> [paper]</a>
-        <a href="https://github.com/jerryliang24/Drag-and-Drop-LLMs"> [code]</a>
-        <a href="https://jerryliang24.github.io/DnD/"> [blog]</a>
-    </div>
-    <img src='https://img.shields.io/github/stars/jerryliang24/Drag-and-Drop-LLMs.svg?style=social&label=Star' alt="sym" height="100%">
-    <div><i>Zhiyuan Liang<b><sup>*</sup></b>, Dongwen Tang, Yuhao Zhou, <u>Xuanlei Zhao</u>, Mingjia Shi, Wangbo Zhao, Zekai Li, Peihao Wang, Konstantin Schürholt, Damian Borth, Michael M. Bronstein, Yang You, Zhangyang Wang<b><sup>*</sup></b>, Kai Wang<b><sup>*</sup></b></i></div>
-  </li>
-</ul>
-
 <div style="height: 0.2em;"></div>
 
 # 💡 Open-Source Projects
+- **[HY-WU](https://github.com/Tencent-Hunyuan/HY-WU)** (Lead for algo and infra): An Extensible Functional Neural Memory Framework <img src='https://img.shields.io/github/stars/Tencent-Hunyuan/HY-WU.svg?style=social&label=Star' alt="sym" height="100%">
 - **[VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys)** (Project Lead): An Easy and Efficient System for Video Generation <img src='https://img.shields.io/github/stars/NUS-HPC-AI-Lab/VideoSys.svg?style=social&label=Star' alt="sym" height="100%">
 - **[Colossal-AI](https://github.com/hpcaitech/ColossalAI)** (Top Contributor): Making large AI models cheaper, faster and more accessible <img src='https://img.shields.io/github/stars/hpcaitech/ColossalAI.svg?style=social&label=Star' alt="sym" height="100%">
 - **[FastFold](https://github.com/hpcaitech/FastFold)** (Top Contributor): Optimizing AlphaFold Training and Inference on GPU Clusters <img src='https://img.shields.io/github/stars/hpcaitech/FastFold.svg?style=social&label=Star' alt="sym" height="100%">
 
 
 # 💻 Internships
-- *2025.07 - now*, [Adobe Research](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/) and [Yuanjun Xiong](https://yjxiong.me/).
-- *2024 - 2024*, [Pika](https://pika.art/) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/).
+- *2025.12 - 2026.03*, [Tencent Hunyuan](https://hunyuan.tencent.com/) with [Kai Wang](https://kaiwang960112.github.io/).
+- *2025.07 - 2025.11*, [Adobe Research](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/) and [Yuanjun Xiong](https://yjxiong.me/).
+- *2024*, [Pika](https://pika.art/) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/).
 - *2022.07 - 2023.12*, [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/) and [Shenggui Li](https://franklee.xyz/).
 
 
