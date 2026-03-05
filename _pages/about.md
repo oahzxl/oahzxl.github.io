@@ -22,7 +22,7 @@ My current research mainly focuses on efficient AI, including:
 
 
 <!-- # 🔥 News
-- *2025.07*: Join [Adobe Research](https://www.adobe.com/) as research intern in Seattle.
+- *2025.07*: Join [Adobe Research](https://www.adobe.com/) as research intern in Seattle. 
 - *2025.05*: [DSP](https://arxiv.org/abs/2403.10266) accepted by ICML 2025!
 - *2025.01*: [PAB](https://arxiv.org/abs/2408.12588) accepted by ICLR 2025 and integrated into [Diffusers](https://huggingface.co/docs/diffusers/en/api/cache#diffusers.PyramidAttentionBroadcastConfig)!
 - *2024.03*: Release [VideoSys (OpenDiT)](https://github.com/NUS-HPC-AI-Lab/VideoSys), an efficient training and inference system for video models.
