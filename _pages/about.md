@@ -11,7 +11,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 Hi there!
 
-I am Xuanlei Zhao, a third-year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. Previously, I interned at [Tencent Hunyuan](https://hunyuan.tencent.com/) with [Kai Wang](https://kaiwang960112.github.io/), [Adobe Research](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/) and [Yuanjun Xiong](https://yjxiong.me/),  [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/), [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
+I am Xuanlei Zhao, a third (final) year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. Previously, I interned at [Tencent Hunyuan](https://hunyuan.tencent.com/) with [Kai Wang](https://kaiwang960112.github.io/), [Adobe Research](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/) and [Yuanjun Xiong](https://yjxiong.me/),  [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/), [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
 
 My current research mainly focuses on efficient AI, including:
 
@@ -35,6 +35,22 @@ My current research mainly focuses on efficient AI, including:
 
 # 📝 Selected Publications ([all](https://scholar.google.com/citations?user=I5NBOacAAAAJ))
 
+
+## 🔁 Efficient LLMs
+<ul>
+  <li>
+    <strong>Unlocking the Power of Loops in Pretrained LLMs with Loop Residuals</strong>
+    <div style="display: inline">
+        <a href="https://github.com/NUS-HPC-AI-Lab/LoopRes/blob/main/docs/paper.pdf"> [paper]</a>
+        <a href="https://github.com/NUS-HPC-AI-Lab/LoopRes"> [code]</a>
+        <a href="https://oahzxl.github.io/LoopRes/"> [blog]</a>
+    </div>
+    <img src='https://img.shields.io/github/stars/NUS-HPC-AI-Lab/LoopRes.svg?style=social&label=Star' alt="sym" height="100%">
+    <div><i><u>Xuanlei Zhao</u>, Hailun Xu, Kai Wang, Yang Luo, Yingxuan Ren, Zirui Zhu, Yuxuan Lou, Kun Xu, Yan Wang, Kanchan Sarkar, Yang You</i></div>
+  </li>
+</ul>
+
+<hr>
 
 ## 🕹️ Efficient Parameter Generation
 <ul>
