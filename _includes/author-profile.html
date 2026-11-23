@@ -118,6 +118,12 @@
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
 {% endif %}
+      {% if author.wechat_qr %}
+        <li class="author__wechat">
+          <i class="fab fa-fw fa-weixin" aria-hidden="true"></i> WeChat
+          <img src="{{ author.wechat_qr | relative_url }}" alt="WeChat QR code for {{ author.name }}" width="670" height="697" loading="lazy">
+        </li>
+      {% endif %}
     </ul>
       <div class="author__urls_sm">
       {% if author.uri %}
@@ -212,6 +218,9 @@
       {% endif %}
       {% if author.wikipedia %}
         <a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if author.wechat_qr %}
+        <a href="{{ author.wechat_qr | relative_url }}" aria-label="WeChat QR code"><i class="fab fa-fw fa-weixin" aria-hidden="true"></i></a>
       {% endif %}
     </div>
   </div>

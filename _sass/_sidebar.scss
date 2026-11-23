@@ -49,6 +49,14 @@
   }
 }
 
+.sidebar.sticky {
+  @include breakpoint($large) {
+    max-height: calc(100vh - 7em);
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
 .sidebar__right {
   margin-bottom: 1em;
 
@@ -235,6 +243,19 @@
 
   li {
     white-space: nowrap;
+  }
+
+  .author__wechat {
+    padding-top: 2px;
+    font-size: $type-size-5;
+
+    img {
+      display: block;
+      width: 130px;
+      max-width: 100%;
+      height: auto;
+      margin-top: 6px;
+    }
   }
 
   a {
