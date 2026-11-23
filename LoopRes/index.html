@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unlocking the Power of Loops in Pretrained LLMs with Loop Residuals</title>
+  <meta name="description" content="LoopRes, an effective, scalable, and simple approach that turns loops into significant and consistent gains for pretrained LLMs.">
+  <meta name="keywords" content="LoopRes, Loop Residuals, looped transformers, Attention Residuals, LLM, test-time scaling">
+  <meta property="og:title" content="Unlocking the Power of Loops in Pretrained LLMs with Loop Residuals">
+  <meta property="og:description" content="LoopRes, an effective, scalable, and simple approach that turns loops into significant and consistent gains for pretrained LLMs.">
+  <meta property="og:url" content="https://oahzxl.github.io/LoopRes/">
+  <meta property="og:image" content="https://oahzxl.github.io/LoopRes/static/images/architecture.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232b4c9b'/%3E%3Cpath d='M22 10a8 8 0 1 0 2 7' fill='none' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M23 4v7h-7' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="./static/css/style.css">
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+
+<body>
+<header class="topbar">
+  <nav class="container topbar-inner" aria-label="Page sections">
+    <a class="brand" href="#top"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#234b9c"/><path d="M22 10a8 8 0 1 0 2 7" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M23 4v7h-7" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>LoopRes</a>
+    <div class="nav-links" id="nav-links">
+      <a href="#abstract">Abstract</a>
+      <a href="#challenges">Challenges</a>
+      <a href="#loopres">LoopRes</a>
+      <a href="#results">Main Results</a>
+      <a href="#scalability">Scalability</a>
+      <a href="#ablation">Ablation Study</a>
+      <a href="#analysis">Analysis</a>
+      <a href="#bibtex">BibTeX</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <div class="container">
+    <h1 class="publication-title">Unlocking the Power of Loops in Pretrained LLMs with Loop Residuals</h1>
+    <div class="hero-meta">
+      <div class="publication-authors">
+      <span class="author-block">Xuanlei Zhao<sup>1</sup>,&nbsp;</span>
+      <span class="author-block">Hailun Xu<sup>2</sup>,&nbsp;</span>
+      <span class="author-block">Kai Wang<sup>1</sup>,&nbsp;</span>
+      <span class="author-block">Yang Luo<sup>1</sup>,&nbsp;</span>
+      <span class="author-block">Yingxuan Ren<sup>1</sup>,&nbsp;</span>
+      <span class="author-block">Zirui Zhu<sup>1</sup>,&nbsp;</span>
+      <span class="author-block">Yuxuan Lou<sup>1</sup>,&nbsp;</span>
+      <span class="author-block">Kun Xu<sup>2</sup>,&nbsp;</span>
+      <span class="author-block">Yan Wang<sup>2</sup>,&nbsp;</span>
+      <span class="author-block">Kanchan Sarkar<sup>2</sup>,&nbsp;</span>
+      <span class="author-block">Yang You<sup>1</sup></span>
+      </div>
+      <div class="publication-affils">
+      <span class="author-block"><sup>1</sup>National University of Singapore&nbsp;&nbsp;</span>
+      <span class="author-block"><sup>2</sup>Independent Researcher</span>
+      </div>
+      <div class="publication-links">
+      <span class="link-block">
+        <!-- TODO: replace this disabled button with the arXiv link once the paper is public. -->
+        <a class="btn" disabled aria-disabled="true" title="Paper link coming soon">
+          <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zM8 13h8v2H8v-2zm0 4h8v2H8v-2z"/></svg></span>
+          <span>Paper (soon)</span>
+        </a>
+      </span>
+      <span class="link-block">
+        <a href="https://github.com/NUS-HPC-AI-Lab/LoopRes" target="_blank" rel="noopener" class="btn btn-primary">
+          <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg></span>
+          <span>Code</span>
+        </a>
+      </span>
+      <span class="link-block">
+        <a href="#bibtex" class="btn">
+          <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h4v4c0 3-1.6 5-4.5 6l-.8-1.7C7.300 14.600 8 13.600 8 12H7a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2zm9 0h4v4c0 3-1.600 5-4.500 6l-.8-1.700c1.600-.7 2.300-1.700 2.300-3.300h-1a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z"/></svg></span>
+          <span>BibTeX</span>
+        </a>
+      </span>
+      </div>
+    </div>
+    <div class="stats" aria-label="Key results">
+      <div class="stat"><b>+29.1%</b><span>over SFT on Qwen3-1.7B-Base at 2× compute</span></div>
+      <div class="stat"><b>2.1×</b><span>gain over SOTA at 2× compute</span></div>
+      <div class="stat"><b>6</b><span>pretrained LLMs from 3 model families and 9 benchmarks</span></div>
+      <div class="stat"><b>+4.8%</b><span>training step time, with +0.7% peak activation memory</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-figure">
+  <div class="container">
+    <figure class="paper-figure scroll-figure">
+      <div class="figure-scroll" tabindex="0"><img src="./static/images/overview.png" width="1799" height="640" alt="Bar and line charts showing LoopRes above SFT and eight looped baselines across compute budgets and backbones."></div>
+      <figcaption><strong>Figure 1. Average scores across compute budgets and backbones.</strong> Scores average seven math and code benchmarks in (a,b) and five in (c). SFT is the same model finetuned without looping.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section section-abstract" id="abstract">
+  <div class="container">
+    <h2 class="title">Abstract</h2>
+    <p class="abstract">
+      Looped Transformers iterate a shared block of layers to increase computation without adding parameters, offering stronger performance and test-time scaling. However, this power has so far required training from scratch and yielded only modest gains for LLMs. Finetuning existing models into loops is far cheaper, yet also brings only marginal gains over SFT. We propose <strong>LoopRes</strong>, an effective, scalable, and simple approach that turns loops into significant and consistent gains for pretrained LLMs. Building on Attention Residuals, LoopRes lets each looped layer attend directly to the outputs of earlier loops. Since these outputs are iterates of the same layers and become harder to tell apart, we give each a trainable loop-aware key that encodes its structural identity. Attending to all earlier loops also lets layers skip intermediate ones, so we restrict each layer to a residual window of the latest <i>W</i> loops, forcing every loop to build incrementally on recent ones. Across 6 pretrained LLMs from 3 model families and 9 benchmarks, LoopRes delivers significant and consistent gains: at 2× compute, it improves Qwen3-1.7B-Base by 29.1% over SFT, more than doubling the gain of the state-of-the-art baseline. The gains hold on larger models up to 30B and across all three families. More importantly, from 1.7B to 8B, LoopRes scales more steeply than SFT as compute grows, reaching a higher ceiling while needing less compute on long outputs. These results establish LoopRes as an effective looping approach, delivering both better performance and better test-time scaling.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="challenges">
+  <div class="container">
+    <h2 class="title">Challenges of Looping with Attention Residuals</h2>
+    <p class="lead">AttnRes assumes sources that differ in content and are fixed in number. In loops, the sources are iterates of the same layers, so they become similar in content and grow in number.</p>
+    <div class="cards">
+      <div class="card-note"><h4>Similar iterates</h4><p>Iterates of the same block are far more similar to each other than to other blocks, so they receive similar scores. This worsens as loops deepen.</p></div>
+      <div class="card-note"><h4>Early convergence</h4><p>The query norm reaches most of its final value within the first third of finetuning, which may commit the model to its early connection pattern.</p></div>
+      <div class="card-note"><h4>Growing sources</h4><p>Layers can skip intermediate loops. The weight on the path through every loop falls from 33.7% with three loops to 0.05% with seven.</p></div>
+    </div>
+    <figure class="paper-figure scroll-figure">
+      <div class="figure-scroll" tabindex="0"><img src="./static/images/attnres_analysis.png" width="1799" height="763" loading="lazy" alt="Visualizations of AttnRes in a looped model: content similarity, attention scores, query norm, and path weights."></div>
+      <figcaption><strong>Figure 3. Visualization of AttnRes in a looped model.</strong> Huginn + AttnRes on Qwen3-1.7B-Base at <i>L</i>=3 and <i>L</i>=7, where L<i>t</i>B<i>j</i> denotes the output of block <i>j</i> in loop <i>t</i>.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="loopres">
+  <div class="container">
+    <h2 class="title">LoopRes</h2>
+    <p class="lead">LoopRes keeps the input-dependent mechanism of AttnRes and introduces two improvements:</p>
+    <div class="cards ideas">
+      <div class="card-note"><h4>Loop-aware keys</h4><p>Each source gets a trainable key per block per loop alongside its content key. It distinguishes iterates of the same layers by their coordinates and is optimized directly.</p></div>
+      <div class="card-note"><h4>Residual window</h4><p>Each layer attends only to the previous <i>W</i> loops. This prevents skipping to distant loops and bounds each input to (<i>W</i>+1)<i>B</i>+1 sources.</p></div>
+    </div>
+    <div class="equation">
+      \[\alpha_s=\frac{\exp\big(\mathbf{q}^{\text{loop}\top}\mathbf{k}^{\text{loop}}_s+\mathbf{q}^{\top}\mathbf{k}_s\big)}{\sum_{s'\in\mathcal{S}}\exp\big(\mathbf{q}^{\text{loop}\top}\mathbf{k}^{\text{loop}}_{s'}+\mathbf{q}^{\top}\mathbf{k}_{s'}\big)},\tag{3}\]
+    </div>
+    <p class="prose">where \(\mathbf{q}^{\text{loop}}\) is the loop-aware query and \(\mathbf{q}\) the content query, both initialized to zero.</p>
+    <figure class="paper-figure scroll-figure">
+      <div class="figure-scroll" tabindex="0"><img src="./static/images/architecture.png" width="1799" height="539" loading="lazy" alt="Diagram comparing layer loops, stack loops, AttnRes, and LoopRes with a residual window."></div>
+      <figcaption><strong>Figure 2. How a looped layer takes the outputs of earlier layers as input.</strong> AttnRes attends to every earlier loop output, while LoopRes attends only to a window of the latest <i>W</i> loops (shaded, <i>W</i>=1 here) and adds a loop-aware key alongside the content key.</figcaption>
+    </figure>
+
+    <h3 class="subhead">Residual window</h3>
+    <p class="prose">Select a block to view its sources, with <i>B</i>=2 and <i>L</i>=7.</p>
+    <div class="explorer" id="explorer">
+      <div class="explorer-controls">
+        <div><span class="control-label">Method</span><span class="segmented" id="method-control">
+          <button type="button" data-method="attnres" aria-pressed="false">AttnRes</button>
+          <button type="button" data-method="loopres" aria-pressed="true">LoopRes</button>
+        </span></div>
+        <div><span class="control-label">W</span><span class="segmented" id="window-control">
+          <button type="button" data-window="1" aria-pressed="true">1</button>
+          <button type="button" data-window="2" aria-pressed="false">2</button>
+          <button type="button" data-window="3" aria-pressed="false">3</button>
+        </span></div>
+      </div>
+      <div class="loop-grid" id="loop-grid"></div>
+      <div class="legend">
+        <span><i style="background:var(--ink)"></i>reader</span>
+        <span><i style="background:var(--blue)"></i>source</span>
+        <span><i style="background:repeating-linear-gradient(135deg,#f1f3f6 0 3px,#d9dde5 3px 5px)"></i>outside window</span>
+        <span><i style="border:1px dashed var(--line-2);background:#fff"></i>not yet run</span>
+      </div>
+      <div class="readout" aria-live="polite">
+        <div class="readout-count" id="readout-count">5</div>
+        <div class="readout-text" id="readout-text"></div>
+      </div>
+    </div>
+
+    <details class="code-toggle">
+      <summary>PyTorch-style pseudo code</summary>
+<pre class="code"><code>def loop_res(values: list[Tensor], loop_keys: list[Tensor], loop_query: Tensor, content_query: Tensor,
+             norm: RMSNorm) -&gt; Tensor:
+    """
+    AttnRes input with loop-aware keys.
+    values:
+        S sources of shape [N, T, D]
+    loop_keys:
+        S loop-aware keys of shape [D], one trainable vector per source
+    """
+    values = torch.stack(values)                                                        <span class="cm"># [S, N, T, D]</span>
+    loop_keys = torch.stack(loop_keys)                                                  <span class="cm"># [S, D]</span>
+    content_keys = norm(values)                                                         <span class="cm"># [S, N, T, D], as in AttnRes</span>
+    logits = torch.einsum('d, s n t d -&gt; s n t', content_query, content_keys)
+<span class="new">    logits = logits + torch.einsum('d, s d -&gt; s', loop_query, loop_keys)[:, None, None] # loop-aware keys</span>
+    weights = logits.softmax(0)
+    return torch.einsum('s n t, s n t d -&gt; n t d', weights, values)
+
+def forward(self, prelude_out: Tensor) -&gt; Tensor:
+    """
+    prelude_out:
+        [N, T, D]: output of the prelude; the returned core output goes to the coda
+    """
+<span class="new">    # residual window: the blocks of the previous W loops and their loop-aware keys</span>
+<span class="new">    window_values, window_keys = [], []</span>
+    for t in range(self.num_loops):
+        values = [prelude_out] + window_values
+        loop_keys = [self.prelude_key] + window_keys
+
+        <span class="cm"># block AttnRes over the core; every sub-layer forms its input by loop_res, with its own queries in loop t</span>
+        blocks = []
+        for i, block in enumerate(self.core_blocks):
+            blocks.append(block(values + blocks, loop_keys + self.block_keys[t][:i], loop=t))
+
+<span class="new">        # end of loop t: once the window is full, drop all blocks of its oldest loop, then add loop t</span>
+<span class="new">        if len(window_values) == self.window_size * self.num_blocks:</span>
+<span class="new">            del window_values[:self.num_blocks], window_keys[:self.num_blocks]</span>
+<span class="new">        window_values += blocks</span>
+<span class="new">        window_keys += self.block_keys[t]</span>
+
+    <span class="cm"># output: the window and the blocks of the last loop</span>
+    return loop_res(values + blocks, loop_keys + self.block_keys[t],
+                    self.output_loop_query, self.output_content_query, self.output_norm)</code></pre>
+      <p class="table-note"><strong>Figure 9. PyTorch-style pseudo code for LoopRes.</strong> Lines in blue mark its two changes to Block AttnRes: (i) loop_res adds a loop-aware key to each source. (ii) Each loop takes a residual window of the previous <i>W</i> loops as input, from which older loops are dropped.</p>
+    </details>
+  </div>
+</section>
+
+<section class="section" id="results">
+  <div class="container">
+    <h2 class="title">Main Results</h2>
+    <p class="lead">LoopRes, SFT, and 8 baselines on 7 benchmarks at 2× and 4× compute, with every baseline reimplemented on the same backbone, data, and hyperparameters.</p>
+    <div class="table-toolbar">
+      <span class="segmented" id="budget-control">
+        <button type="button" data-budget="2x" aria-pressed="true">2× compute</button>
+        <button type="button" data-budget="4x" aria-pressed="false">4× compute</button>
+      </span>
+    </div>
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Table 1">
+      <table class="results wide">
+        <thead>
+          <tr><th scope="col" rowspan="2">method</th><th scope="colgroup" colspan="5" class="group center">math</th><th scope="colgroup" colspan="2" class="group center">code</th><th scope="col" rowspan="2" class="group">avg.</th><th scope="col" rowspan="2">Δ</th><th scope="col" rowspan="2" class="group">loss</th><th scope="col" rowspan="2">Δ</th></tr>
+          <tr><th scope="col" class="group">AIME25</th><th scope="col">AIME26</th><th scope="col">AMC23</th><th scope="col">Olympiad</th><th scope="col">MATH500</th><th scope="col" class="group">HE+</th><th scope="col">MBPP+</th></tr>
+        </thead>
+        <tbody data-budget-body="2x"><tr class="base"><td>SFT</td><td class="group">14.6</td><td>11.7</td><td>48.6</td><td>40.7</td><td>73.4</td><td class="group">57.3</td><td>56.2</td><td class="group">43.2</td><td>–</td><td class="group">0.312</td><td>–</td></tr>
+          <tr><td>Huginn</td><td class="group">19.6</td><td>14.4</td><td>54.1</td><td>46.5</td><td>80.4</td><td class="group">64.2</td><td>64.0</td><td class="group">49.0</td><td>13.5%↑</td><td class="group">0.303</td><td>2.8%↓</td></tr>
+          <tr><td>Ouro</td><td class="group">12.5</td><td>9.2</td><td>47.8</td><td>40.4</td><td>74.6</td><td class="group">59.1</td><td>56.6</td><td class="group">42.9</td><td>0.8%↓</td><td class="group">0.315</td><td>1.1%↑</td></tr>
+          <tr><td>Hyperloop</td><td class="group">18.3</td><td>16.7</td><td>54.4</td><td>47.1</td><td>77.6</td><td class="group">66.9</td><td>60.4</td><td class="group">48.8</td><td>12.9%↑</td><td class="group">0.303</td><td>2.9%↓</td></tr>
+          <tr><td>TaH2-fixed</td><td class="group">15.8</td><td>12.5</td><td>50.0</td><td>41.3</td><td>75.8</td><td class="group">62.3</td><td>57.0</td><td class="group">45.0</td><td>4.0%↑</td><td class="group">0.306</td><td>1.7%↓</td></tr>
+          <tr><td>WMRE</td><td class="group">16.2</td><td>10.6</td><td>51.2</td><td>40.7</td><td>74.0</td><td class="group">60.1</td><td>54.1</td><td class="group">43.8</td><td>1.5%↑</td><td class="group">0.311</td><td>0.3%↓</td></tr>
+          <tr><td>CloseLoop</td><td class="group">16.5</td><td>13.3</td><td>50.0</td><td>44.1</td><td>78.8</td><td class="group">61.4</td><td>56.7</td><td class="group">45.8</td><td>6.0%↑</td><td class="group">0.309</td><td>1.0%↓</td></tr>
+          <tr><td>InfiLoop</td><td class="group">14.4</td><td>10.8</td><td>49.4</td><td>42.4</td><td>73.0</td><td class="group">58.4</td><td>56.3</td><td class="group">43.5</td><td>0.7%↑</td><td class="group">0.312</td><td>0.0%↑</td></tr>
+          <tr><td>BRT</td><td class="group">21.7</td><td>15.4</td><td>53.6</td><td>45.0</td><td>79.0</td><td class="group">66.6</td><td>63.2</td><td class="group">49.2</td><td>13.9%↑</td><td class="group">0.302</td><td>3.0%↓</td></tr>
+          <tr class="ours"><td>LoopRes</td><td class="group">27.9</td><td>19.4</td><td>64.7</td><td>53.8</td><td>84.0</td><td class="group">71.8</td><td>68.9</td><td class="group">55.8</td><td>29.1%↑</td><td class="group">0.292</td><td>6.3%↓</td></tr></tbody>
+        <tbody data-budget-body="4x" hidden><tr class="base"><td>SFT</td><td class="group">14.6</td><td>11.7</td><td>48.6</td><td>40.7</td><td>73.4</td><td class="group">57.3</td><td>56.2</td><td class="group">43.2</td><td>–</td><td class="group">0.312</td><td>–</td></tr>
+          <tr><td>Huginn</td><td class="group">24.4</td><td>18.3</td><td>58.8</td><td>50.4</td><td>80.0</td><td class="group">66.2</td><td>64.3</td><td class="group">51.8</td><td>19.8%↑</td><td class="group">0.299</td><td>4.1%↓</td></tr>
+          <tr><td>Ouro</td><td class="group">13.5</td><td>11.2</td><td>45.6</td><td>40.4</td><td>75.4</td><td class="group">56.9</td><td>52.8</td><td class="group">42.3</td><td>2.2%↓</td><td class="group">0.321</td><td>3.1%↑</td></tr>
+          <tr><td>Hyperloop</td><td class="group">18.5</td><td>15.8</td><td>54.7</td><td>46.7</td><td>79.6</td><td class="group">63.4</td><td>63.6</td><td class="group">48.9</td><td>13.2%↑</td><td class="group">0.303</td><td>2.8%↓</td></tr>
+          <tr><td>TaH2-fixed</td><td class="group">18.8</td><td>12.7</td><td>52.2</td><td>43.1</td><td>77.0</td><td class="group">64.0</td><td>59.8</td><td class="group">46.8</td><td>8.3%↑</td><td class="group">0.303</td><td>2.6%↓</td></tr>
+          <tr><td>WMRE</td><td class="group">12.7</td><td>11.2</td><td>49.5</td><td>41.9</td><td>73.4</td><td class="group">60.1</td><td>55.2</td><td class="group">43.4</td><td>0.5%↑</td><td class="group">0.312</td><td>0.1%↑</td></tr>
+          <tr><td>CloseLoop</td><td class="group">18.3</td><td>13.8</td><td>55.5</td><td>44.1</td><td>77.0</td><td class="group">64.8</td><td>58.3</td><td class="group">47.4</td><td>9.7%↑</td><td class="group">0.307</td><td>1.4%↓</td></tr>
+          <tr><td>InfiLoop</td><td class="group">13.5</td><td>10.8</td><td>49.8</td><td>40.9</td><td>76.4</td><td class="group">57.9</td><td>55.8</td><td class="group">43.6</td><td>0.9%↑</td><td class="group">0.312</td><td>0.0%↑</td></tr>
+          <tr><td>BRT</td><td class="group">21.2</td><td>13.8</td><td>54.7</td><td>44.7</td><td>77.0</td><td class="group">64.2</td><td>59.4</td><td class="group">47.9</td><td>10.7%↑</td><td class="group">0.305</td><td>2.0%↓</td></tr>
+          <tr class="ours"><td>LoopRes</td><td class="group">30.2</td><td>24.6</td><td>67.5</td><td>52.9</td><td>84.2</td><td class="group">75.3</td><td>69.8</td><td class="group">57.8</td><td>33.7%↑</td><td class="group">0.291</td><td>6.8%↓</td></tr></tbody>
+      </table>
+    </div>
+    <p class="table-note"><strong>Table 1. Comparison with baselines at 2× and 4× compute on Qwen3-1.7B-Base.</strong> Δ is the change relative to SFT. HE+ denotes HumanEval+.</p>
+    <p class="prose" style="margin-top:1rem">LoopRes achieves the best score on every benchmark at both compute budgets, more than doubling the gain of the strongest baseline at 2× compute. The relative gains are largest on the hardest benchmarks, such as AIME.</p>
+  </div>
+</section>
+
+<section class="section" id="scalability">
+  <div class="container">
+    <h2 class="title">Scalability</h2>
+
+    <div class="split">
+    <div>
+    <h3 class="subhead">Scaling to deeper loops</h3>
+    <p class="prose">The score improves as loops deepen and gradually saturates beyond <i>L</i> = 5. The best trade-off between score and compute is at <i>L</i> = 3.</p>
+    </div>
+    <figure class="paper-figure">
+      <img src="./static/images/scaling.png" width="889" height="431" loading="lazy" alt="Line chart of average score against decode compute for SFT and LoopRes at loop depths from 2 to 11.">
+      <figcaption><strong>Figure 6. Test-time scaling across loop depths.</strong> Average score as the thinking budget grows from 1K to 30K tokens, on Qwen3-1.7B-Base.</figcaption>
+    </figure>
+    </div>
+
+    <div class="split">
+    <div>
+    <h3 class="subhead">Scaling to larger backbones</h3>
+    <p class="prose">LoopRes improves every benchmark on Qwen3-4B, 8B, and 30B-A3B, and its score rises with a clearly steeper slope than SFT as decode FLOPs grow. LoopRes on the 4B backbone even surpasses SFT on the 8B one in average score.</p>
+    </div>
+    <div class="table-side">
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Table 3">
+      <table class="results compact">
+        <thead><tr><th scope="col">method</th><th scope="col" class="group">A25</th><th scope="col">A26</th><th scope="col">Oly</th><th scope="col">IMO</th><th scope="col">LCB</th><th scope="col" class="group">avg.</th><th scope="col">Δ</th></tr></thead>
+        <tbody>
+          <tr class="group-row"><td colspan="8">Qwen3-4B-Base</td></tr>
+          <tr class="base"><td>SFT</td><td class="group">35.4</td><td>38.3</td><td>61.6</td><td>20.5</td><td>27.4</td><td class="group">36.6</td><td>–</td></tr>
+          <tr class="ours"><td>LoopRes</td><td class="group">47.1</td><td>51.0</td><td>68.3</td><td>29.6</td><td>32.9</td><td class="group">45.8</td><td>+9.2</td></tr>
+          <tr class="group-row"><td colspan="8">Qwen3-8B-Base</td></tr>
+          <tr class="base"><td>SFT</td><td class="group">39.6</td><td>46.0</td><td>65.5</td><td>30.9</td><td>32.6</td><td class="group">42.9</td><td>–</td></tr>
+          <tr class="ours"><td>LoopRes</td><td class="group">51.5</td><td>62.9</td><td>72.3</td><td>35.5</td><td>35.1</td><td class="group">51.5</td><td>+8.6</td></tr>
+          <tr class="group-row"><td colspan="8">Qwen3-30B-A3B-Base</td></tr>
+          <tr class="base"><td>SFT</td><td class="group">59.6</td><td>66.3</td><td>72.9</td><td>38.6</td><td>38.3</td><td class="group">55.1</td><td>–</td></tr>
+          <tr class="ours"><td>LoopRes</td><td class="group">65.4</td><td>72.5</td><td>76.4</td><td>44.9</td><td>44.0</td><td class="group">60.6</td><td>+5.5</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note"><strong>Table 3. Results on larger backbones at 2× compute.</strong> A25/A26: AIME25/26, Oly: OlympiadBench, IMO: IMO-AnswerBench, LCB: LiveCodeBench v6.</p>
+    </div>
+    </div>
+
+    <div class="split">
+    <div>
+    <h3 class="subhead">Generalizing across model families</h3>
+    <p class="prose">LoopRes also improves every benchmark on Llama-3.2-1B and Qwen3.5-2B-Base, whose architectures differ from Qwen3.</p>
+    </div>
+    <div class="table-side">
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Table 4">
+      <table class="results compact narrow-table flat">
+        <thead>
+          <tr><th scope="col">backbone</th><th scope="col">SFT avg.</th><th scope="col" class="is-ours">LoopRes avg.</th><th scope="col">Δ</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Llama-3.2-1B</td><td>14.3</td><td class="is-ours">19.6</td><td class="is-delta">+5.4</td></tr>
+          <tr><td>Qwen3.5-2B-Base</td><td>52.1</td><td class="is-ours">64.1</td><td class="is-delta">+12.0</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note"><strong>Table 4. Results on Llama-3.2-1B and Qwen3.5-2B-Base at 2× compute.</strong> Δ is in points.</p>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="ablation">
+  <div class="container">
+    <h2 class="title">Ablation Study</h2>
+    <p class="lead">We ablate the components of LoopRes on Qwen3-1.7B-Base at both compute budgets.</p>
+    <div class="split wide-left">
+    <div class="table-side">
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Table 5">
+      <table class="results compact">
+        <thead>
+          <tr><th scope="col" rowspan="2">variant</th><th scope="colgroup" colspan="2" class="group center">2× compute</th><th scope="colgroup" colspan="2" class="group center">4× compute</th></tr>
+          <tr><th scope="col" class="group">avg.</th><th scope="col">Δ</th><th scope="col" class="group">avg.</th><th scope="col">Δ</th></tr>
+        </thead>
+        <tbody>
+          <tr class="ours"><td>LoopRes</td><td class="group">55.8</td><td>–</td><td class="group">57.8</td><td>–</td></tr>
+          <tr><td>Huginn + AttnRes</td><td class="group">53.9</td><td>−1.9</td><td class="group">55.0</td><td>−2.8</td></tr>
+          <tr class="group-row"><td colspan="5">Residual window (LoopRes: <i>W</i> = 1)</td></tr>
+          <tr><td><i>W</i> = 2</td><td class="group">55.2</td><td>−0.6</td><td class="group">57.5</td><td>−0.3</td></tr>
+          <tr><td><i>W</i> = 3</td><td class="group">–</td><td>–</td><td class="group">57.7</td><td>−0.1</td></tr>
+          <tr class="group-row"><td colspan="5">Key (LoopRes: loop-aware + content)</td></tr>
+          <tr><td>loop-aware only</td><td class="group">54.9</td><td>−0.9</td><td class="group">57.5</td><td>−0.3</td></tr>
+          <tr><td>content only</td><td class="group">54.9</td><td>−0.9</td><td class="group">55.8</td><td>−2.0</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note"><strong>Table 5. Ablation study of LoopRes on Qwen3-1.7B-Base.</strong> Each group varies one component.</p>
+    </div>
+    <div class="cards">
+      <div class="card-note"><h4>Naive AttnRes</h4><p>Applying AttnRes to Huginn without loop-aware keys or the residual window performs clearly worse, and the gap widens as loops deepen.</p></div>
+      <div class="card-note"><h4>Residual window</h4><p>A larger window reduces the average score, so LoopRes uses <i>W</i> = 1, which achieves the best score at the lowest cost.</p></div>
+      <div class="card-note"><h4>Loop-aware keys</h4><p>Either key alone performs worse than the two combined. As loops deepen, dropping the loop-aware key hurts more.</p></div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="analysis">
+  <div class="container">
+    <h2 class="title">Analysis</h2>
+
+    <h3 class="subhead">What LoopRes learns</h3>
+    <p class="prose">We visualize how LoopRes weighs its sources, revealing three patterns.</p>
+    <div class="cards">
+      <div class="card-note"><h4>Iterative loop updates</h4><p>The first block mainly updates its own output from the previous loop, while the second on average relies most on the first block of the current loop.</p></div>
+      <div class="card-note"><h4>Dominant loop-aware keys</h4><p>The loop-aware key accounts for most of the selection at both compute budgets.</p></div>
+      <div class="card-note"><h4>Adaptive content keys</h4><p>The content key lets each token choose its own depth: simple tokens favor shallower outputs, while digits and math symbols favor deeper ones.</p></div>
+    </div>
+    <figure class="paper-figure scroll-figure">
+      <div class="figure-scroll" tabindex="0"><img src="./static/images/learned.png" width="1799" height="391" loading="lazy" alt="Charts of source weights, key contributions, and tokens that favor shallower or deeper outputs."></div>
+      <figcaption><strong>Figure 7. What LoopRes learns.</strong> LoopRes on Qwen3-1.7B-Base, averaged over 128 samples.</figcaption>
+    </figure>
+
+    <h3 class="subhead">How LoopRes differs from AttnRes</h3>
+    <p class="prose">We further compare LoopRes with AttnRes, with and without the residual window, revealing three differences.</p>
+    <div class="cards">
+      <div class="card-note"><h4>Distinguishable loop iterates</h4><p>LoopRes separates adjacent loops clearly from early in finetuning, while AttnRes struggles even with the window.</p></div>
+      <div class="card-note"><h4>Recency-focused inputs</h4><p>The window removes shortcuts to the first loop, and LoopRes further concentrates the weight on the preceding block.</p></div>
+      <div class="card-note"><h4>Less is more for content keys</h4><p>The content score of AttnRes is almost a fixed preference. In LoopRes, it varies far more with the token, even as loops deepen.</p></div>
+    </div>
+    <figure class="paper-figure scroll-figure">
+      <div class="figure-scroll" tabindex="0"><img src="./static/images/vs_attnres.png" width="1799" height="409" loading="lazy" alt="Charts comparing loop separation, source weights, and token-dependent content scores for AttnRes and LoopRes."></div>
+      <figcaption><strong>Figure 8. How LoopRes differs from AttnRes.</strong> AttnRes, AttnRes with <i>W</i>=1, and LoopRes on Qwen3-1.7B-Base over 128 samples at <i>L</i>=3, with (d) also showing <i>L</i>=7.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="bibtex">
+  <div class="container">
+    <h2 class="title">BibTeX</h2>
+    <div class="bib-wrap">
+      <button type="button" class="copy" id="copy-bib">Copy</button>
+<pre><code id="bib-text">@misc{zhao2026loopres,
+  title={Unlocking the Power of Loops in Pretrained LLMs with Loop Residuals},
+  author={Zhao, Xuanlei and Xu, Hailun and Wang, Kai and Luo, Yang and Ren, Yingxuan and Zhu, Zirui and Lou, Yuxuan and Xu, Kun and Wang, Yan and Sarkar, Kanchan and You, Yang},
+  year={2026},
+  note={Preprint}
+}</code></pre>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+  This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  Website adapted from the following <a href="https://nerfies.github.io">source code</a>.
+  </div>
+</footer>
+
+<script>
+(function () {
+  var LOOPS = 7, BLOCKS = 2;
+  var state = { method: 'loopres', windowSize: 1, loop: 5, block: 2 };
+  var grid = document.getElementById('loop-grid');
+  var nodes = {};
+
+  function pressed(container, attr, value) {
+    container.querySelectorAll('button').forEach(function (button) {
+      button.setAttribute('aria-pressed', String(button.getAttribute(attr) === String(value)));
+    });
+  }
+
+  function addHead(text) {
+    var head = document.createElement('div');
+    head.className = 'head';
+    head.textContent = text;
+    grid.appendChild(head);
+  }
+
+  addHead('');
+  for (var loop = 1; loop <= LOOPS; loop++) addHead('L' + loop);
+
+  var prelude = document.createElement('button');
+  prelude.type = 'button';
+  prelude.className = 'node prelude source';
+  prelude.textContent = 'prelude';
+  prelude.disabled = true;
+  prelude.style.gridColumn = '1';
+  grid.appendChild(prelude);
+
+  for (var block = BLOCKS; block >= 1; block--) {
+    for (var t = 1; t <= LOOPS; t++) {
+      (function (t, block) {
+        var node = document.createElement('button');
+        node.type = 'button';
+        node.className = 'node';
+        node.textContent = 'B' + block;
+        node.style.gridColumn = String(t + 1);
+        node.style.gridRow = String(BLOCKS - block + 2);
+        node.setAttribute('aria-label', 'Loop ' + t + ', block ' + block);
+        node.addEventListener('click', function () {
+          state.loop = t;
+          state.block = block;
+          render();
+        });
+        nodes[t + ':' + block] = node;
+        grid.appendChild(node);
+      })(t, block);
+    }
+  }
+
+  function render() {
+    var isLoopRes = state.method === 'loopres';
+    var firstLoop = isLoopRes ? Math.max(1, state.loop - state.windowSize) : 1;
+    var previous = (state.loop - firstLoop) * BLOCKS;
+    var current = state.block - 1;
+    var count = 1 + previous + current + 1;
+
+    Object.keys(nodes).forEach(function (key) {
+      var parts = key.split(':').map(Number), t = parts[0], block = parts[1], cls = 'node', status = 'not yet run';
+      if (t === state.loop && block === state.block) { cls += ' reader'; status = 'reader'; }
+      else if ((t === state.loop && block < state.block) || (t < state.loop && t >= firstLoop)) { cls += ' source'; status = 'source'; }
+      else if (t < firstLoop) { cls += ' dropped'; status = 'outside window'; }
+      nodes[key].className = cls;
+      nodes[key].setAttribute('aria-label', 'Loop ' + t + ', block ' + block + ': ' + status);
+      nodes[key].setAttribute('aria-pressed', String(t === state.loop && block === state.block));
+    });
+
+    document.getElementById('readout-count').textContent = count;
+    var bound = isLoopRes
+      ? 'Bounded by (W+1)B+1 = ' + ((state.windowSize + 1) * BLOCKS + 1) + '.'
+      : 'The source set grows with every loop.';
+    document.getElementById('readout-text').innerHTML =
+      '<strong>' + count + ' sources</strong> for block ' + state.block + ' of loop ' + state.loop +
+      ': the prelude output, ' + previous + ' block output' + (previous === 1 ? '' : 's') + ' of previous loops, ' +
+      current + ' block output' + (current === 1 ? '' : 's') + ' of loop ' + state.loop + ', and the partial sum. ' + bound;
+
+    pressed(document.getElementById('method-control'), 'data-method', state.method);
+    pressed(document.getElementById('window-control'), 'data-window', state.windowSize);
+    document.querySelectorAll('#window-control button').forEach(function (button) { button.disabled = !isLoopRes; });
+  }
+
+  document.getElementById('method-control').addEventListener('click', function (event) {
+    var button = event.target.closest('button');
+    if (button) { state.method = button.dataset.method; render(); }
+  });
+  document.getElementById('window-control').addEventListener('click', function (event) {
+    var button = event.target.closest('button');
+    if (button && !button.disabled) { state.windowSize = Number(button.dataset.window); render(); }
+  });
+  document.getElementById('budget-control').addEventListener('click', function (event) {
+    var button = event.target.closest('button');
+    if (!button) return;
+    pressed(this, 'data-budget', button.dataset.budget);
+    document.querySelectorAll('[data-budget-body]').forEach(function (body) {
+      body.hidden = body.getAttribute('data-budget-body') !== button.dataset.budget;
+    });
+  });
+  document.getElementById('copy-bib').addEventListener('click', function () {
+    var button = this, text = document.getElementById('bib-text').textContent;
+    function done(label) { button.textContent = label; setTimeout(function () { button.textContent = 'Copy'; }, 1500); }
+    if (navigator.clipboard) navigator.clipboard.writeText(text).then(function () { done('Copied'); }, function () { done('Select to copy'); });
+    else done('Select to copy');
+  });
+
+  render();
+})();
+</script>
+<script>
+(function () {
+  var links = Array.prototype.slice.call(document.querySelectorAll('#nav-links a'));
+  var bar = document.getElementById('nav-links');
+  var sections = links.map(function (link) { return document.querySelector(link.getAttribute('href')); });
+
+  function updateActive() {
+    var y = window.scrollY + 110, active = -1;
+    sections.forEach(function (section, i) { if (section.offsetTop <= y) active = i; });
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) active = links.length - 1;
+    links.forEach(function (link, i) {
+      var on = i === active;
+      if (on && !link.classList.contains('is-active') && bar.scrollWidth > bar.clientWidth) {
+        bar.scrollLeft = link.offsetLeft - bar.offsetLeft - 12;
+      }
+      link.classList.toggle('is-active', on);
+      if (on) link.setAttribute('aria-current', 'true'); else link.removeAttribute('aria-current');
+    });
+  }
+  window.addEventListener('scroll', updateActive, { passive: true });
+  window.addEventListener('resize', updateActive);
+  updateActive();
+
+})();
+</script>
+</body>
+</html>
