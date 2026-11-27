@@ -13,12 +13,10 @@ Hi there!
 
 I am Xuanlei Zhao, a third (final) year PhD student in Computer Science at National University of Singapore advised by [Yang You](https://www.comp.nus.edu.sg/~youy/), where I also completed my master's studies. I obtained my bachelor's degree in CS & EE from Huazhong University of Science and Technology. Previously, I interned at [Tencent Hunyuan](https://hunyuan.tencent.com/) with [Kai Wang](https://kaiwang960112.github.io/), [Adobe Research](https://www.adobe.com/) with [Yan Kang](https://research.adobe.com/person/yan-kang/) and [Yuanjun Xiong](https://yjxiong.me/),  [Pika](https://pika.art/about) with [Chenlin Meng](https://cs.stanford.edu/~chenlin/), [Colossal-AI](https://github.com/hpcaitech/ColossalAI) with [Jiarui Fang](https://fangjiarui.github.io/).
 
-My current research mainly focuses on efficient AI, including:
+My research aims to **scale efficiently** through the co-design of model architectures, algorithms, and systems. I focus on two connected directions:
 
-- Efficient parameter generation, for scaling and customizing foundation models.
-- Efficient diffusion and autoregressive models, e.g., for video generation.
-- Efficient machine learning system, with parallelism and low-level optimization.
-- Co-optimization of algorithm and infrastructure.
+- **Scale Intelligence Efficiently**: Expand model capabilities and customization through effective use of computation and parameter generation.
+- **Scale Computation Efficiently**: Support growing training and inference demands by reducing redundant computation and improving parallelism, memory efficiency, and hardware utilization.
 
 
 <!-- # 🔥 News
@@ -36,7 +34,7 @@ My current research mainly focuses on efficient AI, including:
 # 📝 Selected Publications ([all](https://scholar.google.com/citations?user=I5NBOacAAAAJ))
 
 
-## 🔁 Efficient LLMs
+## 🔁 Scale Intelligence Efficiently
 <ul>
   <li>
     <strong>Unlocking the Power of Loops in Pretrained LLMs with Loop Residuals</strong>
@@ -48,12 +46,6 @@ My current research mainly focuses on efficient AI, including:
     <img src='https://img.shields.io/github/stars/NUS-HPC-AI-Lab/LoopRes.svg?style=social&label=Star' alt="sym" height="100%">
     <div><i><u>Xuanlei Zhao</u>, Hailun Xu, Kai Wang, Yang Luo, Yingxuan Ren, Zirui Zhu, Yuxuan Lou, Kun Xu, Yan Wang, Kanchan Sarkar, Yang You</i></div>
   </li>
-</ul>
-
-<hr>
-
-## 🕹️ Efficient Parameter Generation
-<ul>
   <li>
     <strong>HY-WU (Part I): An Extensible Functional Neural Memory Framework and An Instantiation in Text-Guided Image Editing
 </strong>
@@ -63,23 +55,13 @@ My current research mainly focuses on efficient AI, including:
         <a href="https://tencent-hy-wu.github.io/"> [blog]</a>
     </div>
     <img src='https://img.shields.io/github/stars/Tencent-Hunyuan/HY-WU.svg?style=social&label=Star' alt="sym" height="100%">
-    <div>Tencent HY Team</div>
-  </li>
-  <li>
-    <code class="language-plaintext highlighter-rouge">NeurIPS 2025</code> <strong>Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights</strong>
-    <div style="display: inline">
-        <a href="https://arxiv.org/abs/2506.16406"> [paper]</a>
-        <a href="https://github.com/jerryliang24/Drag-and-Drop-LLMs"> [code]</a>
-        <a href="https://jerryliang24.github.io/DnD/"> [blog]</a>
-    </div>
-    <img src='https://img.shields.io/github/stars/jerryliang24/Drag-and-Drop-LLMs.svg?style=social&label=Star' alt="sym" height="100%">
-    <div><i>Zhiyuan Liang<b><sup>*</sup></b>, Dongwen Tang, Yuhao Zhou, <u>Xuanlei Zhao</u>, Mingjia Shi, Wangbo Zhao, Zekai Li, Peihao Wang, Konstantin Schürholt, Damian Borth, Michael M. Bronstein, Yang You, Zhangyang Wang<b><sup>*</sup></b>, Kai Wang<b><sup>*</sup></b></i></div>
+    <div>Tencent HY Team (Responsible for algorithm and infrastructure)</div>
   </li>
 </ul>
 
 <hr>
 
-## 🎬 Efficient Video Generation
+## ⚙️ Scale Computation Efficiently
 <ul>
   <li>
     <code class="language-plaintext highlighter-rouge">ICLR 2025</code> <strong>Real-Time Video Generation with Pyramid Attention Broadcast</strong>
@@ -107,12 +89,6 @@ My current research mainly focuses on efficient AI, including:
     </div>
     <div><i>Geng Zhang<b><sup>*</sup></b>, <u>Xuanlei Zhao</u><b><sup>*</sup></b>, Kai Wang<b><sup>†</sup></b>, Yang You<b><sup>†</sup></b></i></div>
   </li>
-</ul>
-
-<hr>
-
-## ⚙️ Efficient System Optimization
-<ul>
   <li>
     <code class="language-plaintext highlighter-rouge">ICLR 2024</code> <strong>AutoChunk: Automated Activation Chunk for Memory-Efficient Long Sequence Inference</strong>
     <div style="display: inline">
@@ -142,7 +118,7 @@ My current research mainly focuses on efficient AI, including:
 <div style="height: 0.2em;"></div>
 
 # 💡 Open-Source Projects
-- **[HY-WU](https://github.com/Tencent-Hunyuan/HY-WU)** (Lead for algo and infra): An Extensible Functional Neural Memory Framework <img src='https://img.shields.io/github/stars/Tencent-Hunyuan/HY-WU.svg?style=social&label=Star' alt="sym" height="100%">
+- **[HY-WU](https://github.com/Tencent-Hunyuan/HY-WU)** (Responsible for algorithm and infrastructure): An Extensible Functional Neural Memory Framework <img src='https://img.shields.io/github/stars/Tencent-Hunyuan/HY-WU.svg?style=social&label=Star' alt="sym" height="100%">
 - **[VideoSys](https://github.com/NUS-HPC-AI-Lab/VideoSys)** (Project Lead): An Easy and Efficient System for Video Generation <img src='https://img.shields.io/github/stars/NUS-HPC-AI-Lab/VideoSys.svg?style=social&label=Star' alt="sym" height="100%">
 - **[Colossal-AI](https://github.com/hpcaitech/ColossalAI)** (Top Contributor): Making large AI models cheaper, faster and more accessible <img src='https://img.shields.io/github/stars/hpcaitech/ColossalAI.svg?style=social&label=Star' alt="sym" height="100%">
 - **[FastFold](https://github.com/hpcaitech/FastFold)** (Top Contributor): Optimizing AlphaFold Training and Inference on GPU Clusters <img src='https://img.shields.io/github/stars/hpcaitech/FastFold.svg?style=social&label=Star' alt="sym" height="100%">

@@ -119,7 +119,7 @@
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
 {% endif %}
       {% if author.wechat_qr %}
-        <li><a href="{{ author.wechat_qr | relative_url }}" target="_blank" rel="noopener"><i class="fab fa-fw fa-weixin" aria-hidden="true"></i> WeChat</a></li>
+        <li><a class="wechat-qr-link" href="{{ author.wechat_qr | relative_url }}" target="_blank" rel="noopener"><i class="fab fa-fw fa-weixin" aria-hidden="true"></i> WeChat</a></li>
       {% endif %}
     </ul>
       <div class="author__urls_sm">
@@ -217,7 +217,7 @@
         <a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i></a>
       {% endif %}
       {% if author.wechat_qr %}
-        <a href="{{ author.wechat_qr | relative_url }}" target="_blank" rel="noopener" aria-label="WeChat QR code"><i class="fab fa-fw fa-weixin" aria-hidden="true"></i></a>
+        <a class="wechat-qr-link" href="{{ author.wechat_qr | relative_url }}" target="_blank" rel="noopener" aria-label="WeChat QR code"><i class="fab fa-fw fa-weixin" aria-hidden="true"></i></a>
       {% endif %}
     </div>
   </div>

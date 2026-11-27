@@ -60,8 +60,16 @@ $(document).ready(function(){
   // init smooth scroll
   $("a").smoothScroll({offset: -20});
 
-  // add lightbox class to all image links
-  $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");
+  // Show the QR code as a single image, independent of responsive duplicate links.
+  $(".wechat-qr-link").magnificPopup({
+    type: 'image',
+    gallery: { enabled: false },
+    closeOnContentClick: true,
+    midClick: true
+  });
+
+  // add lightbox class to other image links
+  $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").not(".wechat-qr-link").addClass("image-popup");
 
   // Magnific-Popup options
   $(".image-popup").magnificPopup({
