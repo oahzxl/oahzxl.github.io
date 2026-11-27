@@ -41,7 +41,7 @@ My current research mainly focuses on efficient AI, including:
   <li>
     <strong>Unlocking the Power of Loops in Pretrained LLMs with Loop Residuals</strong>
     <div style="display: inline">
-        <a href="https://github.com/NUS-HPC-AI-Lab/LoopRes/blob/main/docs/paper.pdf"> [paper]</a>
+        <a href="https://arxiv.org/abs/2611.31094"> [paper]</a>
         <a href="https://github.com/NUS-HPC-AI-Lab/LoopRes"> [code]</a>
         <a href="https://oahzxl.github.io/LoopRes/"> [blog]</a>
     </div>
